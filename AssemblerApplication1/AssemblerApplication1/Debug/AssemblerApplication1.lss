@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:55:37 2017
+AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 18:37:30 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
@@ -1905,6 +1905,7 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
                                  .cseg
                                  
                                  .def timerCounter = r17
+                                 .def temp = r16
                                  
                                  .org 0x0000
 000000 940c 0033                    jmp Main;
@@ -1913,7 +1914,7 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
                                  
                                  
                                  .org OVF0addr
-00002e 940c 00c6                 jmp MyISRHandler
+00002e 940c 00c6                 jmp Timer0
                                  
 000030 940c 0032                 jmp DEFAULT        
 000032 9518                      DEFAULT:  reti 
@@ -1945,34 +1946,34 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
 000045 b902                      out PORTA, r16
                                  
 000046 e308
-000047 d07f
-000048 d08e                      do_lcd_command 0b00111000 ; 2x5x7
-000049 d0a7                      rcall sleep_5ms
+000047 d0b4
+000048 d0c3                      do_lcd_command 0b00111000 ; 2x5x7
+000049 d0dc                      rcall sleep_5ms
 00004a e308
-00004b d07b
-00004c d08a                      do_lcd_command 0b00111000 ; 2x5x7
-00004d d09a                      rcall sleep_1ms
+00004b d0b0
+00004c d0bf                      do_lcd_command 0b00111000 ; 2x5x7
+00004d d0cf                      rcall sleep_1ms
 00004e e308
-00004f d077
-000050 d086                      do_lcd_command 0b00111000 ; 2x5x7
+00004f d0ac
+000050 d0bb                      do_lcd_command 0b00111000 ; 2x5x7
 000051 e308
-000052 d074
-000053 d083                      do_lcd_command 0b00111000 ; 2x5x7
+000052 d0a9
+000053 d0b8                      do_lcd_command 0b00111000 ; 2x5x7
 000054 e008
-000055 d071
-000056 d080                      do_lcd_command 0b00001000 ; display off?
+000055 d0a6
+000056 d0b5                      do_lcd_command 0b00001000 ; display off?
 000057 e001
-000058 d06e
-000059 d07d                      do_lcd_command 0b00000001 ; clear display
+000058 d0a3
+000059 d0b2                      do_lcd_command 0b00000001 ; clear display
 00005a e006
-00005b d06b
-00005c d07a                      do_lcd_command 0b00000110 ; increment, no display shift
+00005b d0a0
+00005c d0af                      do_lcd_command 0b00000110 ; increment, no display shift
 00005d e00e
-00005e d068
-00005f d077                      do_lcd_command 0b00001110 ; Cursor on, bar, no blink
+00005e d09d
+00005f d0ac                      do_lcd_command 0b00001110 ; Cursor on, bar, no blink
 000060 e800
-000061 d065
-000062 d074                      do_lcd_command 0b10000000
+000061 d09a
+000062 d0a9                      do_lcd_command 0b10000000
                                  
 000063 e020                      ldi r18, 0b00000000 ;Timer setup
 000064 bd24                      out TCCR0A, r18
@@ -1983,97 +1984,97 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
 00006a 9478                      sei
                                  
 00006b e302
-00006c d061
-00006d d069                      do_lcd_data '2'
+00006c d096
+00006d d09e                      do_lcd_data '2'
 00006e e301
-00006f d05e
-000070 d066                      do_lcd_data '1'
+00006f d093
+000070 d09b                      do_lcd_data '1'
 000071 e302
-000072 d05b
-000073 d063                      do_lcd_data '2'
+000072 d090
+000073 d098                      do_lcd_data '2'
 000074 e301
-000075 d058
-000076 d060                      do_lcd_data '1'
+000075 d08d
+000076 d095                      do_lcd_data '1'
 000077 e200
-000078 d055
-000079 d05d                      do_lcd_data ' '
+000078 d08a
+000079 d092                      do_lcd_data ' '
 00007a e301
-00007b d052
-00007c d05a                      do_lcd_data '1'
+00007b d087
+00007c d08f                      do_lcd_data '1'
 00007d e307
-00007e d04f
-00007f d057                      do_lcd_data '7'
+00007e d084
+00007f d08c                      do_lcd_data '7'
 000080 e703
-000081 d04c
-000082 d054                      do_lcd_data 's'
+000081 d081
+000082 d089                      do_lcd_data 's'
 000083 e301
-000084 d049
-000085 d051                      do_lcd_data '1'
+000084 d07e
+000085 d086                      do_lcd_data '1'
 000086 e200
-000087 d046
-000088 d04e                      do_lcd_data ' '
+000087 d07b
+000088 d083                      do_lcd_data ' '
 000089 e200
-00008a d043
-00008b d04b                      do_lcd_data ' '
+00008a d078
+00008b d080                      do_lcd_data ' '
 00008c e200
-00008d d040
-00008e d048                      do_lcd_data ' '
+00008d d075
+00008e d07d                      do_lcd_data ' '
 00008f e405
-000090 d03d
-000091 d045                      do_lcd_data 'E'
+000090 d072
+000091 d07a                      do_lcd_data 'E'
 000092 e304
-000093 d03a
-000094 d042                      do_lcd_data '4'
+000093 d06f
+000094 d077                      do_lcd_data '4'
                                  
 000095 ea08
-000096 d030
-000097 d03f                      do_lcd_command 0b10101000
+000096 d065
+000097 d074                      do_lcd_command 0b10101000
                                  
 000098 e506
-000099 d034
-00009a d03c                      do_lcd_data 'V'
+000099 d069
+00009a d071                      do_lcd_data 'V'
 00009b e605
-00009c d031
-00009d d039                      do_lcd_data 'e'
+00009c d066
+00009d d06e                      do_lcd_data 'e'
 00009e e60e
-00009f d02e
-0000a0 d036                      do_lcd_data 'n'
+00009f d063
+0000a0 d06b                      do_lcd_data 'n'
 0000a1 e604
-0000a2 d02b
-0000a3 d033                      do_lcd_data 'd'
+0000a2 d060
+0000a3 d068                      do_lcd_data 'd'
 0000a4 e609
-0000a5 d028
-0000a6 d030                      do_lcd_data 'i'
+0000a5 d05d
+0000a6 d065                      do_lcd_data 'i'
 0000a7 e60e
-0000a8 d025
-0000a9 d02d                      do_lcd_data 'n'
+0000a8 d05a
+0000a9 d062                      do_lcd_data 'n'
 0000aa e607
-0000ab d022
-0000ac d02a                      do_lcd_data 'g'
+0000ab d057
+0000ac d05f                      do_lcd_data 'g'
 0000ad e200
-0000ae d01f
-0000af d027                      do_lcd_data ' '
+0000ae d054
+0000af d05c                      do_lcd_data ' '
 0000b0 e40d
-0000b1 d01c
-0000b2 d024                      do_lcd_data 'M'
+0000b1 d051
+0000b2 d059                      do_lcd_data 'M'
 0000b3 e601
-0000b4 d019
-0000b5 d021                      do_lcd_data 'a'
+0000b4 d04e
+0000b5 d056                      do_lcd_data 'a'
 0000b6 e603
-0000b7 d016
-0000b8 d01e                      do_lcd_data 'c'
+0000b7 d04b
+0000b8 d053                      do_lcd_data 'c'
 0000b9 e608
-0000ba d013
-0000bb d01b                      do_lcd_data 'h'
+0000ba d048
+0000bb d050                      do_lcd_data 'h'
 0000bc e609
-0000bd d010
-0000be d018                      do_lcd_data 'i'
+0000bd d045
+0000be d04d                      do_lcd_data 'i'
 0000bf e60e
-0000c0 d00d
-0000c1 d015                      do_lcd_data 'n'
+0000c0 d042
+0000c1 d04a                      do_lcd_data 'n'
 0000c2 e605
-0000c3 d00a
-0000c4 d012                      do_lcd_data 'e'
+0000c3 d03f
+0000c4 d047                      do_lcd_data 'e'
                                  
                                  halt:
 0000c5 cfff                      rjmp halt
@@ -2094,72 +2095,139 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
                                  .endmacro
                                  
                                  
-                                 MyISRHandler: ;Timer overflow 0
+                                 Timer0: ;Timer overflow 0
                                  
-0000c6 9518                      reti
+0000c6 b70f                      in temp, SREG
+0000c7 930f                      push temp
+                                 
+0000c8 9513                      inc timerCounter
+                                 
+0000c9 3c10                      cpi timerCounter,192
+0000ca f019                      breq displaySelectScreen
+                                 
+0000cb 910f                      pop temp
+0000cc bf0f                      out SREG, temp
+                                 
+0000cd 9518                      reti
+                                 
+                                 
+                                 displaySelectScreen:
+                                 
+0000ce 2711                      clr timerCounter
+                                 
+0000cf 2722                      clr r18 
+0000d0 9320 006e                 sts TIMSK0, r18 ; turn off timer.
+                                 
+0000d2 e001
+0000d3 d028
+0000d4 d037                      do_lcd_command 0b00000001 ; clear display
+0000d5 e800
+0000d6 d025
+0000d7 d034                      do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+                                 
+0000d8 e503
+0000d9 d029
+0000da d031                      do_lcd_data 'S'
+0000db e605
+0000dc d026
+0000dd d02e                      do_lcd_data 'e'
+0000de e60c
+0000df d023
+0000e0 d02b                      do_lcd_data 'l'
+0000e1 e605
+0000e2 d020
+0000e3 d028                      do_lcd_data 'e'
+0000e4 e603
+0000e5 d01d
+0000e6 d025                      do_lcd_data 'c'
+0000e7 e704
+0000e8 d01a
+0000e9 d022                      do_lcd_data 't'
+0000ea e200
+0000eb d017
+0000ec d01f                      do_lcd_data ' '
+0000ed e609
+0000ee d014
+0000ef d01c                      do_lcd_data 'i'
+0000f0 e704
+0000f1 d011
+0000f2 d019                      do_lcd_data 't'
+0000f3 e605
+0000f4 d00e
+0000f5 d016                      do_lcd_data 'e'
+0000f6 e60d
+0000f7 d00b
+0000f8 d013                      do_lcd_data 'm'
+                                 
+0000f9 910f                      pop temp
+0000fa bf0f                      out SREG, temp
+                                 
+0000fb 9518                      reti
+                                 
+                                 
                                  
                                  lcd_command: ; Send a command to the LCD (r16)
-0000c7 bb01                      out PORTF, r16
-0000c8 d01f                      rcall sleep_1ms
-0000c9 9a16                      lcd_set LCD_E
-0000ca d01d                      rcall sleep_1ms
-0000cb 9816                      lcd_clr LCD_E
-0000cc d01b                      rcall sleep_1ms
-0000cd 9508                      ret
+0000fc bb01                      out PORTF, r16
+0000fd d01f                      rcall sleep_1ms
+0000fe 9a16                      lcd_set LCD_E
+0000ff d01d                      rcall sleep_1ms
+000100 9816                      lcd_clr LCD_E
+000101 d01b                      rcall sleep_1ms
+000102 9508                      ret
                                  
                                  lcd_data:
-0000ce bb01                      out PORTF, r16
-0000cf 9a17                      lcd_set LCD_RS
-0000d0 d017                      rcall sleep_1ms
-0000d1 9a16                      lcd_set LCD_E
-0000d2 d015                      rcall sleep_1ms
-0000d3 9816                      lcd_clr LCD_E
-0000d4 d013                      rcall sleep_1ms
-0000d5 9817                      lcd_clr LCD_RS
-0000d6 9508                      ret
+000103 bb01                      out PORTF, r16
+000104 9a17                      lcd_set LCD_RS
+000105 d017                      rcall sleep_1ms
+000106 9a16                      lcd_set LCD_E
+000107 d015                      rcall sleep_1ms
+000108 9816                      lcd_clr LCD_E
+000109 d013                      rcall sleep_1ms
+00010a 9817                      lcd_clr LCD_RS
+00010b 9508                      ret
                                  
                                  lcd_wait:
-0000d7 930f                      push r16
-0000d8 2700                      clr r16
-0000d9 bb00                      out DDRF, r16
-0000da bb01                      out PORTF, r16
-0000db 9a15                      lcd_set LCD_RW
+00010c 930f                      push r16
+00010d 2700                      clr r16
+00010e bb00                      out DDRF, r16
+00010f bb01                      out PORTF, r16
+000110 9a15                      lcd_set LCD_RW
                                  lcd_wait_loop:
-0000dc d00b                      rcall sleep_1ms
-0000dd 9a16                      lcd_set LCD_E
-0000de d009                      rcall sleep_1ms
-0000df b10f                      in r16, PINF
-0000e0 9816                      lcd_clr LCD_E
-0000e1 fd07                      sbrc r16, 7
-0000e2 cff9                      rjmp lcd_wait_loop
-0000e3 9815                      lcd_clr LCD_RW
-0000e4 ef0f                      ser r16
-0000e5 bb00                      out DDRF, r16
-0000e6 910f                      pop r16
-0000e7 9508                      ret
+000111 d00b                      rcall sleep_1ms
+000112 9a16                      lcd_set LCD_E
+000113 d009                      rcall sleep_1ms
+000114 b10f                      in r16, PINF
+000115 9816                      lcd_clr LCD_E
+000116 fd07                      sbrc r16, 7
+000117 cff9                      rjmp lcd_wait_loop
+000118 9815                      lcd_clr LCD_RW
+000119 ef0f                      ser r16
+00011a bb00                      out DDRF, r16
+00011b 910f                      pop r16
+00011c 9508                      ret
                                  
                                  .equ F_CPU = 16000000
                                  .equ DELAY_1MS = F_CPU / 4 / 1000 - 4
                                  ; 4 cycles per iteration - setup/call-return overhead
                                  
                                  sleep_1ms:
-0000e8 938f                      push r24
-0000e9 939f                      push r25
-0000ea e09f                      ldi r25, high(DELAY_1MS)
-0000eb e98c                      ldi r24, low(DELAY_1MS)
+00011d 938f                      push r24
+00011e 939f                      push r25
+00011f e09f                      ldi r25, high(DELAY_1MS)
+000120 e98c                      ldi r24, low(DELAY_1MS)
                                  delayloop_1ms:
-0000ec 9701                      sbiw r25:r24, 1
-0000ed f7f1                      brne delayloop_1ms
-0000ee 919f                      pop r25
-0000ef 918f                      pop r24
-0000f0 9508                      ret
+000121 9701                      sbiw r25:r24, 1
+000122 f7f1                      brne delayloop_1ms
+000123 919f                      pop r25
+000124 918f                      pop r24
+000125 9508                      ret
                                  
                                  sleep_5ms:
-0000f1 dff6                      rcall sleep_1ms
-0000f2 dff5                      rcall sleep_1ms
-0000f3 dff4                      rcall sleep_1ms
-0000f4 dff3                      rcall sleep_1ms
-0000f5 dff2                      rcall sleep_1ms
+000126 dff6                      rcall sleep_1ms
+000127 dff5                      rcall sleep_1ms
+000128 dff4                      rcall sleep_1ms
+000129 dff3                      rcall sleep_1ms
+00012a dff2                      rcall sleep_1ms
 
 
 RESOURCE USE INFORMATION
@@ -2179,7 +2247,7 @@ counted separately from r26..r31 here.
 "ATmega2560" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16:  62 r17:   1 r18:   7 r19:   1 r20:   1 
+r13:   0 r14:   0 r15:   0 r16:  81 r17:   4 r18:   9 r19:   1 r20:   1 
 r21:   1 r22:   1 r23:   1 r24:   4 r25:   4 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 10 out of 35 (28.6%)
@@ -2187,30 +2255,30 @@ Registers used: 10 out of 35 (28.6%)
 "ATmega2560" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   0 adiw  :   0 and   :   0 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :   0 brge  :   0 brhc  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :   1 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
 brne  :   1 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   5 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   9 cls   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  11 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :   0 cpse  :   0 dec   :   0 eicall:   0 eijmp :   0 elpm  :   0 
+cpi   :   1 cpse  :   0 dec   :   0 eicall:   0 eijmp :   0 elpm  :   0 
 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 icall :   0 ijmp  :   0 
-in    :   1 inc   :   0 jmp   :   5 ld    :   0 ldd   :   0 ldi   :  46 
+in    :   2 inc   :   1 jmp   :   5 ld    :   0 ldd   :   0 ldi   :  59 
 lds   :   0 lpm   :   0 lsl   :   0 lsr   :   0 mov   :   0 movw  :   0 
 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   0 or    :   0 
-ori   :   0 out   :  14 pop   :   3 push  :   3 rcall :  93 ret   :   5 
-reti  :   2 rjmp  :   2 rol   :   0 ror   :   0 sbc   :   0 sbci  :   0 
+ori   :   0 out   :  16 pop   :   5 push  :   4 rcall : 119 ret   :   5 
+reti  :   3 rjmp  :   2 rol   :   0 ror   :   0 sbc   :   0 sbci  :   0 
 sbi   :   5 sbic  :   0 sbis  :   0 sbiw  :   1 sbr   :   0 sbrc  :   1 
 sbrs  :   0 sec   :   0 seh   :   0 sei   :   1 sen   :   0 ser   :   3 
 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 spm   :   0 
-st    :   0 std   :   0 sts   :   1 sub   :   0 subi  :   0 swap  :   0 
+st    :   0 std   :   0 sts   :   2 sub   :   0 subi  :   0 swap  :   0 
 tst   :   0 wdr   :   0 
-Instructions used: 19 out of 116 (16.4%)
+Instructions used: 22 out of 116 (19.0%)
 
 "ATmega2560" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x0001ee    414      0    414  262144   0.2%
+[.cseg] 0x000000 0x000258    520      0    520  262144   0.2%
 [.dseg] 0x000200 0x000200      0      0      0    8192   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 

@@ -17,6 +17,7 @@ rcall lcd_wait
 .cseg
 
 .def timerCounter = r17
+.def temp = r16
 
 .org 0x0000
    jmp Main;
@@ -130,9 +131,17 @@ cbi PORTA, @0
 
 Timer0: ;Timer overflow 0
 
+in temp, SREG
+push temp
+
 inc timerCounter
+
 cpi timerCounter,192
 breq displaySelectScreen
+
+pop temp
+out SREG, temp
+
 reti
 
 
@@ -157,6 +166,9 @@ do_lcd_data 'i'
 do_lcd_data 't'
 do_lcd_data 'e'
 do_lcd_data 'm'
+
+pop temp
+out SREG, temp
 
 reti
 

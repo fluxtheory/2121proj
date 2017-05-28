@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:55:37 2017
+AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 18:37:30 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1360,20 +1360,22 @@ EQU  UDRE3addr    0000006e
 EQU  UTXC3addr    00000070
 EQU  INT_VECTORS_SIZE 00000072
 DEF  timerCounter r17
+DEF  temp         r16
 CSEG Main         00000033
 CSEG DEFAULT      00000032
-CSEG MyISRHandler 000000c6
-CSEG lcd_command  000000c7
-CSEG lcd_wait     000000d7
-CSEG sleep_5ms    000000f1
-CSEG sleep_1ms    000000e8
-CSEG lcd_data     000000ce
+CSEG Timer0       000000c6
+CSEG lcd_command  000000fc
+CSEG lcd_wait     0000010c
+CSEG sleep_5ms    00000126
+CSEG sleep_1ms    0000011d
+CSEG lcd_data     00000103
 CSEG halt         000000c5
 EQU  LCD_RS       00000007
 EQU  LCD_E        00000006
 EQU  LCD_RW       00000005
 EQU  LCD_BE       00000004
-CSEG lcd_wait_loop 000000dc
+CSEG displaySelectScreen 000000ce
+CSEG lcd_wait_loop 00000111
 EQU  F_CPU        00f42400
 EQU  DELAY_1MS    00000f9c
-CSEG delayloop_1ms 000000ec
+CSEG delayloop_1ms 00000121
