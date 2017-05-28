@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:50:15 2017
+AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:55:37 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
@@ -1903,6 +1903,8 @@ C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\Assemble
                                  .endmacro
                                  
                                  .cseg
+                                 
+                                 .def timerCounter = r17
                                  
                                  .org 0x0000
 000000 940c 0033                    jmp Main;

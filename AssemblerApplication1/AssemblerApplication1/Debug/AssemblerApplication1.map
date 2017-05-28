@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:50:15 2017
+AVRASM ver. 2.2.6  C:\Users\Brandons\Desktop\UNI STUFF\2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Sun May 28 17:55:37 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1359,6 +1359,7 @@ EQU  URXC3addr    0000006c
 EQU  UDRE3addr    0000006e
 EQU  UTXC3addr    00000070
 EQU  INT_VECTORS_SIZE 00000072
+DEF  timerCounter r17
 CSEG Main         00000033
 CSEG DEFAULT      00000032
 CSEG MyISRHandler 000000c6

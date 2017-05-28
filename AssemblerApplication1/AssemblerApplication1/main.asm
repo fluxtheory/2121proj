@@ -16,6 +16,8 @@ rcall lcd_wait
 
 .cseg
 
+.def timerCounter = r17
+
 .org 0x0000
    jmp Main;
    jmp DEFAULT          ; No handling for IRQ0.
@@ -23,7 +25,7 @@ rcall lcd_wait
 
 
 .org OVF0addr
-jmp MyISRHandler
+jmp Timer0
 
 jmp DEFAULT        
 DEFAULT:  reti 
@@ -126,9 +128,39 @@ cbi PORTA, @0
 .endmacro
 
 
-MyISRHandler: ;Timer overflow 0
+Timer0: ;Timer overflow 0
+
+inc timerCounter
+cpi timerCounter,192
+breq displaySelectScreen
+reti
+
+
+displaySelectScreen:
+
+clr timerCounter
+
+clr r18 
+sts TIMSK0, r18 ; turn off timer.
+
+do_lcd_command 0b00000001 ; clear display
+do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+
+do_lcd_data 'S'
+do_lcd_data 'e'
+do_lcd_data 'l'
+do_lcd_data 'e'
+do_lcd_data 'c'
+do_lcd_data 't'
+do_lcd_data ' '
+do_lcd_data 'i'
+do_lcd_data 't'
+do_lcd_data 'e'
+do_lcd_data 'm'
 
 reti
+
+
 
 lcd_command: ; Send a command to the LCD (r16)
 out PORTF, r16
