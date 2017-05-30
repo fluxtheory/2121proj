@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Tue May 30 16:08:03 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Tue May 30 17:29:29 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1382,11 +1382,11 @@ EQU  ROWMASK      0000000f
 CSEG Main         00000033
 CSEG DEFAULT      00000032
 CSEG Timer0       0000012a
-CSEG lcd_command  0000019e
-CSEG lcd_wait     000001ae
-CSEG sleep_5ms    000001c8
-CSEG sleep_1ms    000001bf
-CSEG lcd_data     000001a5
+CSEG lcd_command  000001b3
+CSEG lcd_wait     000001c3
+CSEG sleep_5ms    000001dd
+CSEG sleep_1ms    000001d4
+CSEG lcd_data     000001ba
 CSEG KeypadLoop   000000ef
 CSEG halt         000000ee
 CSEG colloop      000000f1
@@ -1405,8 +1405,11 @@ EQU  LCD_E        00000006
 EQU  LCD_RW       00000005
 EQU  LCD_BE       00000004
 CSEG displaySelectScreen 00000132
-CSEG sleep_20ms   000001ce
-CSEG lcd_wait_loop 000001b3
+CSEG InsertCoin   0000019f
+CSEG FirstZeroLoop 000001a0
+CSEG SecondOneLoop 000001a6
+CSEG lcd_wait_loop 000001c8
 EQU  F_CPU        00f42400
 EQU  DELAY_1MS    00000f9c
-CSEG delayloop_1ms 000001c3
+CSEG delayloop_1ms 000001d8
+CSEG sleep_20ms   000001e3

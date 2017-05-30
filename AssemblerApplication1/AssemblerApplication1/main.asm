@@ -369,10 +369,41 @@ CoinScreen:
 	lds temp1, PINK
 	out PORTC,temp1
 	
-	rcall sleep_20ms
-	rjmp KeypadLoop
+	do_lcd_command 0b10101000
 
+	;rjmp InsertCoins
+	;rcall sleep_20ms
+	;rjmp KeypadLoop
+
+
+InsertCoin:
 	
+	clr temp2
+
+	FirstZeroLoop:
+		
+		lds temp1, PINK
+		out PORTC, temp1
+		andi temp1, 0b0000001
+		cpi temp1, 0
+		brne FirstZeroLoop
+
+	SecondOneLoop:
+
+		lds temp1, PINK
+		out PORTC, temp1
+		andi temp1, 0b0000001
+		cpi temp1, 1
+		brne SecondOneLoop
+		
+		inc temp2
+		mov temp1,temp2
+		subi temp1,-'0'
+		do_lcd_data_r temp1
+		rjmp FirstZeroLoop
+		 
+
+
 lcd_command: ; Send a command to the LCD (r16)
 
 	out PORTF, r16
