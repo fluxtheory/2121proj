@@ -14,6 +14,16 @@ rcall lcd_data
 rcall lcd_wait
 .endmacro
 
+item1: .byte 1
+item2: .byte 1
+item3: .byte 1
+item4: .byte 1
+item5: .byte 1
+item6: .byte 1
+item7: .byte 1
+item8: .byte 1
+item9: .byte 1
+
 .cseg
 
 
@@ -51,6 +61,55 @@ Main:
 	clr r20
 	clr r21
 	clr r22
+	
+
+	ldi YH,high(item1)
+	ldi YL,low(item1)
+	ldi temp1, 1
+	st y, temp1
+
+	ldi YH,high(item2)
+	ldi YL,low(item2)
+	ldi temp1, 2
+	st y, temp1
+
+	ldi YH,high(item3)
+	ldi YL,low(item3)
+	ldi temp1, 3
+	st y, temp1
+
+	ldi YH,high(item4)
+	ldi YL,low(item4)
+	ldi temp1, 4
+	st y, temp1
+
+	ldi YH,high(item5)
+	ldi YL,low(item5)
+	ldi temp1, 5
+	st y, temp1
+
+	ldi YH,high(item6)
+	ldi YL,low(item6)
+	ldi temp1, 6
+	st y, temp1
+
+	ldi YH,high(item7)
+	ldi YL,low(item7)
+	ldi temp1, 7
+	st y, temp1
+
+	ldi YH,high(item8)
+	ldi YL,low(item8)
+	ldi temp1, 8
+	st y, temp1
+
+	ldi YH,high(item9)
+	ldi YL,low(item9)
+	ldi temp1, 9
+	st y, temp1
+
+
+
 
 	ser r16
 	out DDRC, r16
@@ -200,7 +259,11 @@ symbols:
 
 star:
 
-	ldi temp1, '*' ; Set to star
+	;ldi YH,high(item1)
+	;ldi YL,low(item1)
+
+	;ld temp1, y ; Set to star
+	ldi temp1,'*'
 	jmp convert_end
 
 zero:

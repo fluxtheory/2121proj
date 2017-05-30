@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Tue May 30 12:47:28 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Tue May 30 13:50:25 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1359,6 +1359,15 @@ EQU  URXC3addr    0000006c
 EQU  UDRE3addr    0000006e
 EQU  UTXC3addr    00000070
 EQU  INT_VECTORS_SIZE 00000072
+DSEG item1        00000200
+DSEG item2        00000201
+DSEG item3        00000202
+DSEG item4        00000203
+DSEG item5        00000204
+DSEG item6        00000205
+DSEG item7        00000206
+DSEG item8        00000207
+DSEG item9        00000208
 DEF  temp1        r16
 DEF  timerCounter r17
 DEF  rmask        r18
@@ -1372,30 +1381,30 @@ EQU  INITROWMASK  00000001
 EQU  ROWMASK      0000000f
 CSEG Main         00000033
 CSEG DEFAULT      00000032
-CSEG Timer0       00000104
-CSEG lcd_command  0000013a
-CSEG lcd_wait     0000014a
-CSEG sleep_5ms    00000164
-CSEG sleep_1ms    0000015b
-CSEG lcd_data     00000141
-CSEG KeypadLoop   000000c9
-CSEG halt         000000c8
-CSEG colloop      000000cb
-CSEG delay        000000d0
-CSEG nextcol      000000e2
-CSEG rowloop      000000d9
-CSEG convert      000000e7
-CSEG letters      000000f2
-CSEG symbols      000000f6
-CSEG convert_end  00000101
-CSEG star         000000fd
-CSEG zero         00000100
+CSEG Timer0       00000108
+CSEG lcd_command  0000013e
+CSEG lcd_wait     0000014e
+CSEG sleep_5ms    00000168
+CSEG sleep_1ms    0000015f
+CSEG lcd_data     00000145
+CSEG KeypadLoop   000000cd
+CSEG halt         000000cc
+CSEG colloop      000000cf
+CSEG delay        000000d4
+CSEG nextcol      000000e6
+CSEG rowloop      000000dd
+CSEG convert      000000eb
+CSEG letters      000000f6
+CSEG symbols      000000fa
+CSEG convert_end  00000105
+CSEG star         00000101
+CSEG zero         00000104
 EQU  LCD_RS       00000007
 EQU  LCD_E        00000006
 EQU  LCD_RW       00000005
 EQU  LCD_BE       00000004
-CSEG displaySelectScreen 0000010c
-CSEG lcd_wait_loop 0000014f
+CSEG displaySelectScreen 00000110
+CSEG lcd_wait_loop 00000153
 EQU  F_CPU        00f42400
 EQU  DELAY_1MS    00000f9c
-CSEG delayloop_1ms 0000015f
+CSEG delayloop_1ms 00000163
