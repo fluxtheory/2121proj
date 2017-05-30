@@ -68,6 +68,7 @@ Main:
 	clr r21
 	clr r22
 	
+	sts DDRK, r22
 
 	ldi YH,high(item1)
 	ldi YL,low(item1)
@@ -364,10 +365,14 @@ CoinScreen:
 	pop temp1
 	mov temp2,temp1
 	do_lcd_data_r temp2
+	
+	lds temp1, PINK
+	out PORTC,temp1
+	
 	rcall sleep_20ms
 	rjmp KeypadLoop
 
-
+	
 lcd_command: ; Send a command to the LCD (r16)
 
 	out PORTF, r16
