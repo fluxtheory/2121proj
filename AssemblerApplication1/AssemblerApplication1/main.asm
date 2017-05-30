@@ -18,6 +18,16 @@ rcall lcd_wait
 
 .def timerCounter = r17
 .def temp = r16
+.def rmask = r18 ; mask for current row during scan
+.def cmask = r19 ; mask for current column during scan
+.def row = r20 ; current row number
+.def col = r21 ; current column number
+.def temp2 = r22
+
+.equ PORTADIR = 0xF0 ; PD7-4: output, PD3-0, input
+.equ INITCOLMASK = 0xEF ; scan from the rightmost column,
+.equ INITROWMASK = 0x01 ; scan from the top row
+.equ ROWMASK = 0x0F ; for obtaining input from Port D
 
 .org 0x0000
    jmp Main;
