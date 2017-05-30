@@ -14,6 +14,12 @@ rcall lcd_data
 rcall lcd_wait
 .endmacro
 
+.macro do_lcd_data_r
+mov r16, @0
+rcall lcd_data
+rcall lcd_wait
+.endmacro
+
 item1: .byte 1
 item2: .byte 1
 item3: .byte 1
@@ -240,7 +246,7 @@ convert:
 	add temp1, row
 	add temp1, col ; temp1 = row*3 + col
 	subi temp1, -'1' ; Add the value of character ‘1’
-	jmp convert_end
+	jmp CoinScreen
 
 letters:
 
@@ -331,6 +337,35 @@ displaySelectScreen:
 
 	reti
 
+CoinScreen:
+	
+	push temp1
+	clr r18 
+	sts TIMSK0, r18 ; turn off timer.
+
+	do_lcd_command 0b00000001 ; clear display
+	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+
+	do_lcd_data 'I'
+	do_lcd_data 'n'
+	do_lcd_data 's'
+	do_lcd_data 'e'
+	do_lcd_data 'r'
+	do_lcd_data 't'
+	do_lcd_data ' '
+	do_lcd_data 'c'
+	do_lcd_data 'o'
+	do_lcd_data 'i'
+	do_lcd_data 'n'
+	do_lcd_data 's'
+	do_lcd_data ' '
+	do_lcd_data '#'
+	;subi temp1, -'1'
+	pop temp1
+	mov temp2,temp1
+	do_lcd_data_r temp2
+	rcall sleep_20ms
+	rjmp KeypadLoop
 
 
 lcd_command: ; Send a command to the LCD (r16)
@@ -402,4 +437,12 @@ sleep_5ms:
 	rcall sleep_1ms
 	rcall sleep_1ms
 	rcall sleep_1ms
+	ret
+
+sleep_20ms:
+
+	rcall sleep_5ms
+	rcall sleep_5ms
+	rcall sleep_5ms
+	rcall sleep_5ms
 	ret
