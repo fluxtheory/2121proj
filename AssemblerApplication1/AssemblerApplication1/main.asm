@@ -16,8 +16,9 @@ rcall lcd_wait
 
 .cseg
 
+
+.def temp1 = r16
 .def timerCounter = r17
-.def temp = r16
 .def rmask = r18 ; mask for current row during scan
 .def cmask = r19 ; mask for current column during scan
 .def row = r20 ; current row number
@@ -141,16 +142,16 @@ cbi PORTA, @0
 
 Timer0: ;Timer overflow 0
 
-in temp, SREG
-push temp
+in temp1, SREG
+push temp1
 
 inc timerCounter
 
 cpi timerCounter,192
 breq displaySelectScreen
 
-pop temp
-out SREG, temp
+pop temp1
+out SREG, temp1
 
 reti
 
@@ -177,8 +178,8 @@ do_lcd_data 't'
 do_lcd_data 'e'
 do_lcd_data 'm'
 
-pop temp
-out SREG, temp
+pop temp1
+out SREG, temp1
 
 reti
 
