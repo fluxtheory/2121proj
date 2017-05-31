@@ -20,6 +20,7 @@ rcall lcd_data
 rcall lcd_wait
 .endmacro
 
+
 item1: .byte 1
 item2: .byte 1
 item3: .byte 1
@@ -40,6 +41,8 @@ item9: .byte 1
 .def row = r20 ; current row number
 .def col = r21 ; current column number
 .def temp2 = r22
+.def temp3 = r23
+.def temp4 = r24
 
 .equ PORTADIR = 0xF0 ; PD7-4: output, PD3-0, input
 .equ INITCOLMASK = 0xEF ; scan from the rightmost column,
@@ -145,7 +148,7 @@ Main:
 	do_lcd_command 0b00001110 ; Cursor on, bar, no blink
 	do_lcd_command 0b10000000
 
-	ldi r18, 0b00000000 ;Timer setup
+	ldi r18, 0b00000000 ;Timer setup for start screen 3 second wait
 	out TCCR0A, r18
 	ldi r18, 0b00000101   
 	out TCCR0B, r18
@@ -212,7 +215,7 @@ colloop:
 	brne delay  //assuming this counts down to 0 from 255, otherwise, idk.
 	lds temp1, PINL ; Read PORTA
 	andi temp1, ROWMASK ; Get the keypad output value
-	cpi temp1, 0xF ; Check if any row is low???
+	cpi temp1, 0xF ; Check if any row is low??? 0b1101
 	breq nextcol ; If yes, find which row is low
 	ldi rmask, INITROWMASK ; Initialize for row check
 	clr row ;
@@ -247,7 +250,7 @@ convert:
 	add temp1, row
 	add temp1, col ; temp1 = row*3 + col
 	subi temp1, -'1' ; Add the value of character ‘1’
-	jmp CoinScreen
+	jmp checkEmpty
 
 letters:
 
@@ -262,6 +265,7 @@ symbols:
 	cpi col, 1 ; or if we have zero
 	breq zero
 	ldi temp1, '#' ; if not we have hash
+
 	jmp convert_end
 
 star:
@@ -338,6 +342,176 @@ displaySelectScreen:
 
 	reti
 
+
+checkEmpty:
+//temp1 is ascii
+	push temp1
+	subi temp1, '0'
+	cpi temp1, 1
+	breq check1
+	cpi temp1, 2
+	breq check2
+	cpi temp1, 3
+	breq check3
+	cpi temp1, 4
+	breq check4
+	cpi temp1, 5
+	breq check5
+	cpi temp1, 6
+	breq check6
+	cpi temp1, 7
+	breq check7
+	cpi temp1, 8
+	breq check8
+	cpi temp1, 9
+	breq check9
+
+	check1:
+		ldi ZL, low(item1)
+		ldi ZH, high(item1)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check2:
+		ldi ZL, low(item2)
+		ldi ZH, high(item2)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check3:
+		ldi ZL, low(item3)
+		ldi ZH, high(item3)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check4:
+		ldi ZL, low(item4)
+		ldi ZH, high(item4)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check5:
+		ldi ZL, low(item5)
+		ldi ZH, high(item5)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check6:
+		ldi ZL, low(item6)
+		ldi ZH, high(item6)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check7:
+		ldi ZL, low(item7)
+		ldi ZH, high(item7)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check8:
+		ldi ZL, low(item8)
+		ldi ZH, high(item8)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+	check9:
+		ldi ZL, low(item9)
+		ldi ZH, high(item9)
+		ld temp2, Z
+		pop temp1
+		cpi temp2, 0
+		breq EmptyScreen
+		rjmp CoinScreen
+
+	
+EmptyScreen:
+		
+		push temp1
+
+		do_lcd_command 0b00000001
+		do_lcd_data 'O'
+		do_lcd_data 'u'
+		do_lcd_data 't'
+		do_lcd_data ' '
+		do_lcd_data 'o'
+		do_lcd_data 'f'
+		do_lcd_data ' '
+		do_lcd_data 's'
+		do_lcd_data 't'
+		do_lcd_data 'o'
+		do_lcd_data 'c'
+		do_lcd_data 'k'
+
+		do_lcd_command 0b10101000
+		pop temp1
+		do_lcd_data_r temp1
+
+		ser temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		clr temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		ser temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		clr temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		
+		ser temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		clr temp1
+		out PORTC, temp1
+		rcall sleep_500ms
+		
+		
+		rjmp displaySelectScreen2
+
+
+displaySelectScreen2:
+
+
+	do_lcd_command 0b00000001 ; clear display
+	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+
+	do_lcd_data 'S'
+	do_lcd_data 'e'
+	do_lcd_data 'l'
+	do_lcd_data 'e'
+	do_lcd_data 'c'
+	do_lcd_data 't'
+	do_lcd_data ' '
+	do_lcd_data 'i'
+	do_lcd_data 't'
+	do_lcd_data 'e'
+	do_lcd_data 'm'
+
+	rcall sleep_500ms
+
+	rjmp KeypadLoop
+
+
+
+
+
 CoinScreen:
 	
 	push temp1
@@ -364,44 +538,297 @@ CoinScreen:
 	;subi temp1, -'1'
 	pop temp1
 	mov temp2,temp1
+	push temp1
 	do_lcd_data_r temp2
 	
-	lds temp1, PINK
-	out PORTC,temp1
-	
 	do_lcd_command 0b10101000
+	rjmp InsertCoin
 
-	;rjmp InsertCoins
-	;rcall sleep_20ms
-	;rjmp KeypadLoop
+	
 
+	.macro HashLoop
+
+	ldi cmask, INITCOLMASK ; initial column mask
+	lsl cmask
+	lsl cmask  //third column
+	;inc cmask
+	;inc cmask ; initial column
+
+	sts PORTL, cmask ; Otherwise, scan a column.
+	
+	ldi temp1, 0xFF ; Slow down the scan operation.
+	Hashdelay: dec temp1
+	brne Hashdelay  //assuming this counts down to 0 from 255, otherwise, idk.
+	
+	lds temp1, PINL ; Read PORTA
+	andi temp1, ROWMASK ; Get the keypad output value
+	cpi temp1, 0xF ; Check if any row is low???
+	breq @0 ; If yes, find which row is low
+	
+	ldi rmask, INITROWMASK ; Initialize for row check
+
+	lsl rmask
+	lsl rmask
+	lsl rmask
+
+	mov temp2, temp1
+	and temp2, rmask 
+	breq jumpm 
+	
+	rjmp @0
+
+.endmacro 	
+
+jumpm:
+	rjmp displaySelectScreen2
 
 InsertCoin:
 	
-	clr temp2
+	clr temp4
+	ldi temp2, 2
+	clr temp3
+	out PORTC, temp3
+	do_lcd_command 0b10101000
+	
+	mov temp1,temp2
+	subi temp1,-'0'
+	do_lcd_data_r temp1
 
 	FirstZeroLoop:
+		push temp1
 		
+		HashLoop Loop2c
+		Loop2c:
+		
+		pop temp1
 		lds temp1, PINK
-		out PORTC, temp1
-		andi temp1, 0b0000001
+		;out PORTC, temp1
+		andi temp1, 0b00000001
+		
+
 		cpi temp1, 0
 		brne FirstZeroLoop
-
+		
 	SecondOneLoop:
 
 		lds temp1, PINK
-		out PORTC, temp1
-		andi temp1, 0b0000001
+		
+		push temp1
+		
+		HashLoop Loopc
+		Loopc:
+		
+		pop temp1
+
+		andi temp1, 0b00000001
 		cpi temp1, 1
 		brne SecondOneLoop
 		
-		inc temp2
+	ThirdZeroLoop:
+
+		push temp1
+		
+		HashLoop Loop3c
+		Loop3c:
+		
+		pop temp1
+		lds temp1, PINK
+		;out PORTC, temp1
+		andi temp1, 0b00000001
+		
+
+		cpi temp1, 0
+		brne ThirdZeroLoop
+		
+		inc temp4
+		dec temp2
 		mov temp1,temp2
 		subi temp1,-'0'
+		lsl temp3
+		ori temp3, 0b00000001
+
+		push temp1
+
+		out PORTC, temp3
+		do_lcd_command 0b10101000
+		
+		pop temp1
 		do_lcd_data_r temp1
+		cpi temp2, 0
+		breq DeliverScreen
 		rjmp FirstZeroLoop
 		 
+DeliverScreen:
+	;cli  //disable all input related interrupts
+	
+	ser temp1
+	out DDRE, temp1
+	out DDRC, temp1
+	
+	;ldi temp1,0b10101010
+	;out PORTC, temp1
+	do_lcd_command 0b00000001
+	do_lcd_data 'D'
+	do_lcd_data 'e'
+	do_lcd_data 'l'
+	do_lcd_data 'i'
+	do_lcd_data 'v'
+	do_lcd_data 'e'
+	do_lcd_data 'r'
+	do_lcd_data 'i'
+	do_lcd_data 'n'
+	do_lcd_data 'g'
+	do_lcd_data ' '
+	do_lcd_data 'I'
+	do_lcd_data 't'
+	do_lcd_data 'e'
+	do_lcd_data 'm'
+
+	pop temp2
+	subi temp2, '0'
+
+	rcall decrementInventory
+
+	ser temp1					; connected to PE4 (externally labelled PE2)
+	sts OCR3AH, temp1
+	sts OCR3AL, temp1
+
+	ldi temp1, (1 << CS30) 		; set the Timer3 to Phase Correct PWM mode. 
+	sts TCCR3B, temp1
+	ldi temp1, (1 << WGM31)|(1<< WGM30)|(1<<COM3B1)|(1<<COM3A1)
+	sts TCCR3A, temp1
+
+	rcall sleep_1000ms
+	;rcall sleep_1000ms
+	;rcall sleep_1000ms
+
+	clr temp1					; connected to PE4 (externally labelled PE2)
+	sts OCR3AH, temp1
+	sts OCR3AL, temp1
+
+	rjmp displaySelectScreen2
+
+
+	
+decrementInventory:
+	
+	cpi temp2, 1
+	breq decrement1
+	cpi temp2, 2
+	breq decrement2
+	cpi temp2, 3
+	breq decrement3
+	cpi temp2, 4
+	breq decrement4
+	cpi temp2, 5
+	breq decrement5
+	cpi temp2, 6
+	breq decrement6
+	cpi temp2, 7
+	breq decrement7
+	cpi temp2, 8
+	breq decrement8
+	cpi temp2, 9
+	breq decrement9
+	ret
+	
+	decrement1:
+		
+		ldi ZL, low(item1)
+		ldi ZH, high(item1)
+		lds temp1, 0x0200
+		
+		
+		dec temp1
+		out PORTC, temp1
+		st Z, temp1
+
+		ret
+	decrement2:
+		
+		ldi ZL, low(item2)
+		ldi ZH, high(item2)
+		lds temp1, 0x0201
+		
+		out PORTC, temp1
+		
+		dec temp1
+		st Z, temp1
+		ret
+	
+	decrement3:
+		
+		ldi ZL, low(item3)
+		ldi ZH, high(item3)
+		
+		lds temp1, 0x0202
+		out PORTC, temp1
+		dec temp1
+
+		st Z, temp1
+		ret
+	
+	decrement4:
+		ldi ZL, low(item4)
+		ldi ZH, high(item4)
+		ld temp1, Z
+		
+		dec temp1
+		out PORTC, temp1
+		st Z, temp1
+		ret
+
+	decrement5:
+		ldi ZL, low(item5)
+		ldi ZH, high(item5)
+		ld temp1, Z
+		
+		dec temp1
+		out PORTC, temp1
+		st Z, temp1
+		ret
+	
+	decrement6:
+		
+		ldi ZL, low(item6)
+		ldi ZH, high(item6)
+		ld temp1, Z
+		
+		out PORTC, temp1
+		dec temp1
+		st Z, temp1
+		ret
+	
+	decrement7:
+		
+		ldi ZL, low(item7)
+		ldi ZH, high(item7)
+		ld temp1, Z
+		out PORTC, temp1
+
+		dec temp1
+		st Z, temp1
+		ret
+	
+	decrement8:
+		ldi ZL, low(item8)
+		ldi ZH, high(item8)
+		ld temp1, Z
+		out PORTC, temp1
+
+		dec temp1
+		st Z, temp1
+		ret
+	
+	decrement9:
+		ldi ZL, low(item9)
+		ldi ZH, high(item9)
+		ld temp1, Z
+		out PORTC, temp1
+
+		dec temp1
+		st Z, temp1
+		ret
 
 
 lcd_command: ; Send a command to the LCD (r16)
@@ -481,4 +908,28 @@ sleep_20ms:
 	rcall sleep_5ms
 	rcall sleep_5ms
 	rcall sleep_5ms
+	ret
+
+sleep_100ms:
+	
+	rcall sleep_20ms
+	rcall sleep_20ms
+	rcall sleep_20ms
+	rcall sleep_20ms
+	rcall sleep_20ms
+	ret
+
+sleep_500ms:
+	
+	rcall sleep_100ms
+	rcall sleep_100ms
+	rcall sleep_100ms
+	rcall sleep_100ms
+	rcall sleep_100ms
+	ret
+
+sleep_1000ms:
+
+	rcall sleep_500ms
+	rcall sleep_500ms
 	ret
