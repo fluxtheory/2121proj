@@ -22,17 +22,27 @@ rcall lcd_wait
 
 
 item1: .byte 1
+item1Cost: .byte 1
 item2: .byte 1
+item2Cost: .byte 1
 item3: .byte 1
+item3Cost: .byte 1
 item4: .byte 1
+item4Cost: .byte 1
 item5: .byte 1
+item5Cost: .byte 1
 item6: .byte 1
+item6Cost: .byte 1
 item7: .byte 1
+item7Cost: .byte 1
 item8: .byte 1
+item8Cost: .byte 1
 item9: .byte 1
+item9Cost: .byte 1
 
 .cseg
 
+ 
 
 .def temp1 = r16
 .def timerCounter = r17
@@ -45,26 +55,34 @@ item9: .byte 1
 .def temp4 = r24
 .def flag1 = r25
 
+
+
 .equ PORTADIR = 0xF0 ; PD7-4: output, PD3-0, input
 .equ INITCOLMASK = 0xEF ; scan from the rightmost column,
 .equ INITROWMASK = 0x01 ; scan from the top row
 .equ ROWMASK = 0x0F ; for obtaining input from Port D
-
-.org OVF1addr
-jmp Timer1
 
 .org 0x0000
    jmp Main;
    jmp DEFAULT          ; No handling for IRQ0.
    jmp DEFAULT
 
+.org OVF1addr
+jmp Timer1
+
+
+
+
 
 .org OVF0addr
 jmp Timer0
 
+
 jmp DEFAULT        
 DEFAULT:  reti 
 
+EXT_INT0:
+	reti
 
 Main:
 
@@ -84,9 +102,19 @@ Main:
 	ldi temp1, 1
 	st y, temp1
 
+	ldi YH,high(item1Cost)
+	ldi YL,low(item1Cost)
+	ldi temp1,1
+	st y, temp1
+
 	ldi YH,high(item2)
 	ldi YL,low(item2)
 	ldi temp1, 2
+	st y, temp1
+
+	ldi YH,high(item2Cost)
+	ldi YL,low(item2Cost)
+	ldi temp1,2
 	st y, temp1
 
 	ldi YH,high(item3)
@@ -94,9 +122,19 @@ Main:
 	ldi temp1, 3
 	st y, temp1
 
+	ldi YH,high(item3Cost)
+	ldi YL,low(item3Cost)
+	ldi temp1,1
+	st y, temp1
+
 	ldi YH,high(item4)
 	ldi YL,low(item4)
 	ldi temp1, 4
+	st y, temp1
+
+	ldi YH,high(item4Cost)
+	ldi YL,low(item4Cost)
+	ldi temp1,2
 	st y, temp1
 
 	ldi YH,high(item5)
@@ -104,9 +142,19 @@ Main:
 	ldi temp1, 5
 	st y, temp1
 
+	ldi YH,high(item5Cost)
+	ldi YL,low(item5Cost)
+	ldi temp1,1
+	st y, temp1
+
 	ldi YH,high(item6)
 	ldi YL,low(item6)
 	ldi temp1, 6
+	st y, temp1
+
+	ldi YH,high(item6Cost)
+	ldi YL,low(item6Cost)
+	ldi temp1,2
 	st y, temp1
 
 	ldi YH,high(item7)
@@ -114,14 +162,29 @@ Main:
 	ldi temp1, 7
 	st y, temp1
 
+	ldi YH,high(item7Cost)
+	ldi YL,low(item7Cost)
+	ldi temp1,1
+	st y, temp1
+
 	ldi YH,high(item8)
 	ldi YL,low(item8)
 	ldi temp1, 8
 	st y, temp1
 
+	ldi YH,high(item8Cost)
+	ldi YL,low(item8Cost)
+	ldi temp1,2
+	st y, temp1
+
 	ldi YH,high(item9)
 	ldi YL,low(item9)
 	ldi temp1, 9
+	st y, temp1
+
+	ldi YH,high(item9Cost)
+	ldi YL,low(item9Cost)
+	ldi temp1,1
 	st y, temp1
 
 
@@ -270,7 +333,7 @@ convert:
 	lsl temp1
 	add temp1, row
 	add temp1, col ; temp1 = row*3 + col
-	subi temp1, -'1' ; Add the value of character ‘1’
+	subi temp1, -'1' ; Add the value of character â€˜1â€™    //key pressed is saved as ascii
 	jmp checkEmpty
 
 letters:
@@ -303,8 +366,8 @@ star:
 
 	Flag2Check:
 	cpi r26,1
-	;breq AdminMode ;this mode though clear r26 and flag1
-	jmp convert_end
+	breq adminModeInitialJump ;this mode though clear r26 and flag1
+	
 
 zero:
 
@@ -327,6 +390,11 @@ sbi PORTA, @0
 cbi PORTA, @0
 .endmacro
 
+adminModeInitialJump:
+	
+	clr flag1
+	clr r26
+	jmp adminModeInitial
 
 Timer0: ;Timer overflow 0
 
@@ -610,9 +678,6 @@ displaySelectScreen2:
 	rjmp KeypadLoop
 
 
-
-
-
 CoinScreen:
 	
 	push temp1
@@ -649,7 +714,6 @@ CoinScreen:
 
 	.macro HashLoop
 
-
 	ldi cmask, INITCOLMASK ; initial column mask
 	lsl cmask
 	lsl cmask  //third column
@@ -672,15 +736,11 @@ CoinScreen:
 	lsl rmask
 
 	mov temp2, temp1
-	and temp2, rmask
-	breq CoinReturn 
+	and temp2, rmask 
+	breq CoinReturn
 	
-
 	rjmp @0
-
-.endmacro 	
-
-
+	.endmacro
 
 InsertCoin:
 	
@@ -695,7 +755,6 @@ InsertCoin:
 	do_lcd_data_r temp1
 
 	FirstZeroLoop:
-
 		push temp1
 		push temp2
 
@@ -712,8 +771,6 @@ InsertCoin:
 		cpi temp1, 0
 		brne FirstZeroLoop
 		rjmp SecondOneLoop
-		
-
 
 	SecondOneLoop:
 
@@ -732,7 +789,7 @@ InsertCoin:
 		cpi temp1, 1
 		brne SecondOneLoop
 		rjmp ThirdZeroLoop 
-		
+
 	CoinReturn:
 
 		cpi temp4,0
@@ -754,7 +811,7 @@ InsertCoin:
 
 		JumpDisplay:
 		rjmp displaySelectScreen2
-
+		
 	ThirdZeroLoop:
 
 		push temp1
@@ -798,7 +855,9 @@ InsertCoin:
 DeliverScreen:
 	;cli  //disable all input related interrupts
 	
-	
+	ser temp1
+	out DDRE, temp1
+	out DDRC, temp1
 	
 	;ldi temp1,0b10101010
 	;out PORTC, temp1
@@ -829,8 +888,8 @@ DeliverScreen:
 	sts OCR3AL, temp1
 
 	rcall sleep_1000ms
-	rcall sleep_1000ms
-	rcall sleep_1000ms
+	;rcall sleep_1000ms
+	;rcall sleep_1000ms
 
 	clr temp1					; connected to PE4 (externally labelled PE2)
 	sts OCR3AH, temp1
@@ -870,7 +929,7 @@ decrementInventory:
 		
 		
 		dec temp1
-		;out PORTC, temp1
+		//out PORTC, temp1
 		st Z, temp1
 
 		ret
@@ -880,7 +939,7 @@ decrementInventory:
 		ldi ZH, high(item2)
 		lds temp1, 0x0201
 		
-		;out PORTC, temp1
+		//out PORTC, temp1
 		
 		dec temp1
 		st Z, temp1
@@ -892,7 +951,7 @@ decrementInventory:
 		ldi ZH, high(item3)
 		
 		lds temp1, 0x0202
-		;out PORTC, temp1
+		//out PORTC, temp1
 		dec temp1
 
 		st Z, temp1
@@ -904,7 +963,7 @@ decrementInventory:
 		ld temp1, Z
 		
 		dec temp1
-		;out PORTC, temp1
+		//out PORTC, temp1
 		st Z, temp1
 		ret
 
@@ -914,7 +973,7 @@ decrementInventory:
 		ld temp1, Z
 		
 		dec temp1
-		;out PORTC, temp1
+		//out PORTC, temp1
 		st Z, temp1
 		ret
 	
@@ -924,7 +983,7 @@ decrementInventory:
 		ldi ZH, high(item6)
 		ld temp1, Z
 		
-		;out PORTC, temp1
+		//out PORTC, temp1
 		dec temp1
 		st Z, temp1
 		ret
@@ -934,7 +993,7 @@ decrementInventory:
 		ldi ZL, low(item7)
 		ldi ZH, high(item7)
 		ld temp1, Z
-		;out PORTC, temp1
+		//out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
@@ -944,7 +1003,7 @@ decrementInventory:
 		ldi ZL, low(item8)
 		ldi ZH, high(item8)
 		ld temp1, Z
-		;out PORTC, temp1
+		//out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
@@ -954,12 +1013,52 @@ decrementInventory:
 		ldi ZL, low(item9)
 		ldi ZH, high(item9)
 		ld temp1, Z
-		;out PORTC, temp1
+		//out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
 		ret
 
+adminModeInitial:
+	do_lcd_command 0b00000001
+	do_lcd_data 'A'
+	do_lcd_data 'd'
+	do_lcd_data 'm'
+	do_lcd_data 'i'
+	do_lcd_data 'n'
+	do_lcd_data ' '
+	do_lcd_data 'm'
+	do_lcd_data 'o'
+	do_lcd_data 'd'
+	do_lcd_data 'e'
+	do_lcd_data ' '
+	do_lcd_data '1'
+	
+	do_lcd_command 0b10101000
+
+	push temp1
+	ldi ZL, low(item1)   //z holds pointer to item1's inventory.
+	ldi ZH, high(item1)
+	ld temp1, Z
+	do_lcd_data_r temp1 
+	out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
+	
+	do_lcd_command 0b10110110
+	do_lcd_data '$'
+	ldi ZL, low(item1Cost)
+	ldi ZH, high(item1Cost)
+	ld temp1, Z
+	do_lcd_data_r temp1 
+	pop temp1
+	rjmp adminMode
+
+
+adminMode:
+
+	jmp KeypadLoop
+
+	
+	
 
 lcd_command: ; Send a command to the LCD (r16)
 
@@ -1050,7 +1149,6 @@ sleep_100ms:
 	ret
 
 sleep_250ms:
-	
 	rcall sleep_100ms
 	rcall sleep_100ms
 	rcall sleep_20ms
@@ -1058,7 +1156,6 @@ sleep_250ms:
 	rcall sleep_5ms
 	rcall sleep_5ms
 	ret
-
 sleep_500ms:
 	
 	rcall sleep_100ms
