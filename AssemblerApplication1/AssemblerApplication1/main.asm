@@ -93,7 +93,8 @@ Main:
 	clr r21
 	clr r22
 	clr flag1
-	clr r26
+	clr r26 //flag2
+	clr r27 //admin flag
 	
 	sts DDRK, r22
 
@@ -348,9 +349,12 @@ symbols:
 	breq star
 	cpi col, 1 ; or if we have zero
 	breq zero
-	ldi temp1, '#' ; if not we have hash
-
-	jmp convert_end
+	ldi temp1, '#'
+	cpi r27,1
+	brne convert_end
+	 ; if not we have hash
+	rjmp DisplaySelectScreen2
+	
 
 star:
 
@@ -904,8 +908,8 @@ DeliverScreen:
 	sts OCR3AL, temp1
 
 	rcall sleep_1000ms
-	;rcall sleep_1000ms
-	;rcall sleep_1000ms
+	rcall sleep_1000ms
+	rcall sleep_1000ms
 
 	clr temp1					; connected to PE4 (externally labelled PE2)
 	sts OCR3AH, temp1
@@ -1068,11 +1072,15 @@ adminModeInitial:
 	subi temp1, -'0'
 	do_lcd_data_r temp1 
 	pop temp1
+
+	ldi r27,1
+
 	rjmp adminMode
 
 
 returnInventory:
-	 push temp1
+	 
+	push temp1
 	subi temp1, '0'
 	cpi temp1, 1
 	breq return1
@@ -1090,15 +1098,15 @@ returnInventory:
 	breq return7
 	cpi temp1, 8
 	breq return8
-	cpi temp1, 9
-	breq return9
+	rjmp return9
 
 	return1:
 		ldi ZL, low(item1)    //inventory amount
 		ldi ZH, high(item1)
 		ldi YL, low(item1Cost) 	//item cost
 		ldi YH, high(item1Cost)	
-		out PORTC, 0b00000001
+		ldi temp1, 0b00000001
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return2:
@@ -1106,7 +1114,8 @@ returnInventory:
 		ldi ZH, high(item2)
 		ldi YL, low(item2Cost) 	//item cost
 		ldi YH, high(item2Cost)
-		out PORTC, 0b00000011
+		ldi temp1, 0b00000011
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return3:
@@ -1114,7 +1123,8 @@ returnInventory:
 		ldi ZH, high(item3)
 		ldi YL, low(item3Cost) 	//item cost
 		ldi YH, high(item3Cost)
-		out PORTC, 0b00000111
+		ldi temp1, 0b00000111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return4:
@@ -1122,7 +1132,8 @@ returnInventory:
 		ldi ZH, high(item4)
 		ldi YL, low(item4Cost) 	//item cost
 		ldi YH, high(item4Cost)
-		out PORTC, 0b00001111
+		ldi temp1, 0b00001111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return5:
@@ -1130,7 +1141,8 @@ returnInventory:
 		ldi ZH, high(item5)
 		ldi YL, low(item5Cost) 	//item cost
 		ldi YH, high(item5Cost)
-		out PORTC, 0b00011111
+		ldi temp1, 0b00011111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return6:
@@ -1138,7 +1150,8 @@ returnInventory:
 		ldi ZH, high(item6)
 		ldi YL, low(item6Cost) 	//item cost
 		ldi YH, high(item6Cost)
-		out PORTC, 0b00111111
+		ldi temp1, 0b00111111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return7:
@@ -1146,7 +1159,8 @@ returnInventory:
 		ldi ZH, high(item7)
 		ldi YL, low(item7Cost) 	//item cost
 		ldi YH, high(item7Cost)
-		out PORTC, 0b01111111
+		ldi temp1, 0b01111111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return8:
@@ -1154,7 +1168,8 @@ returnInventory:
 		ldi ZH, high(item8)
 		ldi YL, low(item8Cost) 	//item cost
 		ldi YH, high(item8Cost)
-		out PORTC, 0b11111111
+		ldi temp1, 0b11111111
+		out PORTC, temp1
 		pop temp1
 		rjmp adminMode
 	return9:
@@ -1169,7 +1184,7 @@ returnInventory:
 
 adminMode:
 	//how does the program get here?
-	rjmp returnInventory  //itll get stuck in a loop here.
+	;rjmp returnInventory  //itll get stuck in a loop here.
 
 	do_lcd_command 0b00000001
 	do_lcd_data 'A'
@@ -1197,15 +1212,11 @@ adminMode:
 	do_lcd_data '$'		//displays cost of selected item
 	ld temp1, Y
 	do_lcd_data_r temp1 
-
+	
 	pop temp2
 	pop temp1
-	HashLoop displaySelectScreen2
 
 	jmp KeypadLoop   
-
-
-
 	
 	
 
