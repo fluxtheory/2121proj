@@ -119,7 +119,14 @@ Main:
 	st y, temp1
 
 
+	clr temp1					; connected to PE4 (externally labelled PE2)
+	sts OCR3AH, temp1
+	sts OCR3AL, temp1
 
+	ldi temp1, (1 << CS30) 		; set the Timer3 to Phase Correct PWM mode. 
+	sts TCCR3B, temp1
+	ldi temp1, (1 << WGM31)|(1<< WGM30)|(1<<COM3B1)|(1<<COM3A1)
+	sts TCCR3A, temp1
 
 	ser r16
 	out DDRC, r16
@@ -716,11 +723,6 @@ DeliverScreen:
 	ser temp1					; connected to PE4 (externally labelled PE2)
 	sts OCR3AH, temp1
 	sts OCR3AL, temp1
-
-	ldi temp1, (1 << CS30) 		; set the Timer3 to Phase Correct PWM mode. 
-	sts TCCR3B, temp1
-	ldi temp1, (1 << WGM31)|(1<< WGM30)|(1<<COM3B1)|(1<<COM3A1)
-	sts TCCR3A, temp1
 
 	rcall sleep_1000ms
 	rcall sleep_1000ms
