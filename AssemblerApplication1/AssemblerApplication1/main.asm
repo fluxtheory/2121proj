@@ -43,11 +43,15 @@ item9: .byte 1
 .def temp2 = r22
 .def temp3 = r23
 .def temp4 = r24
+.def flag1 = r25
 
 .equ PORTADIR = 0xF0 ; PD7-4: output, PD3-0, input
 .equ INITCOLMASK = 0xEF ; scan from the rightmost column,
 .equ INITROWMASK = 0x01 ; scan from the top row
 .equ ROWMASK = 0x0F ; for obtaining input from Port D
+
+.org OVF1addr
+jmp Timer1
 
 .org 0x0000
    jmp Main;
@@ -70,6 +74,8 @@ Main:
 	clr r20
 	clr r21
 	clr r22
+	clr flag1
+	clr r26
 	
 	sts DDRK, r22
 
@@ -163,6 +169,13 @@ Main:
 	ldi r18, 1<<TOIE0
 	sts TIMSK0, r18
 
+	ldi r18, 0b00000000 ;Timer setup for start screen 3 second wait
+	sts TCCR1A, r18
+	ldi r18, 0b00000101   
+	sts TCCR1B, r18
+	;ldi r18, 1<<TOIE1
+	clr r18
+	sts TIMSK1, r18
 
 	ldi temp1, PORTADIR ;keypad setup
 	sts DDRL, temp1 ; PA7:4/PA3:0, out/in
@@ -278,11 +291,19 @@ symbols:
 
 star:
 
-	;ldi YH,high(item1)
-	;ldi YL,low(item1)
-
-	;ld temp1, y ; Set to star
 	ldi temp1,'*'
+	
+	cpi flag1,1
+	breq Flag2Check
+	
+	ldi flag1, 1
+	
+	ldi temp3, 1<<TOIE1 ;start timer.
+	sts TIMSK1, temp3
+
+	Flag2Check:
+	cpi r26,1
+	;breq AdminMode ;this mode though clear r26 and flag1
 	jmp convert_end
 
 zero:
@@ -322,6 +343,78 @@ Timer0: ;Timer overflow 0
 
 	reti
 
+Timer1:
+
+	push cmask
+	push rmask
+	push temp1
+	push temp2
+	in temp1,SREG
+	push temp1
+
+	inc TimerCounter
+
+
+	ldi cmask, INITCOLMASK ; initial column mask
+
+	sts PORTL, cmask ; Otherwise, scan a column.
+	
+	ldi temp1, 0xFF ; Slow down the scan operation.
+	Hashdelay: dec temp1
+	brne Hashdelay  //assuming this counts down to 0 from 255, otherwise, idk.
+	
+	lds temp1, PINL ; Read PORTA
+	andi temp1, ROWMASK ; Get the keypad output value
+	cpi temp1, 0xF ; Check if any row is low???
+	breq Released ; If yes, find which row is low
+	
+	ldi rmask, INITROWMASK ; Initialize for row check
+
+	lsl rmask
+	lsl rmask
+	lsl rmask
+
+	mov temp2, temp1
+	and temp2, rmask
+	breq StillPressed 
+
+	rjmp Released
+	
+StillPressed:
+
+	inc TimerCounter
+
+	pop temp1
+	out SREG, temp1
+	pop temp2
+	pop temp1
+	pop rmask
+	pop cmask
+	
+	cpi TimerCounter, 255
+	brne Finish
+	
+	ldi r26,1
+	clr temp3
+	sts TIMSK1, temp3
+
+	Finish:
+	reti
+
+Released:
+	
+	clr temp3
+	sts TIMSK1, temp3
+	clr flag1
+
+	pop temp1
+	out SREG, temp1
+	pop temp2
+	pop temp1
+	pop rmask
+	pop cmask
+	
+	reti
 
 displaySelectScreen:
 
