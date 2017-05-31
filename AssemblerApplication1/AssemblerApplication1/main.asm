@@ -130,6 +130,7 @@ Main:
 
 	ser r16
 	out DDRC, r16
+	out DDRE, temp1
 
 	ldi r16, low(RAMEND)
 	out SPL, r16
@@ -555,6 +556,7 @@ CoinScreen:
 
 	.macro HashLoop
 
+
 	ldi cmask, INITCOLMASK ; initial column mask
 	lsl cmask
 	lsl cmask  //third column
@@ -577,9 +579,10 @@ CoinScreen:
 	lsl rmask
 
 	mov temp2, temp1
-	and temp2, rmask 
+	and temp2, rmask
 	breq CoinReturn 
 	
+
 	rjmp @0
 
 .endmacro 	
@@ -599,12 +602,16 @@ InsertCoin:
 	do_lcd_data_r temp1
 
 	FirstZeroLoop:
+
 		push temp1
-		
+		push temp2
+
 		HashLoop Loop2c
 		Loop2c:
-		
-		pop temp1
+
+		pop temp2 
+		pop temp1 
+
 		lds temp1, PINK
 		andi temp1, 0b00000001
 		
@@ -620,11 +627,13 @@ InsertCoin:
 		lds temp1, PINK
 		
 		push temp1
-		
+		push temp2
+
 		HashLoop Loopc
 		Loopc:
 		
-		pop temp1
+		pop temp2 
+		pop temp1 
 
 		andi temp1, 0b00000001
 		cpi temp1, 1
@@ -656,13 +665,15 @@ InsertCoin:
 	ThirdZeroLoop:
 
 		push temp1
+		push temp2
 			
 		HashLoop Loop3c
 		Loop3c:
-		
-		pop temp1
+			
+		pop temp2
+		pop temp1 
+
 		lds temp1, PINK
-		;out PORTC,t
 		andi temp1, 0b00000001
 		
 
@@ -670,7 +681,9 @@ InsertCoin:
 		brne ThirdZeroLoop
 		
 		inc temp4
+		
 		dec temp2
+		
 		mov temp1,temp2
 		subi temp1,-'0'
 		lsl temp3
@@ -692,9 +705,7 @@ InsertCoin:
 DeliverScreen:
 	;cli  //disable all input related interrupts
 	
-	ser temp1
-	out DDRE, temp1
-	out DDRC, temp1
+	
 	
 	;ldi temp1,0b10101010
 	;out PORTC, temp1
