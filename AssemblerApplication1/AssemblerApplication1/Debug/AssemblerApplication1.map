@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 31 19:33:20 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 31 19:39:29 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1384,11 +1384,11 @@ EQU  ROWMASK      0000000f
 CSEG Main         00000033
 CSEG DEFAULT      00000032
 CSEG Timer0       0000012a
-CSEG lcd_command  00000380
-CSEG lcd_wait     00000390
-CSEG sleep_5ms    000003aa
-CSEG sleep_1ms    000003a1
-CSEG lcd_data     00000387
+CSEG lcd_command  00000377
+CSEG lcd_wait     00000387
+CSEG sleep_5ms    000003a1
+CSEG sleep_1ms    00000398
+CSEG lcd_data     0000037e
 CSEG KeypadLoop   000000ef
 CSEG halt         000000ee
 CSEG colloop      000000f1
@@ -1418,7 +1418,7 @@ CSEG check8       000001a5
 CSEG check9       000001ac
 CSEG EmptyScreen  000001b3
 CSEG CoinScreen   0000021e
-CSEG sleep_500ms  000003c2
+CSEG sleep_500ms  000003b9
 CSEG displaySelectScreen2 000001f5
 CSEG InsertCoin   0000025c
 CSEG FirstZeroLoop 00000268
@@ -1430,24 +1430,24 @@ CSEG Hashdelay@HashLoop@4820 0000028e
 CSEG Loopc        0000029d
 CSEG ThirdZeroLoop 000002b3
 CSEG JumpDisplay  000002b2
-CSEG sleep_250ms  000003bb
+CSEG sleep_250ms  000003b2
 CSEG Hashdelay@HashLoop@4886 000002ba
 CSEG Loop3c       000002c9
 CSEG DeliverScreen 000002e1
 CSEG decrementInventory 0000032b
-CSEG sleep_1000ms 000003c8
+CSEG sleep_1000ms 000003bf
 CSEG decrement1   0000033e
-CSEG decrement2   00000346
-CSEG decrement3   0000034e
-CSEG decrement4   00000356
-CSEG decrement5   0000035d
-CSEG decrement6   00000364
-CSEG decrement7   0000036b
-CSEG decrement8   00000372
-CSEG decrement9   00000379
-CSEG lcd_wait_loop 00000395
+CSEG decrement2   00000345
+CSEG decrement3   0000034c
+CSEG decrement4   00000353
+CSEG decrement5   00000359
+CSEG decrement6   0000035f
+CSEG decrement7   00000365
+CSEG decrement8   0000036b
+CSEG decrement9   00000371
+CSEG lcd_wait_loop 0000038c
 EQU  F_CPU        00f42400
 EQU  DELAY_1MS    00000f9c
-CSEG delayloop_1ms 000003a5
-CSEG sleep_20ms   000003b0
-CSEG sleep_100ms  000003b5
+CSEG delayloop_1ms 0000039c
+CSEG sleep_20ms   000003a7
+CSEG sleep_100ms  000003ac

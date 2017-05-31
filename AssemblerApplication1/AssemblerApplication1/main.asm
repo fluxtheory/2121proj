@@ -655,7 +655,7 @@ InsertCoin:
 		
 		pop temp1
 		lds temp1, PINK
-		;out PORTC, temp1
+		;out PORTC,t
 		andi temp1, 0b00000001
 		
 
@@ -764,7 +764,7 @@ decrementInventory:
 		
 		
 		dec temp1
-		out PORTC, temp1
+		;out PORTC, temp1
 		st Z, temp1
 
 		ret
@@ -774,7 +774,7 @@ decrementInventory:
 		ldi ZH, high(item2)
 		lds temp1, 0x0201
 		
-		out PORTC, temp1
+		;out PORTC, temp1
 		
 		dec temp1
 		st Z, temp1
@@ -786,7 +786,7 @@ decrementInventory:
 		ldi ZH, high(item3)
 		
 		lds temp1, 0x0202
-		out PORTC, temp1
+		;out PORTC, temp1
 		dec temp1
 
 		st Z, temp1
@@ -798,7 +798,7 @@ decrementInventory:
 		ld temp1, Z
 		
 		dec temp1
-		out PORTC, temp1
+		;out PORTC, temp1
 		st Z, temp1
 		ret
 
@@ -808,7 +808,7 @@ decrementInventory:
 		ld temp1, Z
 		
 		dec temp1
-		out PORTC, temp1
+		;out PORTC, temp1
 		st Z, temp1
 		ret
 	
@@ -818,7 +818,7 @@ decrementInventory:
 		ldi ZH, high(item6)
 		ld temp1, Z
 		
-		out PORTC, temp1
+		;out PORTC, temp1
 		dec temp1
 		st Z, temp1
 		ret
@@ -828,7 +828,7 @@ decrementInventory:
 		ldi ZL, low(item7)
 		ldi ZH, high(item7)
 		ld temp1, Z
-		out PORTC, temp1
+		;out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
@@ -838,7 +838,7 @@ decrementInventory:
 		ldi ZL, low(item8)
 		ldi ZH, high(item8)
 		ld temp1, Z
-		out PORTC, temp1
+		;out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
@@ -848,7 +848,7 @@ decrementInventory:
 		ldi ZL, low(item9)
 		ldi ZH, high(item9)
 		ld temp1, Z
-		out PORTC, temp1
+		;out PORTC, temp1
 
 		dec temp1
 		st Z, temp1
