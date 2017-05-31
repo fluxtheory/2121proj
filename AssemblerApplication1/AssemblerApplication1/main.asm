@@ -335,6 +335,8 @@ convert:
 	add temp1, row
 	add temp1, col ; temp1 = row*3 + col
 	subi temp1, -'1' ; Add the value of character ‘1’    //key pressed is saved as ascii
+	cpi r27,1
+	breq Adminjmp
 	jmp checkEmpty
 
 letters:
@@ -370,10 +372,13 @@ star:
 
 	Flag2Check:
 	cpi r26,1
-	breq adminModeInitialJump ;this mode though clear r26 and flag1
+	breq adminModeInitialJump ;this mode should clear r26 and flag1
 	
 	;out PORTC, temp1 ; Write value to PORTC
 	jmp KeypadLoop
+
+Adminjmp:
+	rjmp adminMode
 
 zero:
 
@@ -1108,7 +1113,7 @@ returnInventory:
 		ldi temp1, 0b00000001
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return2:
 		ldi ZL, low(item2)   
 		ldi ZH, high(item2)
@@ -1117,7 +1122,7 @@ returnInventory:
 		ldi temp1, 0b00000011
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return3:
 		ldi ZL, low(item3)   
 		ldi ZH, high(item3)
@@ -1126,7 +1131,7 @@ returnInventory:
 		ldi temp1, 0b00000111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return4:
 		ldi ZL, low(item4)   
 		ldi ZH, high(item4)
@@ -1135,7 +1140,7 @@ returnInventory:
 		ldi temp1, 0b00001111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return5:
 		ldi ZL, low(item5)   
 		ldi ZH, high(item5)
@@ -1144,7 +1149,7 @@ returnInventory:
 		ldi temp1, 0b00011111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return6:
 		ldi ZL, low(item6)   
 		ldi ZH, high(item6)
@@ -1153,7 +1158,7 @@ returnInventory:
 		ldi temp1, 0b00111111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return7:
 		ldi ZL, low(item7)   
 		ldi ZH, high(item7)
@@ -1162,7 +1167,7 @@ returnInventory:
 		ldi temp1, 0b01111111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return8:
 		ldi ZL, low(item8)   
 		ldi ZH, high(item8)
@@ -1171,20 +1176,20 @@ returnInventory:
 		ldi temp1, 0b11111111
 		out PORTC, temp1
 		pop temp1
-		rjmp adminMode
+		ret
 	return9:
 		ldi ZL, low(item9)   
 		ldi ZH, high(item9)
 		ldi YL, low(item9Cost) 	//item cost
 		ldi YH, high(item9Cost)
 		pop temp1
-		rjmp adminMode
+		ret
 
 	
 
 adminMode:
 	//how does the program get here?
-	;rjmp returnInventory  //itll get stuck in a loop here.
+	rcall returnInventory  //itll get stuck in a loop here.
 
 	do_lcd_command 0b00000001
 	do_lcd_data 'A'
