@@ -234,7 +234,7 @@ Main:
 
 	ldi r18, 0b00000000 ;Timer setup for start screen 3 second wait
 	sts TCCR1A, r18
-	ldi r18, 0b00000101   
+	ldi r18, 0b00000011   
 	sts TCCR1B, r18
 	;ldi r18, 1<<TOIE1
 	clr r18
@@ -354,7 +354,7 @@ symbols:
 
 star:
 
-	ldi temp1,'*'
+	;ldi temp1,'*'
 	
 	cpi flag1,1
 	breq Flag2Check
@@ -368,8 +368,8 @@ star:
 	cpi r26,1
 	breq adminModeInitialJump ;this mode though clear r26 and flag1
 	
-	out PORTC, temp1 ; Write value to PORTC
-	jmp adminModeInitialJump
+	;out PORTC, temp1 ; Write value to PORTC
+	jmp KeypadLoop
 
 zero:
 
@@ -424,8 +424,7 @@ Timer1:
 	in temp1,SREG
 	push temp1
 
-	ldi temp1, 0b10101010
-	out PORTC, temp1
+	
 
 	inc TimerCounter
 
@@ -459,21 +458,28 @@ StillPressed:
 
 	inc TimerCounter
 
+	ldi temp1, 0b10101010
+	out PORTC, temp1
+	
+	cpi TimerCounter, 25
+	brlo Finish
+		
+	ldi temp1, 0b11110000
+	out PORTC, temp1
+
+	ldi r26,1
+	clr temp3
+	sts TIMSK1, temp3
+
+	Finish:
+
 	pop temp1
 	out SREG, temp1
 	pop temp2
 	pop temp1
 	pop rmask
 	pop cmask
-	
-	cpi TimerCounter, 255
-	brne Finish
-	
-	ldi r26,1
-	clr temp3
-	sts TIMSK1, temp3
 
-	Finish:
 	reti
 
 Released:
@@ -481,6 +487,9 @@ Released:
 	clr temp3
 	sts TIMSK1, temp3
 	clr flag1
+
+	ldi temp1, 0b11111111
+	out PORTC, temp1
 
 	pop temp1
 	out SREG, temp1
