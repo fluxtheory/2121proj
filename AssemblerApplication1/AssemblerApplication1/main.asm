@@ -573,14 +573,13 @@ CoinScreen:
 
 	mov temp2, temp1
 	and temp2, rmask 
-	breq jumpm 
+	breq jumpme 
 	
 	rjmp @0
 
 .endmacro 	
 
-jumpm:
-	rjmp displaySelectScreen2
+
 
 InsertCoin:
 	
@@ -608,7 +607,11 @@ InsertCoin:
 
 		cpi temp1, 0
 		brne FirstZeroLoop
+		rjmp SecondOneLoop
 		
+	jumpme:
+	rjmp displaySelectScreen2
+
 	SecondOneLoop:
 
 		lds temp1, PINK
@@ -658,6 +661,8 @@ InsertCoin:
 		breq DeliverScreen
 		rjmp FirstZeroLoop
 		 
+
+
 DeliverScreen:
 	;cli  //disable all input related interrupts
 	
