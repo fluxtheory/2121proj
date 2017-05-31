@@ -551,8 +551,6 @@ CoinScreen:
 	ldi cmask, INITCOLMASK ; initial column mask
 	lsl cmask
 	lsl cmask  //third column
-	;inc cmask
-	;inc cmask ; initial column
 
 	sts PORTL, cmask ; Otherwise, scan a column.
 	
@@ -573,7 +571,7 @@ CoinScreen:
 
 	mov temp2, temp1
 	and temp2, rmask 
-	breq jumpme 
+	breq CoinReturn 
 	
 	rjmp @0
 
@@ -601,7 +599,6 @@ InsertCoin:
 		
 		pop temp1
 		lds temp1, PINK
-		;out PORTC, temp1
 		andi temp1, 0b00000001
 		
 
@@ -609,8 +606,7 @@ InsertCoin:
 		brne FirstZeroLoop
 		rjmp SecondOneLoop
 		
-	jumpme:
-	rjmp displaySelectScreen2
+
 
 	SecondOneLoop:
 
@@ -626,11 +622,34 @@ InsertCoin:
 		andi temp1, 0b00000001
 		cpi temp1, 1
 		brne SecondOneLoop
+		rjmp ThirdZeroLoop 
 		
+	CoinReturn:
+
+		cpi temp4,0
+		breq JumpDisplay
+		dec temp4
+	
+		ser temp1					
+		sts OCR3AH, temp1
+		sts OCR3AL, temp1
+	
+		rcall sleep_250ms
+
+		clr temp1					
+		sts OCR3AH, temp1
+		sts OCR3AL, temp1
+	
+		rcall sleep_250ms
+		rjmp CoinReturn
+
+		JumpDisplay:
+		rjmp displaySelectScreen2
+
 	ThirdZeroLoop:
 
 		push temp1
-		
+			
 		HashLoop Loop3c
 		Loop3c:
 		
@@ -704,8 +723,8 @@ DeliverScreen:
 	sts TCCR3A, temp1
 
 	rcall sleep_1000ms
-	;rcall sleep_1000ms
-	;rcall sleep_1000ms
+	rcall sleep_1000ms
+	rcall sleep_1000ms
 
 	clr temp1					; connected to PE4 (externally labelled PE2)
 	sts OCR3AH, temp1
@@ -922,6 +941,16 @@ sleep_100ms:
 	rcall sleep_20ms
 	rcall sleep_20ms
 	rcall sleep_20ms
+	ret
+
+sleep_250ms:
+	
+	rcall sleep_100ms
+	rcall sleep_100ms
+	rcall sleep_20ms
+	rcall sleep_20ms
+	rcall sleep_5ms
+	rcall sleep_5ms
 	ret
 
 sleep_500ms:

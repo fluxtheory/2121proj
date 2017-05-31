@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 31 17:00:49 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Wed May 31 19:33:20 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1384,11 +1384,11 @@ EQU  ROWMASK      0000000f
 CSEG Main         00000033
 CSEG DEFAULT      00000032
 CSEG Timer0       0000012a
-CSEG lcd_command  0000036d
-CSEG lcd_wait     0000037d
-CSEG sleep_5ms    00000397
-CSEG sleep_1ms    0000038e
-CSEG lcd_data     00000374
+CSEG lcd_command  00000380
+CSEG lcd_wait     00000390
+CSEG sleep_5ms    000003aa
+CSEG sleep_1ms    000003a1
+CSEG lcd_data     00000387
 CSEG KeypadLoop   000000ef
 CSEG halt         000000ee
 CSEG colloop      000000f1
@@ -1418,34 +1418,36 @@ CSEG check8       000001a5
 CSEG check9       000001ac
 CSEG EmptyScreen  000001b3
 CSEG CoinScreen   0000021e
-CSEG sleep_500ms  000003a8
+CSEG sleep_500ms  000003c2
 CSEG displaySelectScreen2 000001f5
 CSEG InsertCoin   0000025c
 CSEG FirstZeroLoop 00000268
-CSEG Hashdelay@HashLoop@4772 0000026f
+CSEG Hashdelay@HashLoop@4770 0000026f
 CSEG Loop2c       0000027e
-CSEG jumpme       00000285
-CSEG SecondOneLoop 00000286
-CSEG Hashdelay@HashLoop@4826 0000028f
-CSEG Loopc        0000029e
-CSEG ThirdZeroLoop 000002a2
-CSEG Hashdelay@HashLoop@4871 000002a9
-CSEG Loop3c       000002b8
-CSEG DeliverScreen 000002d0
-CSEG decrementInventory 00000318
-CSEG sleep_1000ms 000003ae
-CSEG decrement1   0000032b
-CSEG decrement2   00000333
-CSEG decrement3   0000033b
-CSEG decrement4   00000343
-CSEG decrement5   0000034a
-CSEG decrement6   00000351
-CSEG decrement7   00000358
-CSEG decrement8   0000035f
-CSEG decrement9   00000366
-CSEG lcd_wait_loop 00000382
+CSEG CoinReturn   000002a2
+CSEG SecondOneLoop 00000285
+CSEG Hashdelay@HashLoop@4820 0000028e
+CSEG Loopc        0000029d
+CSEG ThirdZeroLoop 000002b3
+CSEG JumpDisplay  000002b2
+CSEG sleep_250ms  000003bb
+CSEG Hashdelay@HashLoop@4886 000002ba
+CSEG Loop3c       000002c9
+CSEG DeliverScreen 000002e1
+CSEG decrementInventory 0000032b
+CSEG sleep_1000ms 000003c8
+CSEG decrement1   0000033e
+CSEG decrement2   00000346
+CSEG decrement3   0000034e
+CSEG decrement4   00000356
+CSEG decrement5   0000035d
+CSEG decrement6   00000364
+CSEG decrement7   0000036b
+CSEG decrement8   00000372
+CSEG decrement9   00000379
+CSEG lcd_wait_loop 00000395
 EQU  F_CPU        00f42400
 EQU  DELAY_1MS    00000f9c
-CSEG delayloop_1ms 00000392
-CSEG sleep_20ms   0000039d
-CSEG sleep_100ms  000003a2
+CSEG delayloop_1ms 000003a5
+CSEG sleep_20ms   000003b0
+CSEG sleep_100ms  000003b5
