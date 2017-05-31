@@ -352,7 +352,7 @@ symbols:
 	ldi temp1, '#'
 	cpi r27,1
 	brne convert_end
-	 ; if not we have hash
+	clr r27
 	rjmp DisplaySelectScreen2
 	
 
