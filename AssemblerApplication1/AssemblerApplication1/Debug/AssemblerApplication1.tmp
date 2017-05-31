@@ -42,14 +42,14 @@
   <item9Cost><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>41</LINE></item9Cost>
   <Main><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>87</LINE></Main>
   <DEFAULT><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>82</LINE></DEFAULT>
-  <Timer1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>414</LINE></Timer1>
-  <Timer0><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>399</LINE></Timer0>
+  <Timer1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>418</LINE></Timer1>
+  <Timer0><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>403</LINE></Timer0>
   <EXT_INT0><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>84</LINE></EXT_INT0>
-  <lcd_command><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1063</LINE></lcd_command>
-  <lcd_wait><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1085</LINE></lcd_wait>
-  <sleep_5ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1125</LINE></sleep_5ms>
-  <sleep_1ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1110</LINE></sleep_1ms>
-  <lcd_data><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1073</LINE></lcd_data>
+  <lcd_command><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1070</LINE></lcd_command>
+  <lcd_wait><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1092</LINE></lcd_wait>
+  <sleep_5ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1132</LINE></sleep_5ms>
+  <sleep_1ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1117</LINE></sleep_1ms>
+  <lcd_data><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1080</LINE></lcd_data>
   <KeypadLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>286</LINE></KeypadLoop>
   <halt><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>283</LINE></halt>
   <colloop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>292</LINE></colloop>
@@ -59,57 +59,57 @@
   <convert><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>325</LINE></convert>
   <letters><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>339</LINE></letters>
   <symbols><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>345</LINE></symbols>
-  <checkEmpty><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>515</LINE></checkEmpty>
-  <convert_end><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>376</LINE></convert_end>
+  <checkEmpty><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>522</LINE></checkEmpty>
+  <convert_end><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>378</LINE></convert_end>
   <star><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>355</LINE></star>
-  <zero><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>372</LINE></zero>
+  <zero><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>374</LINE></zero>
   <Flag2Check><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>367</LINE></Flag2Check>
-  <adminModeInitialJump><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>393</LINE></adminModeInitialJump>
-  <adminModeInitial><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1022</LINE></adminModeInitial>
-  <displaySelectScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>487</LINE></displaySelectScreen>
-  <Hashdelay><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>431</LINE></Hashdelay>
-  <Released><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>472</LINE></Released>
-  <StillPressed><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>451</LINE></StillPressed>
-  <Finish><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>469</LINE></Finish>
-  <check1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>538</LINE></check1>
-  <check2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>546</LINE></check2>
-  <check3><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>554</LINE></check3>
-  <check4><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>562</LINE></check4>
-  <check5><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>570</LINE></check5>
-  <check6><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>578</LINE></check6>
-  <check7><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>586</LINE></check7>
-  <check8><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>594</LINE></check8>
-  <check9><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>602</LINE></check9>
-  <EmptyScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>612</LINE></EmptyScreen>
-  <CoinScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>681</LINE></CoinScreen>
-  <sleep_500ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1159</LINE></sleep_500ms>
-  <displaySelectScreen2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>658</LINE></displaySelectScreen2>
-  <InsertCoin><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>745</LINE></InsertCoin>
-  <FirstZeroLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>757</LINE></FirstZeroLoop>
-  <Loop2c><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>762</LINE></Loop2c>
-  <CoinReturn><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>793</LINE></CoinReturn>
-  <SecondOneLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>775</LINE></SecondOneLoop>
-  <Loopc><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>783</LINE></Loopc>
-  <ThirdZeroLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>815</LINE></ThirdZeroLoop>
-  <JumpDisplay><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>812</LINE></JumpDisplay>
-  <sleep_250ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1151</LINE></sleep_250ms>
-  <Loop3c><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>821</LINE></Loop3c>
-  <DeliverScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>855</LINE></DeliverScreen>
-  <decrementInventory><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>902</LINE></decrementInventory>
-  <sleep_1000ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1168</LINE></sleep_1000ms>
-  <decrement1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>924</LINE></decrement1>
-  <decrement2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>936</LINE></decrement2>
-  <decrement3><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>948</LINE></decrement3>
-  <decrement4><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>960</LINE></decrement4>
-  <decrement5><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>970</LINE></decrement5>
-  <decrement6><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>980</LINE></decrement6>
-  <decrement7><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>991</LINE></decrement7>
-  <decrement8><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1002</LINE></decrement8>
-  <decrement9><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1012</LINE></decrement9>
-  <adminMode><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1056</LINE></adminMode>
-  <lcd_wait_loop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1092</LINE></lcd_wait_loop>
-  <delayloop_1ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1117</LINE></delayloop_1ms>
-  <sleep_20ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1134</LINE></sleep_20ms>
-  <sleep_100ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1142</LINE></sleep_100ms>
+  <adminModeInitialJump><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>395</LINE></adminModeInitialJump>
+  <adminModeInitial><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1029</LINE></adminModeInitial>
+  <displaySelectScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>494</LINE></displaySelectScreen>
+  <Hashdelay><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>438</LINE></Hashdelay>
+  <Released><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>479</LINE></Released>
+  <StillPressed><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>458</LINE></StillPressed>
+  <Finish><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>476</LINE></Finish>
+  <check1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>545</LINE></check1>
+  <check2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>553</LINE></check2>
+  <check3><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>561</LINE></check3>
+  <check4><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>569</LINE></check4>
+  <check5><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>577</LINE></check5>
+  <check6><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>585</LINE></check6>
+  <check7><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>593</LINE></check7>
+  <check8><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>601</LINE></check8>
+  <check9><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>609</LINE></check9>
+  <EmptyScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>619</LINE></EmptyScreen>
+  <CoinScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>688</LINE></CoinScreen>
+  <sleep_500ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1166</LINE></sleep_500ms>
+  <displaySelectScreen2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>665</LINE></displaySelectScreen2>
+  <InsertCoin><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>752</LINE></InsertCoin>
+  <FirstZeroLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>764</LINE></FirstZeroLoop>
+  <Loop2c><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>769</LINE></Loop2c>
+  <CoinReturn><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>800</LINE></CoinReturn>
+  <SecondOneLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>782</LINE></SecondOneLoop>
+  <Loopc><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>790</LINE></Loopc>
+  <ThirdZeroLoop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>822</LINE></ThirdZeroLoop>
+  <JumpDisplay><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>819</LINE></JumpDisplay>
+  <sleep_250ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1158</LINE></sleep_250ms>
+  <Loop3c><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>828</LINE></Loop3c>
+  <DeliverScreen><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>862</LINE></DeliverScreen>
+  <decrementInventory><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>909</LINE></decrementInventory>
+  <sleep_1000ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1175</LINE></sleep_1000ms>
+  <decrement1><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>931</LINE></decrement1>
+  <decrement2><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>943</LINE></decrement2>
+  <decrement3><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>955</LINE></decrement3>
+  <decrement4><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>967</LINE></decrement4>
+  <decrement5><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>977</LINE></decrement5>
+  <decrement6><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>987</LINE></decrement6>
+  <decrement7><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>998</LINE></decrement7>
+  <decrement8><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1009</LINE></decrement8>
+  <decrement9><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1019</LINE></decrement9>
+  <adminMode><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1063</LINE></adminMode>
+  <lcd_wait_loop><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1099</LINE></lcd_wait_loop>
+  <delayloop_1ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1124</LINE></delayloop_1ms>
+  <sleep_20ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1141</LINE></sleep_20ms>
+  <sleep_100ms><FILE>C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm</FILE><LINE>1149</LINE></sleep_100ms>
  </LABELS>
 </ASSEMBLER_INFO>

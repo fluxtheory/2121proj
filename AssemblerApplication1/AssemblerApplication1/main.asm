@@ -368,6 +368,8 @@ star:
 	cpi r26,1
 	breq adminModeInitialJump ;this mode though clear r26 and flag1
 	
+	out PORTC, temp1 ; Write value to PORTC
+	jmp adminModeInitialJump
 
 zero:
 
@@ -392,6 +394,8 @@ cbi PORTA, @0
 
 adminModeInitialJump:
 	
+	clr temp3
+	sts TIMSK1, temp3
 	clr flag1
 	clr r26
 	jmp adminModeInitial
@@ -419,6 +423,9 @@ Timer1:
 	push temp2
 	in temp1,SREG
 	push temp1
+
+	ldi temp1, 0b10101010
+	out PORTC, temp1
 
 	inc TimerCounter
 
