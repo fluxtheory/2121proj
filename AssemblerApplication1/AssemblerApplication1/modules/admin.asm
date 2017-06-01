@@ -203,47 +203,42 @@ returnInventory:  ;this function stores the inventory and cost information for t
 adminMode:
  
 
- rcall sleep_100ms
+ 	rcall sleep_100ms
  
 
- push temp1
- rcall returnInventory  
+ 	push temp1
+ 	rcall returnInventory  
 
- do_lcd_command 0b00000001
- do_lcd_data 'A'
- do_lcd_data 'd'
- do_lcd_data 'm'
- do_lcd_data 'i'
- do_lcd_data 'n'
- do_lcd_data ' '
- do_lcd_data 'm'
- do_lcd_data 'o'
- do_lcd_data 'd'
- do_lcd_data 'e'
- do_lcd_data ' '
- pop temp1
+ 	do_lcd_command 0b00000001
+ 	do_lcd_data 'A'
+ 	do_lcd_data 'd'
+ 	do_lcd_data 'm'
+ 	do_lcd_data 'i'
+ 	do_lcd_data 'n'
+ 	do_lcd_data ' '
+ 	do_lcd_data 'm'
+ 	do_lcd_data 'o'
+	do_lcd_data 'd'
+ 	do_lcd_data 'e'
+ 	do_lcd_data ' '
+ 	pop temp1
  
- mov temp4, temp1
- subi temp4, '0'
+ 	mov temp4, temp1
+ 	subi temp4, '0' 
 
- do_lcd_data_r temp1 
+ 	do_lcd_data_r temp1 
 
- do_lcd_command 0b10101000
+ 	do_lcd_command 0b10101000
 
- ld temp1, Z
-
- LEDcount temp1
-
- subi temp1,-'0'
-
- do_lcd_data_r temp1   //displays inventory of selected item
+ 	ld temp1, Z
+ 	LEDcount temp1
+ 	subi temp1,-'0'
+ 	do_lcd_data_r temp1   //displays inventory of selected item
  
- do_lcd_command 0b10110110
- do_lcd_data '$'		//displays cost of selected item
- ld temp1, Y
- subi temp1,-'0'
- do_lcd_data_r temp1 
+ 	do_lcd_command 0b10110110
+ 	do_lcd_data '$'		
+ 	ld temp1, Y
+ 	subi temp1,-'0'
+ 	do_lcd_data_r temp1 //displays cost of selected item
 
-
- ret 
- 
+ 	ret 
