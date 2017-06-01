@@ -87,6 +87,48 @@ letters:
 	breq SetZero
 
 	rjmp KeypadLoop
+	
+IncreaseCost:
+	
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	ld temp1, Y
+	cpi temp1, 3
+	breq convert_end
+
+	inc temp1
+	st Y, temp1
+
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall sleep_100ms
+	
+	rcall adminMode
+	rjmp KeypadLoop
+
+DecreaseCost:
+	
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	ld temp1, Y
+	cpi temp1, 1
+	breq convert_end
+
+	dec temp1
+	st Y, temp1
+
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall sleep_100ms
+	rcall adminMode
+	rjmp KeypadLoop
+
 
 symbols:
 
