@@ -87,3 +87,36 @@ letters:
 	breq SetZero
 
 	rjmp KeypadLoop
+
+symbols:
+
+	cpi col, 0 ; Check if we have a star
+	breq star
+	cpi col, 1 ; or if we have zero
+	breq zero
+	ldi temp1, '#'
+	cpi r27,1
+	brne convert_end
+	clr flag1
+	clr r27
+	rjmp DisplaySelectScreen2
+	
+
+star:
+
+	;ldi temp1,'*'
+	
+	cpi flag1,1
+	breq Flag2Check
+	
+	ldi flag1, 1
+	
+	ldi temp3, 1<<TOIE1 ;start timer.
+	sts TIMSK1, temp3
+
+	Flag2Check:
+	cpi r26,1
+	breq adminModeInitialJump ;this mode should clear r26 and flag1
+	
+	;out PORTC, temp1 ; Write value to PORTC
+	jmp KeypadLoop
