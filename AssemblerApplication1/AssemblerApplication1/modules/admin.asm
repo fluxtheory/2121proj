@@ -1,14 +1,18 @@
+;admin mode
+;
+;
 
-.macro LEDcount
+
+.macro LEDcount   ;a macro that transforms decimal to number of LED blocks.
 	push @0
 	push temp2
 	push temp3
 	clr temp2
 	out PORTG, temp2
 
-	cpi @0, 10
+	cpi @0, 10   ;if the item has 10 in inventory, we want the top 2 orange-red LEDs to be on.
 	breq TWO
-	cpi @0, 9 
+	cpi @0, 9    ; if it has only 9, then only the orange one.
 	breq ONE
 	rjmp mainloop
 
@@ -45,7 +49,7 @@
 	pop @0
 .endmacro
 
-adminModeInitial:
+adminModeInitial:    ;the default screen for admin mode always displays the information for item1
 
 	do_lcd_command 0b00000001
 	do_lcd_data 'A'
@@ -62,7 +66,7 @@ adminModeInitial:
 	do_lcd_data '1'
 	
 	do_lcd_command 0b10101000
-
+	;displaying inventory
 	push temp1
 	ldi ZL, low(item1)   //z holds pointer to item1's inventory. 
 	ldi ZH, high(item1)
@@ -74,6 +78,7 @@ adminModeInitial:
 	do_lcd_data_r temp1 
 	//out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
 	
+	;displaying cost
 	do_lcd_command 0b10110110
 	do_lcd_data '$'
 	ldi ZL, low(item1Cost)
@@ -92,7 +97,7 @@ adminModeInitial:
 
 
 
-returnInventory:
+returnInventory:  ;this function stores the inventory and cost information for the selected item in registers Y and Z
 	 
 	push temp1
 	subi temp1, '0'
@@ -154,48 +159,47 @@ returnInventory:
 		ldi ZL, low(item5)   
 		ldi ZH, high(item5)
 		ldi YL, low(item5Cost) 	//item cost
- ldi YH, high(item5Cost)
- ;ldi temp1, 0b00011111
- ;out PORTC, temp1
- pop temp1
- ret
- return6:
- ldi ZL, low(item6) 
- ldi ZH, high(item6)
- ldi YL, low(item6Cost) 	//item cost
- ldi YH, high(item6Cost)
- ;ldi temp1, 0b00111111
- ;out PORTC, temp1
- pop temp1
- ret
- return7:
- ldi ZL, low(item7) 
- ldi ZH, high(item7)
- ldi YL, low(item7Cost) 	//item cost
- ldi YH, high(item7Cost)
- ;ldi temp1, 0b01111111
- ;out PORTC, temp1
- pop temp1
- ret
- return8:
- ldi ZL, low(item8) 
- ldi ZH, high(item8)
- ldi YL, low(item8Cost) 	//item cost
- ldi YH, high(item8Cost)
- ;ldi temp1, 0b11111111
- ;out PORTC, temp1
- pop temp1
- ret
- return9:
- ldi ZL, low(item9) 
- ldi ZH, high(item9)
- ldi YL, low(item9Cost) 	//item cost
- ldi YH, high(item9Cost)
- pop temp1
- ret
+ 		ldi YH, high(item5Cost)
+ 		;ldi temp1, 0b00011111
+ 		;out PORTC, temp1
+ 		pop temp1
+ 		ret
+ 	return6:
+ 		ldi ZL, low(item6) 
+ 		ldi ZH, high(item6)
+ 		ldi YL, low(item6Cost) 	//item cost
+ 		ldi YH, high(item6Cost)
+ 		;ldi temp1, 0b00111111
+ 		;out PORTC, temp1
+ 		pop temp1
+ 		ret
+ 	return7:
+ 		ldi ZL, low(item7) 
+ 		ldi ZH, high(item7)
+ 		ldi YL, low(item7Cost) 	//item cost
+ 		ldi YH, high(item7Cost)
+ 		;ldi temp1, 0b01111111
+ 		;out PORTC, temp1
+ 		pop temp1
+ 		ret
+	 return8:
+		ldi ZL, low(item8) 
+ 		ldi ZH, high(item8)
+ 		ldi YL, low(item8Cost) 	//item cost
+ 		ldi YH, high(item8Cost)
+ 		;ldi temp1, 0b11111111
+ 		;out PORTC, temp1
+ 		pop temp1
+ 		ret
+ 	return9:
+ 		ldi ZL, low(item9) 
+ 		ldi ZH, high(item9)
+ 		ldi YL, low(item9Cost) 	//item cost
+ 		ldi YH, high(item9Cost)
+ 		pop temp1
+ 		ret
 
  
-
 adminMode:
  
 
