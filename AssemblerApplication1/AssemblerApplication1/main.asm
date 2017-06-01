@@ -1,6 +1,6 @@
 .include "m2560def.inc"
 
-.include “modules/lcdmacros.asm”
+.include "modules/lcdmacros.asm"
 
 .dseg
 
@@ -339,7 +339,7 @@ halt:
 	rjmp halt
 
 
-.include “modules/keypad.asm"
+.include "modules/keypad.asm"
 
 Adminjmp:
 	rcall adminMode
@@ -509,7 +509,7 @@ displaySelectScreen:
 
  reti
 
-.include “modules/emptyScreen.asm
+.include "modules/emptyScreen.asm"
 
 
 displaySelectScreen2:
@@ -535,12 +535,12 @@ displaySelectScreen2:
  rjmp KeypadLoop
 
 
-.include “modules/coinInsert.asm”
+.include "modules/coinInsert.asm"
  
-.include “modules/deliverItem.asm”
+.include "modules/deliverItem.asm"
 
-.include “modules/admin.asm”
+.include "modules/admin.asm"
  
-.include “modules/lcd.asm”
+.include "modules/lcd.asm"
 
-.include “modules/sleep.asm”
+.include "modules/sleep.asm"

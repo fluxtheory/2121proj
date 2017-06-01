@@ -130,8 +130,7 @@ returnInventory:
 	return5:
 		ldi ZL, low(item5)   
 		ldi ZH, high(item5)
-		ldi
- YL, low(item5Cost) 	//item cost
+		ldi YL, low(item5Cost) 	//item cost
  ldi YH, high(item5Cost)
  ;ldi temp1, 0b00011111
  ;out PORTC, temp1
