@@ -40,9 +40,11 @@ item8Cost: .byte 1
 item9: .byte 1
 item9Cost: .byte 1
 
+
+
 .cseg
 
- 
+
 
 .def temp1 = r16
 .def timerCounter = r17
@@ -62,10 +64,16 @@ item9Cost: .byte 1
 .equ INITROWMASK = 0x01 ; scan from the top row
 .equ ROWMASK = 0x0F ; for obtaining input from Port D
 
+
+
 .org 0x0000
-   jmp Main;
-   jmp DEFAULT          ; No handling for IRQ0.
-   jmp DEFAULT
+   jmp Main;          
+
+ .org INT0addr     //for push button
+jmp EXT_INT0
+
+ .org INT1addr     //for push button
+jmp EXT_INT1
 
 .org OVF1addr
 jmp Timer1
@@ -79,6 +87,63 @@ jmp DEFAULT
 DEFAULT:  reti 
 
 EXT_INT0:
+	
+	push temp1
+	in temp1, SREG
+	push temp1
+
+	cpi r27, 1
+	brne End
+	
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	ld temp1, Z
+	cpi temp1, 10
+	breq End
+
+	inc temp1
+	st Z, temp1
+
+	rcall sleep_250ms
+
+	End:
+	pop temp1
+	out SREG, temp1
+	pop temp1
+
+	reti
+
+EXT_INT1:
+	
+	push temp1
+	in temp1, SREG
+	push temp1
+
+	
+	cpi r27, 1
+	brne End2
+
+	mov temp1, temp4
+	subi temp1,-'0'
+
+	rcall returnInventory
+
+	ld temp1, Z
+	cpi temp1,0
+	breq End2
+
+	dec temp1
+	st Z, temp1
+
+	rcall sleep_250ms
+	
+	End2:
+	pop temp1
+	out SREG, temp1
+	pop temp1
 	reti
 
 Main:
@@ -319,6 +384,20 @@ rowloop:
 	inc col ; increase column value
 	jmp colloop ; go to the next column
 
+SetZero:
+
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	clr temp1
+	st Z, temp1
+
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall sleep_100ms
+	rjmp adminMode
 
 convert:
 
@@ -336,11 +415,62 @@ convert:
 	breq Adminjmp
 	jmp checkEmpty
 
-letters:
 
+
+letters:
+	
 	ldi temp1, 0b00110010
-	add temp1, row ; Get the ASCII value for the key
-	jmp convert_end
+	add temp1, row
+
+	cpi r27, 1
+	brne convert_end
+	
+	cpi row,0
+	breq IncreaseCost
+	cpi row,1
+	breq DecreaseCost
+	cpi row,2
+	breq SetZero
+
+	rjmp KeypadLoop
+
+IncreaseCost:
+	
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	ld temp1, Y
+	cpi temp1, 3
+	breq convert_end
+
+	inc temp1
+	st Y, temp1
+
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall sleep_100ms
+	rjmp adminMode
+
+DecreaseCost:
+	
+	mov temp1, temp4
+	subi temp1,-'0'
+	
+	rcall returnInventory
+
+	ld temp1, Y
+	cpi temp1, 1
+	breq convert_end
+
+	dec temp1
+	st Y, temp1
+
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall sleep_100ms
+	rjmp adminMode
 
 symbols:
 
@@ -1090,6 +1220,8 @@ adminModeInitial:
 	do_lcd_data_r temp1 
 	pop temp1
 
+
+	ldi temp4, 1
 	ldi r27,1
 	ldi flag1,1
 
@@ -1203,6 +1335,9 @@ returnInventory:
 adminMode:
 	//how does the program get here?
 
+	rcall sleep_100ms
+	
+
 	push temp1
 	rcall returnInventory  //itll get stuck in a loop here.
 
@@ -1219,6 +1354,10 @@ adminMode:
 	do_lcd_data 'e'
 	do_lcd_data ' '
 	pop temp1
+	
+	mov temp4, temp1
+	subi temp4, '0'
+
 	do_lcd_data_r temp1 
 
 	do_lcd_command 0b10101000
