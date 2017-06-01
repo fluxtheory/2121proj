@@ -514,6 +514,9 @@ displaySelectScreen:
 
 displaySelectScreen2:
 
+clr temp1
+out PORTC, temp1
+out PORTG, temp1
 
  do_lcd_command 0b00000001 ; clear display
  do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD

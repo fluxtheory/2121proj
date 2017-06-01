@@ -1,25 +1,48 @@
 
 .macro LEDcount
- push @0
- push temp2
- clr temp2
+	push @0
+	push temp2
+	push temp3
+	clr temp2
+	out PORTG, temp2
 
- mainloop:
- cpi @0, 0
- breq endmacro
+	cpi @0, 10
+	breq TWO
+	cpi @0, 9 
+	breq ONE
+	rjmp mainloop
 
- lsl temp2
- ori temp2, 0b00000001
- 
- dec @0
+	TWO:
+		
+		ldi temp3, TopLED
+		ori temp3, SecondLED
+		out PORTG, temp3
+		rjmp mainloop
 
- rjmp mainloop
- endmacro:
+	ONE:
+		ldi temp3, SecondLED
+		out PORTG, temp3
 
- out PORTC, temp2
+	mainloop:
+	cpi @0, 0
+	breq endmacro
 
- pop temp2
- pop @0
+	lsl temp2
+	ori temp2, 0b00000001
+	
+	dec @0
+
+	rjmp mainloop
+	endmacro:
+
+	out PORTC, temp2
+
+
+
+
+	pop temp3
+	pop temp2
+	pop @0
 .endmacro
 
 adminModeInitial:
