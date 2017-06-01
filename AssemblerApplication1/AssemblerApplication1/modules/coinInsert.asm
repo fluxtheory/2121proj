@@ -1,5 +1,5 @@
 
-CoinScreen:
+CoinScreen:  ; display screen
  
  push temp1
  clr r18 
@@ -33,7 +33,7 @@ CoinScreen:
 
  
 
- .macro HashLoop
+ .macro HashLoop   ; a modified version of keypad loop that ONLY listens for the '#' character. Nothing else.
 
  ldi cmask, INITCOLMASK ; initial column mask
  lsl cmask
@@ -63,7 +63,7 @@ CoinScreen:
  rjmp @0
  .endmacro
 
-InsertCoin:
+InsertCoin:    ;coin screen that handles coin insertion.
  
  pop temp1
 
@@ -81,7 +81,7 @@ InsertCoin:
  subi temp1,-'0'
  do_lcd_data_r temp1
 
- FirstZeroLoop:
+ FirstZeroLoop:  ;listens for coin or hashkey inputs
  push temp1
  push temp2
 
@@ -96,10 +96,10 @@ InsertCoin:
  
 
  cpi temp1, 0
- brne FirstZeroLoop
- rjmp SecondOneLoop
+ brne FirstZeroLoop  ; if no input is received, go back and listen again.
+ rjmp SecondOneLoop ; if there is a coin inserted go to the second loop
 
- SecondOneLoop:
+ SecondOneLoop:  ;one coin has been inserted, listening for second coin or for abort instruction
 
  lds temp1, PINK
  
@@ -114,8 +114,8 @@ InsertCoin:
 
  andi temp1, 0b00000001
  cpi temp1, 1
- brne SecondOneLoop
- rjmp ThirdZeroLoop 
+ brne SecondOneLoop  ; no further input received, re-entering loop.
+ rjmp ThirdZeroLoop  ; otherwise, enter third loop.
 
  CoinReturn:
 
@@ -139,7 +139,7 @@ InsertCoin:
  JumpDisplay:
  rjmp displaySelectScreen2
  
- ThirdZeroLoop:
+ ThirdZeroLoop: ; much like the first two loops, listens for input, but this time sends them to delivery screen.
 
  push temp1
  push temp2
