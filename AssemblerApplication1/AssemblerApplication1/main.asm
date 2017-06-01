@@ -489,53 +489,53 @@ displaySelectScreen:
 	sts TIMSK0, r18 ; turn off timer.
 
 	do_lcd_command 0b00000001
- ; clear display
- do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+ 	; clear display
+	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
 
- do_lcd_data 'S'
- do_lcd_data 'e'
- do_lcd_data 'l'
- do_lcd_data 'e'
- do_lcd_data 'c'
- do_lcd_data 't'
- do_lcd_data ' '
- do_lcd_data 'i'
- do_lcd_data 't'
- do_lcd_data 'e'
- do_lcd_data 'm'
+ 	do_lcd_data 'S'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'l'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'c'
+ 	do_lcd_data 't'
+ 	do_lcd_data ' '
+ 	do_lcd_data 'i'
+ 	do_lcd_data 't'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'm'
 
- pop temp1
- out SREG, temp1
+ 	pop temp1
+ 	out SREG, temp1
 
- reti
+ 	reti
 
 .include "modules/emptyScreen.asm"
 
 
 displaySelectScreen2:
 
-clr temp1
-out PORTC, temp1
-out PORTG, temp1
+	clr temp1
+	out PORTC, temp1
+	out PORTG, temp1
 
- do_lcd_command 0b00000001 ; clear display
- do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+ 	do_lcd_command 0b00000001 ; clear display
+ 	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
 
- do_lcd_data 'S'
- do_lcd_data 'e'
- do_lcd_data 'l'
- do_lcd_data 'e'
- do_lcd_data 'c'
- do_lcd_data 't'
- do_lcd_data ' '
- do_lcd_data 'i'
- do_lcd_data 't'
- do_lcd_data 'e'
- do_lcd_data 'm'
+ 	do_lcd_data 'S'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'l'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'c'
+ 	do_lcd_data 't'
+ 	do_lcd_data ' '
+ 	do_lcd_data 'i'
+ 	do_lcd_data 't'
+ 	do_lcd_data 'e'
+ 	do_lcd_data 'm'
 
- rcall sleep_500ms
+ 	rcall sleep_500ms
 
- rjmp KeypadLoop
+ 	rjmp KeypadLoop
 
 
 .include "modules/coinInsert.asm"
