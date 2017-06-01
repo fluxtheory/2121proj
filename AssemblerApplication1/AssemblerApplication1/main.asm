@@ -850,6 +850,9 @@ EmptyScreen:
 
 displaySelectScreen2:
 
+	clr temp1
+	out PORTC, temp1
+	out PORTG, temp1
 
 	do_lcd_command 0b00000001 ; clear display
 	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
@@ -1221,7 +1224,26 @@ decrementInventory:
 .macro LEDcount
 	push @0
 	push temp2
+	push temp3
 	clr temp2
+	out PORTG, temp2
+
+	cpi @0, 10
+	breq TWO
+	cpi @0, 9 
+	breq ONE
+	rjmp mainloop
+
+	TWO:
+		
+		ldi temp3, TopLED
+		ori temp3, SecondLED
+		out PORTG, temp3
+		rjmp mainloop
+
+	ONE:
+		ldi temp3, SecondLED
+		out PORTG, temp3
 
 	mainloop:
 	cpi @0, 0
@@ -1237,6 +1259,10 @@ decrementInventory:
 
 	out PORTC, temp2
 
+
+
+
+	pop temp3
 	pop temp2
 	pop @0
 .endmacro
