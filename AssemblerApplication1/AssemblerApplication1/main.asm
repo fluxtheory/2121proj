@@ -351,6 +351,7 @@ symbols:
 	ldi temp1, '#'
 	cpi r27,1
 	brne convert_end
+	clr flag1
 	clr r27
 	rjmp DisplaySelectScreen2
 	
@@ -1055,6 +1056,7 @@ decrementInventory:
 		ret
 
 adminModeInitial:
+
 	do_lcd_command 0b00000001
 	do_lcd_data 'A'
 	do_lcd_data 'd'
@@ -1089,8 +1091,9 @@ adminModeInitial:
 	pop temp1
 
 	ldi r27,1
+	ldi flag1,1
 
-	rjmp adminMode
+	rjmp KeypadLoop
 
 
 returnInventory:
@@ -1199,6 +1202,8 @@ returnInventory:
 
 adminMode:
 	//how does the program get here?
+
+	push temp1
 	rcall returnInventory  //itll get stuck in a loop here.
 
 	do_lcd_command 0b00000001
@@ -1213,11 +1218,10 @@ adminMode:
 	do_lcd_data 'd'
 	do_lcd_data 'e'
 	do_lcd_data ' '
+	pop temp1
 	do_lcd_data_r temp1 
 
 	do_lcd_command 0b10101000
-	push temp1
-	push temp2
 
 	ld temp1, Z
 	subi temp1,-'0'
@@ -1226,10 +1230,9 @@ adminMode:
 	do_lcd_command 0b10110110
 	do_lcd_data '$'		//displays cost of selected item
 	ld temp1, Y
+	subi temp1,-'0'
 	do_lcd_data_r temp1 
-	
-	pop temp2
-	pop temp1
+
 
 	jmp KeypadLoop   
 	
