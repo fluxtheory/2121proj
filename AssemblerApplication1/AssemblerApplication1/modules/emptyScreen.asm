@@ -98,62 +98,62 @@ checkEmpty:
  
 EmptyScreen:
  
- push temp1
+    push temp1
 
- do_lcd_command 0b00000001
- do_lcd_data 'O'
- do_lcd_data 'u'
- do_lcd_data 't'
- do_lcd_data ' '
- do_lcd_data 'o'
- do_lcd_data 'f'
- do_lcd_data ' '
- do_lcd_data 's'
- do_lcd_data 't'
- do_lcd_data 'o'
- do_lcd_data 'c'
- do_lcd_data 'k'
+    do_lcd_command 0b00000001
+    do_lcd_data 'O'
+    do_lcd_data 'u'
+    do_lcd_data 't'
+    do_lcd_data ' '
+    do_lcd_data 'o'
+    do_lcd_data 'f'
+    do_lcd_data ' '
+    do_lcd_data 's'
+    do_lcd_data 't'
+    do_lcd_data 'o'
+    do_lcd_data 'c'
+    do_lcd_data 'k'
 
- do_lcd_command 0b10101000
- pop temp1
- do_lcd_data_r temp1
+    do_lcd_command 0b10101000
+    pop temp1
+    do_lcd_data_r temp1
 
- ser temp1                ; alternates flashing for 3 seconds.
- out PORTC, temp1
- ldi temp1, TopLED
- ori temp1, SecondLED
- out PORTG, temp1
- 
- rcall sleep_500ms       ; alternates flashing for 3 seconds.
- clr temp1
- out PORTC, temp1
- out PORTG, temp1
- 
- rcall sleep_500ms        ; alternates flashing for 3 seconds.
- ser temp1
- out PORTC, temp1
- ldi temp1, TopLED
- ori temp1, SecondLED
- out PORTG, temp1
- 
- rcall sleep_500ms        ; alternates flashing for 3 seconds.
- clr temp1
- out PORTC, temp1
- out PORTG, temp1
+    ser temp1                ; alternates flashing for 3 seconds.
+    out PORTC, temp1
+    ldi temp1, TopLED
+    ori temp1, SecondLED
+    out PORTG, temp1
 
- rcall sleep_500ms        ; alternates flashing for 3 seconds.
- ser temp1
- out PORTC, temp1
- ldi temp1, TopLED
- ori temp1, SecondLED
- out PORTG, temp1
+    rcall sleep_500ms       ; alternates flashing for 3 seconds.
+    clr temp1
+    out PORTC, temp1
+    out PORTG, temp1
 
- rcall sleep_500ms         ; alternates flashing for 3 seconds.
- clr temp1
- out PORTC, temp1
- out PORTG, temp1
- 
- rcall sleep_500ms
- 
- 
- rjmp displaySelectScreen2
+    rcall sleep_500ms        ; alternates flashing for 3 seconds.
+    ser temp1
+    out PORTC, temp1
+    ldi temp1, TopLED
+    ori temp1, SecondLED
+    out PORTG, temp1
+
+    rcall sleep_500ms        ; alternates flashing for 3 seconds.
+    clr temp1
+    out PORTC, temp1
+    out PORTG, temp1
+
+    rcall sleep_500ms        ; alternates flashing for 3 seconds.
+    ser temp1
+    out PORTC, temp1
+    ldi temp1, TopLED
+    ori temp1, SecondLED
+    out PORTG, temp1
+
+    rcall sleep_500ms         ; alternates flashing for 3 seconds.
+    clr temp1
+    out PORTC, temp1
+    out PORTG, temp1
+
+    rcall sleep_500ms
+
+
+    rjmp displaySelectScreen2
