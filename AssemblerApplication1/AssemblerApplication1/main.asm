@@ -58,7 +58,8 @@ item9Cost: .byte 1
 .def flag1 = r25
 
 
-
+.equ TopLED = 0b00000010
+.equ SecondLED = 0b00000001
 .equ PORTADIR = 0xF0 ; PD7-4: output, PD3-0, input
 .equ INITCOLMASK = 0xEF ; scan from the rightmost column,
 .equ INITROWMASK = 0x01 ; scan from the top row
@@ -271,6 +272,8 @@ Main:
 	ser r16
 	out DDRC, r16
 	out DDRE, temp1
+	out DDRG, temp1
+
 
 	ldi r16, low(RAMEND)
 	out SPL, r16
@@ -806,22 +809,39 @@ EmptyScreen:
 
 		ser temp1
 		out PORTC, temp1
-		rcall sleep_500ms
-		clr temp1
-		out PORTC, temp1
-		rcall sleep_500ms
-		ser temp1
-		out PORTC, temp1
-		rcall sleep_500ms
-		clr temp1
-		out PORTC, temp1
-		rcall sleep_500ms
+		ldi temp1, TopLED
+		ori temp1, SecondLED
+		out PORTG, temp1
 		
-		ser temp1
-		out PORTC, temp1
 		rcall sleep_500ms
 		clr temp1
 		out PORTC, temp1
+		out PORTG, temp1
+		
+		rcall sleep_500ms
+		ser temp1
+		out PORTC, temp1
+		ldi temp1, TopLED
+		ori temp1, SecondLED
+		out PORTG, temp1
+		
+		rcall sleep_500ms
+		clr temp1
+		out PORTC, temp1
+		out PORTG, temp1
+
+		rcall sleep_500ms
+		ser temp1
+		out PORTC, temp1
+		ldi temp1, TopLED
+		ori temp1, SecondLED
+		out PORTG, temp1
+
+		rcall sleep_500ms
+		clr temp1
+		out PORTC, temp1
+		out PORTG, temp1
+		
 		rcall sleep_500ms
 		
 		
