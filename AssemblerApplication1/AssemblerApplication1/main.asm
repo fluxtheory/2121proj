@@ -108,6 +108,11 @@ EXT_INT0:
 	st Z, temp1
 
 	rcall sleep_250ms
+	
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall adminMode
+
 
 	End:
 	pop temp1
@@ -139,6 +144,9 @@ EXT_INT1:
 	st Z, temp1
 
 	rcall sleep_250ms
+	mov temp1, temp4
+	subi temp1, -'0'
+	rcall adminMode
 	
 	End2:
 	pop temp1
@@ -397,7 +405,8 @@ SetZero:
 	mov temp1, temp4
 	subi temp1, -'0'
 	rcall sleep_100ms
-	rjmp adminMode
+	rcall adminMode
+	rjmp KeypadLoop
 
 convert:
 
@@ -451,7 +460,9 @@ IncreaseCost:
 	mov temp1, temp4
 	subi temp1, -'0'
 	rcall sleep_100ms
-	rjmp adminMode
+	
+	rcall adminMode
+	rjmp KeypadLoop
 
 DecreaseCost:
 	
@@ -470,7 +481,8 @@ DecreaseCost:
 	mov temp1, temp4
 	subi temp1, -'0'
 	rcall sleep_100ms
-	rjmp adminMode
+	rcall adminMode
+	rjmp KeypadLoop
 
 symbols:
 
@@ -506,7 +518,8 @@ star:
 	jmp KeypadLoop
 
 Adminjmp:
-	rjmp adminMode
+	rcall adminMode
+	rjmp KeypadLoop
 
 zero:
 
@@ -514,7 +527,7 @@ zero:
 
 convert_end:
 
-	out PORTC, temp1 ; Write value to PORTC
+	;out PORTC, temp1 ; Write value to PORTC
 	jmp KeypadLoop ; Restart KeypadLoop loop
 
 .equ LCD_RS = 7
@@ -598,13 +611,13 @@ StillPressed:
 	inc timerCounter
 
 	
-	out PORTC, TimerCounter
+	;out PORTC, TimerCounter
 	
 	cpi timerCounter, 25
 	brlo Finish
 		
-	ldi temp1, 0b11110000
-	out PORTC, temp1
+	;ldi temp1, 0b11110000
+	;out PORTC, temp1
 
 	ldi r26,1
 	clr temp3
@@ -631,8 +644,8 @@ Released:
 
 	clr timerCounter
 
-	ldi temp1, 0b11111111
-	out PORTC, temp1
+	;ldi temp1, 0b11111111
+	;out PORTC, temp1
 
 	pop temp1
 	out SREG, temp1
@@ -1185,6 +1198,29 @@ decrementInventory:
 		st Z, temp1
 		ret
 
+.macro LEDcount
+	push @0
+	push temp2
+	clr temp2
+
+	mainloop:
+	cpi @0, 0
+	breq endmacro
+
+	lsl temp2
+	ori temp2, 0b00000001
+	
+	dec @0
+
+	rjmp mainloop
+	endmacro:
+
+	out PORTC, temp2
+
+	pop temp2
+	pop @0
+.endmacro
+
 adminModeInitial:
 
 	do_lcd_command 0b00000001
@@ -1204,12 +1240,15 @@ adminModeInitial:
 	do_lcd_command 0b10101000
 
 	push temp1
-	ldi ZL, low(item1)   //z holds pointer to item1's inventory.
+	ldi ZL, low(item1)   //z holds pointer to item1's inventory. 
 	ldi ZH, high(item1)
 	ld temp1, Z
+	
+	LEDcount temp1
+
 	subi temp1, -'0'
 	do_lcd_data_r temp1 
-	out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
+	//out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
 	
 	do_lcd_command 0b10110110
 	do_lcd_data '$'
@@ -1226,6 +1265,7 @@ adminModeInitial:
 	ldi flag1,1
 
 	rjmp KeypadLoop
+
 
 
 returnInventory:
@@ -1255,8 +1295,8 @@ returnInventory:
 		ldi ZH, high(item1)
 		ldi YL, low(item1Cost) 	//item cost
 		ldi YH, high(item1Cost)	
-		ldi temp1, 0b00000001
-		out PORTC, temp1
+		;ldi temp1, 0b00000001
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return2:
@@ -1264,8 +1304,8 @@ returnInventory:
 		ldi ZH, high(item2)
 		ldi YL, low(item2Cost) 	//item cost
 		ldi YH, high(item2Cost)
-		ldi temp1, 0b00000011
-		out PORTC, temp1
+		;ldi temp1, 0b00000011
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return3:
@@ -1273,8 +1313,8 @@ returnInventory:
 		ldi ZH, high(item3)
 		ldi YL, low(item3Cost) 	//item cost
 		ldi YH, high(item3Cost)
-		ldi temp1, 0b00000111
-		out PORTC, temp1
+		;ldi temp1, 0b00000111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return4:
@@ -1282,8 +1322,8 @@ returnInventory:
 		ldi ZH, high(item4)
 		ldi YL, low(item4Cost) 	//item cost
 		ldi YH, high(item4Cost)
-		ldi temp1, 0b00001111
-		out PORTC, temp1
+		;ldi temp1, 0b00001111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return5:
@@ -1291,8 +1331,8 @@ returnInventory:
 		ldi ZH, high(item5)
 		ldi YL, low(item5Cost) 	//item cost
 		ldi YH, high(item5Cost)
-		ldi temp1, 0b00011111
-		out PORTC, temp1
+		;ldi temp1, 0b00011111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return6:
@@ -1300,8 +1340,8 @@ returnInventory:
 		ldi ZH, high(item6)
 		ldi YL, low(item6Cost) 	//item cost
 		ldi YH, high(item6Cost)
-		ldi temp1, 0b00111111
-		out PORTC, temp1
+		;ldi temp1, 0b00111111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return7:
@@ -1309,8 +1349,8 @@ returnInventory:
 		ldi ZH, high(item7)
 		ldi YL, low(item7Cost) 	//item cost
 		ldi YH, high(item7Cost)
-		ldi temp1, 0b01111111
-		out PORTC, temp1
+		;ldi temp1, 0b01111111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return8:
@@ -1318,8 +1358,8 @@ returnInventory:
 		ldi ZH, high(item8)
 		ldi YL, low(item8Cost) 	//item cost
 		ldi YH, high(item8Cost)
-		ldi temp1, 0b11111111
-		out PORTC, temp1
+		;ldi temp1, 0b11111111
+		;out PORTC, temp1
 		pop temp1
 		ret
 	return9:
@@ -1363,7 +1403,11 @@ adminMode:
 	do_lcd_command 0b10101000
 
 	ld temp1, Z
+
+	LEDcount temp1
+
 	subi temp1,-'0'
+
 	do_lcd_data_r temp1   //displays inventory of selected item
 	
 	do_lcd_command 0b10110110
@@ -1373,7 +1417,7 @@ adminMode:
 	do_lcd_data_r temp1 
 
 
-	jmp KeypadLoop   
+	ret   
 	
 	
 
