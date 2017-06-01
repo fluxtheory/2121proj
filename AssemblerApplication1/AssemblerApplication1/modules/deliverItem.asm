@@ -1,7 +1,7 @@
 
 
 DeliverScreen:
- ;cli  //disable all input related interrupts
+ ;cli  //disable all input related interrupts during this time.
  
  ser temp1
  out DDRE, temp1
@@ -35,15 +35,15 @@ DeliverScreen:
  sts OCR3AH, temp1
  sts OCR3AL, temp1
 
- rcall sleep_1000ms
+ rcall sleep_1000ms   ;spin motors for 3 seconds.
  rcall sleep_1000ms
  rcall sleep_1000ms
 
- clr temp1					; connected to PE4 (externally labelled PE2)
+ clr temp1					; stops motors
  sts OCR3AH, temp1
  sts OCR3AL, temp1
 
- rjmp displaySelectScreen2
+ rjmp displaySelectScreen2  ;jump back to select screen.
 
 
  
