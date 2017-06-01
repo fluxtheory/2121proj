@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Thu Jun 01 11:48:56 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Thu Jun 01 12:12:35 2017
 
 
 EQU  SIGNATURE_000 0000001e
@@ -1442,31 +1442,31 @@ CSEG EmptyScreen  0000023f
 CSEG CoinScreen   000002aa
 CSEG sleep_500ms  00000521
 CSEG InsertCoin   000002e8
-CSEG FirstZeroLoop 000002f4
-CSEG Hashdelay@HashLoop@4966 000002fc
-CSEG Loop2c       0000030b
-CSEG CoinReturn   00000332
-CSEG SecondOneLoop 00000313
-CSEG Hashdelay@HashLoop@5016 0000031d
-CSEG Loopc        0000032c
-CSEG ThirdZeroLoop 00000343
-CSEG JumpDisplay  00000342
+CSEG ReturnInventory 00000446
+CSEG FirstZeroLoop 000002f7
+CSEG Hashdelay@HashLoop@4969 000002ff
+CSEG Loop2c       0000030e
+CSEG CoinReturn   00000335
+CSEG SecondOneLoop 00000316
+CSEG Hashdelay@HashLoop@5019 00000320
+CSEG Loopc        0000032f
+CSEG ThirdZeroLoop 00000346
+CSEG JumpDisplay  00000345
 CSEG sleep_250ms  0000051a
-CSEG Hashdelay@HashLoop@5083 0000034b
-CSEG Loop3c       0000035a
-CSEG DeliverScreen 00000373
-CSEG decrementInventory 000003b7
+CSEG Hashdelay@HashLoop@5086 0000034e
+CSEG Loop3c       0000035d
+CSEG DeliverScreen 00000376
+CSEG decrementInventory 000003ba
 CSEG sleep_1000ms 00000527
-CSEG decrement1   000003ca
-CSEG decrement2   000003d1
-CSEG decrement3   000003d8
+CSEG decrement1   000003cd
+CSEG decrement2   000003d3
+CSEG decrement3   000003d9
 CSEG decrement4   000003df
 CSEG decrement5   000003e5
 CSEG decrement6   000003eb
 CSEG decrement7   000003f1
 CSEG decrement8   000003f7
 CSEG decrement9   000003fd
-CSEG returnInventory 00000446
 CSEG return1      00000459
 CSEG return2      00000461
 CSEG return3      00000469

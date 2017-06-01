@@ -773,8 +773,14 @@ CoinScreen:
 
 InsertCoin:
 	
+	pop temp1
+
+	rcall ReturnInventory
+	ld temp2,Y
+
+	push temp1
+
 	clr temp4
-	ldi temp2, 2
 	clr temp3
 	out PORTC, temp3
 	do_lcd_command 0b10101000
@@ -954,7 +960,7 @@ decrementInventory:
 		
 		ldi ZL, low(item1)
 		ldi ZH, high(item1)
-		lds temp1, 0x0200
+		ld temp1, Z
 		
 		
 		dec temp1
@@ -966,7 +972,7 @@ decrementInventory:
 		
 		ldi ZL, low(item2)
 		ldi ZH, high(item2)
-		lds temp1, 0x0201
+		ld temp1, Z
 		
 		//out PORTC, temp1
 		
@@ -979,7 +985,7 @@ decrementInventory:
 		ldi ZL, low(item3)
 		ldi ZH, high(item3)
 		
-		lds temp1, 0x0202
+		ld temp1, Z
 		//out PORTC, temp1
 		dec temp1
 
