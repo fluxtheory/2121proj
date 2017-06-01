@@ -1,4 +1,7 @@
 
+
+;listens for keypad input. self-explanatory.
+
 KeypadLoop:
 
 	ldi cmask, INITCOLMASK ; initial column mask
@@ -88,7 +91,7 @@ letters:
 
 	rjmp KeypadLoop
 	
-IncreaseCost:
+IncreaseCost:     ;helper functions for admin mode.
 	
 	mov temp1, temp4
 	subi temp1,-'0'
@@ -109,7 +112,7 @@ IncreaseCost:
 	rcall adminMode
 	rjmp KeypadLoop
 
-DecreaseCost:
+DecreaseCost:    ;helper functions for admin mode.
 	
 	mov temp1, temp4
 	subi temp1,-'0'
