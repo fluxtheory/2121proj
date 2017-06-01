@@ -110,7 +110,7 @@ decrementInventory:
        st Z, temp1
        ret
  
- decrement6:
+    decrement6:
  
        ldi ZL, low(item6)
        ldi ZH, high(item6)
@@ -119,7 +119,7 @@ decrementInventory:
        st Z, temp1
        ret
  
- decrement7:
+    decrement7:
  
        ldi ZL, low(item7)
        ldi ZH, high(item7)
@@ -128,7 +128,7 @@ decrementInventory:
        st Z, temp1
        ret
  
- decrement8:
+    decrement8:
        ldi ZL, low(item8)
        ldi ZH, high(item8)
        ld temp1, Z
@@ -136,7 +136,7 @@ decrementInventory:
        st Z, temp1
        ret
  
- decrement9:
+    decrement9:
        ldi ZL, low(item9)
        ldi ZH, high(item9)
        ld temp1, Z
