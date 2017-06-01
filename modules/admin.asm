@@ -1,4 +1,27 @@
 
+.macro LEDcount
+ push @0
+ push temp2
+ clr temp2
+
+ mainloop:
+ cpi @0, 0
+ breq endmacro
+
+ lsl temp2
+ ori temp2, 0b00000001
+ 
+ dec @0
+
+ rjmp mainloop
+ endmacro:
+
+ out PORTC, temp2
+
+ pop temp2
+ pop @0
+.endmacro
+
 adminModeInitial:
 
 	do_lcd_command 0b00000001
