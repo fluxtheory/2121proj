@@ -71,9 +71,6 @@ item9Cost: .byte 1
 jmp Timer1
 
 
-
-
-
 .org OVF0addr
 jmp Timer0
 
@@ -411,6 +408,8 @@ adminModeInitialJump:
 
 Timer0: ;Timer overflow 0
 
+	ldi flag1,1
+
 	in temp1, SREG
 	push temp1
 
@@ -435,7 +434,7 @@ Timer1:
 
 	
 
-	inc TimerCounter
+	inc timerCounter
 
 
 	ldi cmask, INITCOLMASK ; initial column mask
@@ -465,12 +464,12 @@ Timer1:
 	
 StillPressed:
 
-	inc TimerCounter
+	inc timerCounter
 
-	ldi temp1, 0b10101010
-	out PORTC, temp1
 	
-	cpi TimerCounter, 25
+	out PORTC, TimerCounter
+	
+	cpi timerCounter, 25
 	brlo Finish
 		
 	ldi temp1, 0b11110000
@@ -479,6 +478,8 @@ StillPressed:
 	ldi r26,1
 	clr temp3
 	sts TIMSK1, temp3
+
+	clr timerCounter
 
 	Finish:
 
@@ -497,6 +498,8 @@ Released:
 	sts TIMSK1, temp3
 	clr flag1
 
+	clr timerCounter
+
 	ldi temp1, 0b11111111
 	out PORTC, temp1
 
@@ -512,6 +515,7 @@ Released:
 displaySelectScreen:
 
 	clr timerCounter
+	clr flag1
 
 	clr r18 
 	sts TIMSK0, r18 ; turn off timer.
