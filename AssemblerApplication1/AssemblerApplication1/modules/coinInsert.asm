@@ -4,6 +4,7 @@ CoinScreen:  ; display screen
    push temp1
    clr r18 
    sts TIMSK0, r18 ; turn off timer.
+   clr flag1 ;This is the bug were admin mode doesn't show
 
    do_lcd_command 0b00000001 ; clear display
    do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
