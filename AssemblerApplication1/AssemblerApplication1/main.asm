@@ -295,6 +295,21 @@ Main:
 	clr r18
 	sts TIMSK1, r18
 
+
+	ldi r17, (2 << ISC00)      ; set INT0 as falling-
+    sts EICRA, r17             ; edge triggered interrupt
+    in r17, EIMSK              ; enable INT0
+    ori r17, (1<<INT0)
+    out EIMSK, r17
+
+               
+
+	ldi r17, (2 << ISC00)      ; set INT0 as falling-
+    sts EICRA, r17             ; edge triggered interrupt
+    in r17, EIMSK              ; enable INT0
+    ori r17, (1<<INT1)
+    out EIMSK, r17
+
 	ldi temp1, PORTADIR ;keypad setup
 	sts DDRL, temp1 ; PA7:4/PA3:0, out/in
 

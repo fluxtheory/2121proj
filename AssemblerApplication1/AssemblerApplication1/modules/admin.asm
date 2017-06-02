@@ -74,8 +74,18 @@ adminModeInitial:    ;the default screen for admin mode always displays the info
 	
 	LEDcount temp1
 
+	cpi temp1, 10
+	breq TEN
+
 	subi temp1, -'0'
 	do_lcd_data_r temp1 
+	rjmp EndIt
+	TEN:
+
+	do_lcd_data '1'
+	do_lcd_data '0'
+
+	EndIt:
 	//out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
 	
 	;displaying cost
@@ -232,8 +242,19 @@ adminMode:
 
  	ld temp1, Z
  	LEDcount temp1
- 	subi temp1,-'0'
- 	do_lcd_data_r temp1   //displays inventory of selected item
+
+ 	cpi temp1, 10
+	breq TEN1
+
+	subi temp1, -'0'
+	do_lcd_data_r temp1 
+	rjmp EndIt1
+	TEN1:
+
+	do_lcd_data '1'
+	do_lcd_data '0'
+
+	EndIt1:   //displays inventory of selected item
  
  	do_lcd_command 0b10110110
  	do_lcd_data '$'		

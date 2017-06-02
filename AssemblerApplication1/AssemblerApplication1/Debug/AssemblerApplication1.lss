@@ -1,26 +1,26 @@
 
-AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Thu Jun 01 21:33:58 2017
+AVRASM ver. 2.2.6  C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm Fri Jun 02 10:59:57 2017
 
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc'
 C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(1): Including file 'C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc'
 C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(3): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcdmacros.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(342): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/keypad.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(512): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/emptyScreen.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(541): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/coinInsert.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(543): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/deliverItem.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(545): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/admin.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(547): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcd.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(549): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/sleep.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(357): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/keypad.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(527): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/emptyScreen.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(556): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/coinInsert.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(558): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/deliverItem.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(560): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/admin.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(562): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcd.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(564): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/sleep.asm'
 [builtin](2): Including file 'C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc'
 C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(1): Including file 'C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m2560def.inc'
 C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(3): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcdmacros.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(342): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/keypad.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(512): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/emptyScreen.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(541): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/coinInsert.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(543): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/deliverItem.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(545): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/admin.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(547): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcd.asm'
-C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(549): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/sleep.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(357): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/keypad.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(527): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/emptyScreen.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(556): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/coinInsert.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(558): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/deliverItem.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(560): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/admin.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(562): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/lcd.asm'
+C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\main.asm(564): Including file 'C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\AssemblerApplication1\modules/sleep.asm'
                                  
                                  .include "m2560def.inc"
                                  
@@ -1906,23 +1906,25 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
                                  
                                  .include "modules/lcdmacros.asm"
                                  
+                                 
+                                 
                                  .macro do_lcd_command
-                                 ldi r16, @0
-                                 rcall lcd_command
-                                 rcall lcd_wait
+                                   ldi r16, @0
+                                   rcall lcd_command
+                                   rcall lcd_wait
                                  .endmacro
                                  
                                  
                                  .macro do_lcd_data
-                                 ldi r16, @0
-                                 rcall lcd_data
-                                 rcall lcd_wait
+                                   ldi r16, @0
+                                   rcall lcd_data
+                                   rcall lcd_wait
                                  .endmacro
                                  
                                  .macro do_lcd_data_r
-                                 mov r16, @0
-                                 rcall lcd_data
-                                 rcall lcd_wait
+                                   mov r16, @0
+                                   rcall lcd_data
+                                   rcall lcd_wait
                                  .endmacro
                                  
                                  .dseg
@@ -1981,11 +1983,11 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 000004 940c 0048                 jmp EXT_INT1
                                  
                                  .org OVF1addr
-000028 940c 01d9                 jmp Timer1
+000028 940c 01e5                 jmp Timer1
                                  
                                  
                                  .org OVF0addr
-00002e 940c 01d0                 jmp Timer0
+00002e 940c 01dc                 jmp Timer0
                                  
                                  
 000030 940c 0032                 jmp DEFAULT        
@@ -2003,7 +2005,7 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 000038 2f08                      	mov temp1, temp4
 000039 5d00                      	subi temp1,-'0'
                                  	
-00003a d486                      	rcall returnInventory
+00003a d49b                      	rcall returnInventory
                                  
 00003b 8100                      	ld temp1, Z
 00003c 300a                      	cpi temp1, 10
@@ -2012,11 +2014,11 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 00003e 9503                      	inc temp1
 00003f 8300                      	st Z, temp1
                                  
-000040 d55f                      	rcall sleep_250ms
+000040 d57d                      	rcall sleep_250ms
                                  	
 000041 2f08                      	mov temp1, temp4
 000042 5d00                      	subi temp1, -'0'
-000043 d4c6                      	rcall adminMode
+000043 d4db                      	rcall adminMode
                                  
                                  
                                  	End:
@@ -2039,7 +2041,7 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 00004d 2f08                      	mov temp1, temp4
 00004e 5d00                      	subi temp1,-'0'
                                  
-00004f d471                      	rcall returnInventory
+00004f d486                      	rcall returnInventory
                                  
 000050 8100                      	ld temp1, Z
 000051 3000                      	cpi temp1,0
@@ -2048,10 +2050,10 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 000053 950a                      	dec temp1
 000054 8300                      	st Z, temp1
                                  
-000055 d54a                      	rcall sleep_250ms
+000055 d568                      	rcall sleep_250ms
 000056 2f08                      	mov temp1, temp4
 000057 5d00                      	subi temp1, -'0'
-000058 d4b1                      	rcall adminMode
+000058 d4c6                      	rcall adminMode
                                  	
                                  	End2:
 000059 910f                      	pop temp1
@@ -2192,34 +2194,34 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 0000c8 b902                      	out PORTA, r16
                                  
 0000c9 e308
-0000ca d49a
-0000cb d4a9                      	do_lcd_command 0b00111000 ; 2x5x7
-0000cc d4c2                      	rcall sleep_5ms
+0000ca d4b8
+0000cb d4c7                      	do_lcd_command 0b00111000 ; 2x5x7
+0000cc d4e0                      	rcall sleep_5ms
 0000cd e308
-0000ce d496
-0000cf d4a5                      	do_lcd_command 0b00111000 ; 2x5x7
-0000d0 d4b5                      	rcall sleep_1ms
+0000ce d4b4
+0000cf d4c3                      	do_lcd_command 0b00111000 ; 2x5x7
+0000d0 d4d3                      	rcall sleep_1ms
 0000d1 e308
-0000d2 d492
-0000d3 d4a1                      	do_lcd_command 0b00111000 ; 2x5x7
+0000d2 d4b0
+0000d3 d4bf                      	do_lcd_command 0b00111000 ; 2x5x7
 0000d4 e308
-0000d5 d48f
-0000d6 d49e                      	do_lcd_command 0b00111000 ; 2x5x7
+0000d5 d4ad
+0000d6 d4bc                      	do_lcd_command 0b00111000 ; 2x5x7
 0000d7 e008
-0000d8 d48c
-0000d9 d49b                      	do_lcd_command 0b00001000 ; display off?
+0000d8 d4aa
+0000d9 d4b9                      	do_lcd_command 0b00001000 ; display off?
 0000da e001
-0000db d489
-0000dc d498                      	do_lcd_command 0b00000001 ; clear display
+0000db d4a7
+0000dc d4b6                      	do_lcd_command 0b00000001 ; clear display
 0000dd e006
-0000de d486
-0000df d495                      	do_lcd_command 0b00000110 ; increment, no display shift
+0000de d4a4
+0000df d4b3                      	do_lcd_command 0b00000110 ; increment, no display shift
 0000e0 e00e
-0000e1 d483
-0000e2 d492                      	do_lcd_command 0b00001110 ; Cursor on, bar, no blink
+0000e1 d4a1
+0000e2 d4b0                      	do_lcd_command 0b00001110 ; Cursor on, bar, no blink
 0000e3 e800
-0000e4 d480
-0000e5 d48f                      	do_lcd_command 0b10000000
+0000e4 d49e
+0000e5 d4ad                      	do_lcd_command 0b10000000
                                  
 0000e6 e020                      	ldi r18, 0b00000000 ;Timer setup for start screen 3 second wait
 0000e7 bd24                      	out TCCR0A, r18
@@ -2236,288 +2238,306 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 0000f3 2722                      	clr r18
 0000f4 9320 006f                 	sts TIMSK1, r18
                                  
-0000f6 ef00                      	ldi temp1, PORTADIR ;keypad setup
-0000f7 9300 010a                 	sts DDRL, temp1 ; PA7:4/PA3:0, out/in
                                  
-0000f9 9478                      	sei
+0000f6 e012                      	ldi r17, (2 << ISC00)      ; set INT0 as falling-
+0000f7 9310 0069                     sts EICRA, r17             ; edge triggered interrupt
+0000f9 b31d                          in r17, EIMSK              ; enable INT0
+0000fa 6011                          ori r17, (1<<INT0)
+0000fb bb1d                          out EIMSK, r17
                                  
-0000fa e302
-0000fb d470
-0000fc d478                      	do_lcd_data '2'
-0000fd e301
-0000fe d46d
-0000ff d475                      	do_lcd_data '1'
-000100 e302
-000101 d46a
-000102 d472                      	do_lcd_data '2'
-000103 e301
-000104 d467
-000105 d46f                      	do_lcd_data '1'
-000106 e200
-000107 d464
-000108 d46c                      	do_lcd_data ' '
+                                                
+                                 
+0000fc e012                      	ldi r17, (2 << ISC00)      ; set INT0 as falling-
+0000fd 9310 0069                     sts EICRA, r17             ; edge triggered interrupt
+0000ff b31d                          in r17, EIMSK              ; enable INT0
+000100 6012                          ori r17, (1<<INT1)
+000101 bb1d                          out EIMSK, r17
+                                 
+000102 ef00                      	ldi temp1, PORTADIR ;keypad setup
+000103 9300 010a                 	sts DDRL, temp1 ; PA7:4/PA3:0, out/in
+                                 
+000105 9478                      	sei
+                                 
+000106 e302
+000107 d482
+000108 d48a                      	do_lcd_data '2'
 000109 e301
-00010a d461
-00010b d469                      	do_lcd_data '1'
-00010c e307
-00010d d45e
-00010e d466                      	do_lcd_data '7'
-00010f e703
-000110 d45b
-000111 d463                      	do_lcd_data 's'
-000112 e301
-000113 d458
-000114 d460                      	do_lcd_data '1'
-000115 e200
-000116 d455
-000117 d45d                      	do_lcd_data ' '
-000118 e200
-000119 d452
-00011a d45a                      	do_lcd_data ' '
-00011b e200
-00011c d44f
-00011d d457                      	do_lcd_data ' '
-00011e e405
-00011f d44c
-000120 d454                      	do_lcd_data 'E'
-000121 e304
-000122 d449
-000123 d451                      	do_lcd_data '4'
+00010a d47f
+00010b d487                      	do_lcd_data '1'
+00010c e302
+00010d d47c
+00010e d484                      	do_lcd_data '2'
+00010f e301
+000110 d479
+000111 d481                      	do_lcd_data '1'
+000112 e200
+000113 d476
+000114 d47e                      	do_lcd_data ' '
+000115 e301
+000116 d473
+000117 d47b                      	do_lcd_data '1'
+000118 e307
+000119 d470
+00011a d478                      	do_lcd_data '7'
+00011b e703
+00011c d46d
+00011d d475                      	do_lcd_data 's'
+00011e e301
+00011f d46a
+000120 d472                      	do_lcd_data '1'
+000121 e200
+000122 d467
+000123 d46f                      	do_lcd_data ' '
+000124 e200
+000125 d464
+000126 d46c                      	do_lcd_data ' '
+000127 e200
+000128 d461
+000129 d469                      	do_lcd_data ' '
+00012a e405
+00012b d45e
+00012c d466                      	do_lcd_data 'E'
+00012d e304
+00012e d45b
+00012f d463                      	do_lcd_data '4'
                                  
-000124 ea08
-000125 d43f
-000126 d44e                      	do_lcd_command 0b10101000
+000130 ea08
+000131 d451
+000132 d460                      	do_lcd_command 0b10101000
                                  
-000127 e506
-000128 d443
-000129 d44b                      	do_lcd_data 'V'
-00012a e605
-00012b d440
-00012c d448                      	do_lcd_data 'e'
-00012d e60e
-00012e d43d
-00012f d445                      	do_lcd_data 'n'
-000130 e604
-000131 d43a
-000132 d442                      	do_lcd_data 'd'
-000133 e609
-000134 d437
-000135 d43f                      	do_lcd_data 'i'
-000136 e60e
-000137 d434
-000138 d43c                      	do_lcd_data 'n'
-000139 e607
-00013a d431
-00013b d439                      	do_lcd_data 'g'
-00013c e200
-00013d d42e
-00013e d436                      	do_lcd_data ' '
-00013f e40d
-000140 d42b
-000141 d433                      	do_lcd_data 'M'
-000142 e601
-000143 d428
-000144 d430                      	do_lcd_data 'a'
-000145 e603
-000146 d425
-000147 d42d                      	do_lcd_data 'c'
-000148 e608
-000149 d422
-00014a d42a                      	do_lcd_data 'h'
-00014b e609
-00014c d41f
-00014d d427                      	do_lcd_data 'i'
-00014e e60e
-00014f d41c
-000150 d424                      	do_lcd_data 'n'
-000151 e605
-000152 d419
-000153 d421                      	do_lcd_data 'e'
+000133 e506
+000134 d455
+000135 d45d                      	do_lcd_data 'V'
+000136 e605
+000137 d452
+000138 d45a                      	do_lcd_data 'e'
+000139 e60e
+00013a d44f
+00013b d457                      	do_lcd_data 'n'
+00013c e604
+00013d d44c
+00013e d454                      	do_lcd_data 'd'
+00013f e609
+000140 d449
+000141 d451                      	do_lcd_data 'i'
+000142 e60e
+000143 d446
+000144 d44e                      	do_lcd_data 'n'
+000145 e607
+000146 d443
+000147 d44b                      	do_lcd_data 'g'
+000148 e200
+000149 d440
+00014a d448                      	do_lcd_data ' '
+00014b e40d
+00014c d43d
+00014d d445                      	do_lcd_data 'M'
+00014e e601
+00014f d43a
+000150 d442                      	do_lcd_data 'a'
+000151 e603
+000152 d437
+000153 d43f                      	do_lcd_data 'c'
+000154 e608
+000155 d434
+000156 d43c                      	do_lcd_data 'h'
+000157 e609
+000158 d431
+000159 d439                      	do_lcd_data 'i'
+00015a e60e
+00015b d42e
+00015c d436                      	do_lcd_data 'n'
+00015d e605
+00015e d42b
+00015f d433                      	do_lcd_data 'e'
                                  
-000154 c001                      	rjmp KeypadLoop
+000160 c001                      	rjmp KeypadLoop
                                  
                                  halt:
-000155 cfff                      	rjmp halt
+000161 cfff                      	rjmp halt
                                  
                                  
                                  .include "modules/keypad.asm"
                                  
+                                 
+                                 ;listens for keypad input. self-explanatory.
+                                 
                                  KeypadLoop:
                                  
-000156 ee3f                      	ldi cmask, INITCOLMASK ; initial column mask
-000157 2755                      	clr col ; initial column
+000162 ee3f                      	ldi cmask, INITCOLMASK ; initial column mask
+000163 2755                      	clr col ; initial column
                                  
                                  
                                  colloop:
                                  
-000158 3054                      	cpi col, 4
-000159 f3e1                      	breq KeypadLoop ; If all keys are scanned, repeat.
-00015a 9330 010b                 	sts PORTL, cmask ; Otherwise, scan a column.
-00015c ef0f                      	ldi temp1, 0xFF ; Slow down the scan operation.
-00015d 950a                      	delay: dec temp1
-00015e f7f1                      	brne delay  //assuming this counts down to 0 from 255, otherwise, idk.
-00015f 9100 0109                 	lds temp1, PINL ; Read PORTA
-000161 700f                      	andi temp1, ROWMASK ; Get the keypad output value
-000162 300f                      	cpi temp1, 0xF ; Check if any row is low??? 0b1101
-000163 f059                      	breq nextcol ; If yes, find which row is low
-000164 e021                      	ldi rmask, INITROWMASK ; Initialize for row check
-000165 2744                      	clr row ;
+000164 3054                      	cpi col, 4
+000165 f3e1                      	breq KeypadLoop ; If all keys are scanned, repeat.
+000166 9330 010b                 	sts PORTL, cmask ; Otherwise, scan a column.
+000168 ef0f                      	ldi temp1, 0xFF ; Slow down the scan operation.
+000169 950a                      	delay: dec temp1
+00016a f7f1                      	brne delay  //assuming this counts down to 0 from 255, otherwise, idk.
+00016b 9100 0109                 	lds temp1, PINL ; Read PORTA
+00016d 700f                      	andi temp1, ROWMASK ; Get the keypad output value
+00016e 300f                      	cpi temp1, 0xF ; Check if any row is low??? 0b1101
+00016f f059                      	breq nextcol ; If yes, find which row is low
+000170 e021                      	ldi rmask, INITROWMASK ; Initialize for row check
+000171 2744                      	clr row ;
                                  
                                  
                                  rowloop:
                                  
-000166 3044                      	cpi row, 4
-000167 f039                      	breq nextcol ; the row scan is over.
-000168 2f60                      	mov temp2, temp1
-000169 2362                      	and temp2, rmask ; check un-masked bit
-00016a f099                      	breq convert ; if bit is clear, the key is pressed
-00016b 9543                      	inc row ; else move to the next row
-00016c 0f22                      	lsl rmask
-00016d 940c 0166                 	jmp rowloop
+000172 3044                      	cpi row, 4
+000173 f039                      	breq nextcol ; the row scan is over.
+000174 2f60                      	mov temp2, temp1
+000175 2362                      	and temp2, rmask ; check un-masked bit
+000176 f099                      	breq convert ; if bit is clear, the key is pressed
+000177 9543                      	inc row ; else move to the next row
+000178 0f22                      	lsl rmask
+000179 940c 0172                 	jmp rowloop
                                  	nextcol: ; if row scan is over
-00016f 0f33                      	lsl cmask
-000170 9533                      	inc cmask
-000171 9553                      	inc col ; increase column value
-000172 940c 0158                 	jmp colloop ; go to the next column
+00017b 0f33                      	lsl cmask
+00017c 9533                      	inc cmask
+00017d 9553                      	inc col ; increase column value
+00017e 940c 0164                 	jmp colloop ; go to the next column
                                  
                                  SetZero:
                                  
-000174 2f08                      	mov temp1, temp4
-000175 5d00                      	subi temp1,-'0'
+000180 2f08                      	mov temp1, temp4
+000181 5d00                      	subi temp1,-'0'
                                  	
-000176 d34a                      	rcall returnInventory
+000182 d353                      	rcall returnInventory
                                  
-000177 2700                      	clr temp1
-000178 8300                      	st Z, temp1
+000183 2700                      	clr temp1
+000184 8300                      	st Z, temp1
                                  
-000179 2f08                      	mov temp1, temp4
-00017a 5d00                      	subi temp1, -'0'
-00017b d41e                      	rcall sleep_100ms
-00017c d38d                      	rcall adminMode
-00017d cfd8                      	rjmp KeypadLoop
+000185 2f08                      	mov temp1, temp4
+000186 5d00                      	subi temp1, -'0'
+000187 d430                      	rcall sleep_100ms
+000188 d396                      	rcall adminMode
+000189 cfd8                      	rjmp KeypadLoop
                                  
                                  convert:
                                  
-00017e 3053                      	cpi col, 3 ; If the pressed key is in col.3
-00017f f059                      	breq letters ; we have a letter
+00018a 3053                      	cpi col, 3 ; If the pressed key is in col.3
+00018b f059                      	breq letters ; we have a letter
                                  	; If the key is not in col.3 and
-000180 3043                      	cpi row, 3 ; If the key is in row3,
-000181 f171                      	breq symbols ; we have a symbol or 0
-000182 2f04                      	mov temp1, row ; Otherwise we have a number in 1-9
-000183 0f00                      	lsl temp1
-000184 0f04                      	add temp1, row
-000185 0f05                      	add temp1, col ; temp1 = row*3 + col
-000186 5c0f                      	subi temp1, -'1' ; Add the value of character ‘1’    //key pressed is saved as ascii
-000187 30b1                      	cpi r27,1
-000188 f1d9                      	breq Adminjmp
-000189 940c 023d                 	jmp checkEmpty
+00018c 3043                      	cpi row, 3 ; If the key is in row3,
+00018d f171                      	breq symbols ; we have a symbol or 0
+00018e 2f04                      	mov temp1, row ; Otherwise we have a number in 1-9
+00018f 0f00                      	lsl temp1
+000190 0f04                      	add temp1, row
+000191 0f05                      	add temp1, col ; temp1 = row*3 + col
+000192 5c0f                      	subi temp1, -'1' ; Add the value of character ‘1’    //key pressed is saved as ascii
+000193 30b1                      	cpi r27,1
+000194 f1d9                      	breq Adminjmp
+000195 940c 0249                 	jmp checkEmpty
                                  
                                  
                                  
                                  letters:
                                  	
-00018b e302                      	ldi temp1, 0b00110010
-00018c 0f04                      	add temp1, row
+000197 e302                      	ldi temp1, 0b00110010
+000198 0f04                      	add temp1, row
                                  
-00018d 30b1                      	cpi r27, 1
-00018e f5c1                      	brne convert_end
+000199 30b1                      	cpi r27, 1
+00019a f5c1                      	brne convert_end
                                  	
-00018f 3040                      	cpi row,0
-000190 f029                      	breq IncreaseCost
-000191 3041                      	cpi row,1
-000192 f081                      	breq DecreaseCost
-000193 3042                      	cpi row,2
-000194 f2f9                      	breq SetZero
+00019b 3040                      	cpi row,0
+00019c f029                      	breq IncreaseCost
+00019d 3041                      	cpi row,1
+00019e f081                      	breq DecreaseCost
+00019f 3042                      	cpi row,2
+0001a0 f2f9                      	breq SetZero
                                  
-000195 cfc0                      	rjmp KeypadLoop
+0001a1 cfc0                      	rjmp KeypadLoop
                                  	
-                                 IncreaseCost:
+                                 IncreaseCost:     ;helper functions for admin mode.
                                  	
-000196 2f08                      	mov temp1, temp4
-000197 5d00                      	subi temp1,-'0'
+0001a2 2f08                      	mov temp1, temp4
+0001a3 5d00                      	subi temp1,-'0'
                                  	
-000198 d328                      	rcall returnInventory
+0001a4 d331                      	rcall returnInventory
                                  
-000199 8108                      	ld temp1, Y
-00019a 3003                      	cpi temp1, 3
-00019b f159                      	breq convert_end
+0001a5 8108                      	ld temp1, Y
+0001a6 3003                      	cpi temp1, 3
+0001a7 f159                      	breq convert_end
                                  
-00019c 9503                      	inc temp1
-00019d 8308                      	st Y, temp1
+0001a8 9503                      	inc temp1
+0001a9 8308                      	st Y, temp1
                                  
-00019e 2f08                      	mov temp1, temp4
-00019f 5d00                      	subi temp1, -'0'
-0001a0 d3f9                      	rcall sleep_100ms
+0001aa 2f08                      	mov temp1, temp4
+0001ab 5d00                      	subi temp1, -'0'
+0001ac d40b                      	rcall sleep_100ms
                                  	
-0001a1 d368                      	rcall adminMode
-0001a2 cfb3                      	rjmp KeypadLoop
+0001ad d371                      	rcall adminMode
+0001ae cfb3                      	rjmp KeypadLoop
                                  
-                                 DecreaseCost:
+                                 DecreaseCost:    ;helper functions for admin mode.
                                  	
-0001a3 2f08                      	mov temp1, temp4
-0001a4 5d00                      	subi temp1,-'0'
+0001af 2f08                      	mov temp1, temp4
+0001b0 5d00                      	subi temp1,-'0'
                                  	
-0001a5 d31b                      	rcall returnInventory
+0001b1 d324                      	rcall returnInventory
                                  
-0001a6 8108                      	ld temp1, Y
-0001a7 3001                      	cpi temp1, 1
-0001a8 f0f1                      	breq convert_end
+0001b2 8108                      	ld temp1, Y
+0001b3 3001                      	cpi temp1, 1
+0001b4 f0f1                      	breq convert_end
                                  
-0001a9 950a                      	dec temp1
-0001aa 8308                      	st Y, temp1
+0001b5 950a                      	dec temp1
+0001b6 8308                      	st Y, temp1
                                  
-0001ab 2f08                      	mov temp1, temp4
-0001ac 5d00                      	subi temp1, -'0'
-0001ad d3ec                      	rcall sleep_100ms
-0001ae d35b                      	rcall adminMode
-0001af cfa6                      	rjmp KeypadLoop
+0001b7 2f08                      	mov temp1, temp4
+0001b8 5d00                      	subi temp1, -'0'
+0001b9 d3fe                      	rcall sleep_100ms
+0001ba d364                      	rcall adminMode
+0001bb cfa6                      	rjmp KeypadLoop
                                  
                                  
                                  symbols:
                                  
-0001b0 3050                      	cpi col, 0 ; Check if we have a star
-0001b1 f041                      	breq star
-0001b2 3051                      	cpi col, 1 ; or if we have zero
-0001b3 f091                      	breq zero
-0001b4 e203                      	ldi temp1, '#'
-0001b5 30b1                      	cpi r27,1
-0001b6 f481                      	brne convert_end
-0001b7 2799                      	clr flag1
-0001b8 27bb                      	clr r27
-0001b9 c124                      	rjmp DisplaySelectScreen2
+0001bc 3050                      	cpi col, 0 ; Check if we have a star
+0001bd f041                      	breq star
+0001be 3051                      	cpi col, 1 ; or if we have zero
+0001bf f091                      	breq zero
+0001c0 e203                      	ldi temp1, '#'
+0001c1 30b1                      	cpi r27,1
+0001c2 f481                      	brne convert_end
+0001c3 2799                      	clr flag1
+0001c4 27bb                      	clr r27
+0001c5 c124                      	rjmp DisplaySelectScreen2
                                  	
                                  
                                  star:
                                  
                                  	;ldi temp1,'*'
                                  	
-0001ba 3091                      	cpi flag1,1
-0001bb f021                      	breq Flag2Check
+0001c6 3091                      	cpi flag1,1
+0001c7 f021                      	breq Flag2Check
                                  	
-0001bc e091                      	ldi flag1, 1
+0001c8 e091                      	ldi flag1, 1
                                  	
-0001bd e071                      	ldi temp3, 1<<TOIE1 ;start timer.
-0001be 9370 006f                 	sts TIMSK1, temp3
+0001c9 e071                      	ldi temp3, 1<<TOIE1 ;start timer.
+0001ca 9370 006f                 	sts TIMSK1, temp3
                                  
                                  	Flag2Check:
-0001c0 30a1                      	cpi r26,1
-0001c1 f039                      	breq adminModeInitialJump ;this mode should clear r26 and flag1
+0001cc 30a1                      	cpi r26,1
+0001cd f039                      	breq adminModeInitialJump ;this mode should clear r26 and flag1
                                  	
                                  	;out PORTC, temp1 ; Write value to PORTC
-0001c2 940c 0156                 	jmp KeypadLoop
+0001ce 940c 0162                 	jmp KeypadLoop
                                  
                                  Adminjmp:
-0001c4 d345                      	rcall adminMode
-0001c5 cf90                      	rjmp KeypadLoop
+0001d0 d34e                      	rcall adminMode
+0001d1 cf90                      	rjmp KeypadLoop
                                  
                                  zero:
                                  
-0001c6 e300                      	ldi temp1, '0' ; Set to zero
+0001d2 e300                      	ldi temp1, '0' ; Set to zero
                                  
                                  convert_end:
                                  
                                  	;out PORTC, temp1 ; Write value to PORTC
-0001c7 940c 0156                 	jmp KeypadLoop ; Restart KeypadLoop loop
+0001d3 940c 0162                 	jmp KeypadLoop ; Restart KeypadLoop loop
                                  
                                  .equ LCD_RS = 7
                                  .equ LCD_E = 6
@@ -2533,108 +2553,88 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
                                  
                                  adminModeInitialJump:
                                  	
-0001c9 2777                      	clr temp3
-0001ca 9370 006f                 	sts TIMSK1, temp3
-0001cc 2799                      	clr flag1
-0001cd 27aa                      	clr r26
-0001ce 940c 0463                 	jmp adminModeInitial
+0001d5 2777                      	clr temp3
+0001d6 9370 006f                 	sts TIMSK1, temp3
+0001d8 2799                      	clr flag1
+0001d9 27aa                      	clr r26
+0001da 940c 046f                 	jmp adminModeInitial
                                  
                                  Timer0: ;Timer overflow 0
                                  
-0001d0 e091                      	ldi flag1,1
+0001dc e091                      	ldi flag1,1
                                  
-0001d1 b70f                      	in temp1, SREG
-0001d2 930f                      	push temp1
-                                 
-0001d3 9513                      	inc timerCounter
-                                 
-0001d4 3c10                      	cpi timerCounter,192
-0001d5 f1c1                      	breq displaySelectScreen
-                                 
-0001d6 910f                      	pop temp1
-0001d7 bf0f                      	out SREG, temp1
-                                 
-0001d8 9518                      	reti
-                                 
-                                 Timer1:
-                                 
-0001d9 933f                      	push cmask
-0001da 932f                      	push rmask
-0001db 930f                      	push temp1
-0001dc 936f                      	push temp2
-0001dd b70f                      	in temp1,SREG
+0001dd b70f                      	in temp1, SREG
 0001de 930f                      	push temp1
-                                 
-                                 	
                                  
 0001df 9513                      	inc timerCounter
                                  
+0001e0 3c10                      	cpi timerCounter,192
+0001e1 f1c1                      	breq displaySelectScreen
                                  
-0001e0 ee3f                      	ldi cmask, INITCOLMASK ; initial column mask
+0001e2 910f                      	pop temp1
+0001e3 bf0f                      	out SREG, temp1
                                  
-0001e1 9330 010b                 	sts PORTL, cmask ; Otherwise, scan a column.
+0001e4 9518                      	reti
+                                 
+                                 Timer1:
+                                 
+0001e5 933f                      	push cmask
+0001e6 932f                      	push rmask
+0001e7 930f                      	push temp1
+0001e8 936f                      	push temp2
+0001e9 b70f                      	in temp1,SREG
+0001ea 930f                      	push temp1
+                                 
                                  	
-0001e3 ef0f                      	ldi temp1, 0xFF ; Slow down the scan operation.
-0001e4 950a                      	Hashdelay: dec temp1
-0001e5 f7f1                      	brne Hashdelay  //assuming this counts down to 0 from 255, otherwise, idk.
+                                 
+0001eb 9513                      	inc timerCounter
+                                 
+                                 
+0001ec ee3f                      	ldi cmask, INITCOLMASK ; initial column mask
+                                 
+0001ed 9330 010b                 	sts PORTL, cmask ; Otherwise, scan a column.
                                  	
-0001e6 9100 0109                 	lds temp1, PINL ; Read PORTA
-0001e8 700f                      	andi temp1, ROWMASK ; Get the keypad output value
-0001e9 300f                      	cpi temp1, 0xF ; Check if any row is low???
-0001ea f0b9                      	breq Released ; If yes, find which row is low
+0001ef ef0f                      	ldi temp1, 0xFF ; Slow down the scan operation.
+0001f0 950a                      	Hashdelay: dec temp1
+0001f1 f7f1                      	brne Hashdelay  //assuming this counts down to 0 from 255, otherwise, idk.
                                  	
-0001eb e021                      	ldi rmask, INITROWMASK ; Initialize for row check
+0001f2 9100 0109                 	lds temp1, PINL ; Read PORTA
+0001f4 700f                      	andi temp1, ROWMASK ; Get the keypad output value
+0001f5 300f                      	cpi temp1, 0xF ; Check if any row is low???
+0001f6 f0b9                      	breq Released ; If yes, find which row is low
+                                 	
+0001f7 e021                      	ldi rmask, INITROWMASK ; Initialize for row check
                                  
-0001ec 0f22                      	lsl rmask
-0001ed 0f22                      	lsl rmask
-0001ee 0f22                      	lsl rmask
+0001f8 0f22                      	lsl rmask
+0001f9 0f22                      	lsl rmask
+0001fa 0f22                      	lsl rmask
                                  
-0001ef 2f60                      	mov temp2, temp1
-0001f0 2362                      	and temp2, rmask
-0001f1 f009                      	breq StillPressed 
+0001fb 2f60                      	mov temp2, temp1
+0001fc 2362                      	and temp2, rmask
+0001fd f009                      	breq StillPressed 
                                  
-0001f2 c00f                      	rjmp Released
+0001fe c00f                      	rjmp Released
                                  	
                                  StillPressed:
                                  
-0001f3 9513                      	inc timerCounter
+0001ff 9513                      	inc timerCounter
                                  
                                  	
                                  	;out PORTC, TimerCounter
                                  	
-0001f4 3119                      	cpi timerCounter, 25
-0001f5 f028                      	brlo Finish
+000200 3119                      	cpi timerCounter, 25
+000201 f028                      	brlo Finish
                                  		
                                  	;ldi temp1, 0b11110000
                                  	;out PORTC, temp1
                                  
-0001f6 e0a1                      	ldi r26,1
-0001f7 2777                      	clr temp3
-0001f8 9370 006f                 	sts TIMSK1, temp3
-                                 
-0001fa 2711                      	clr timerCounter
-                                 
-                                 	Finish:
-                                 
-0001fb 910f                      	pop temp1
-0001fc bf0f                      	out SREG, temp1
-0001fd 916f                      	pop temp2
-0001fe 910f                      	pop temp1
-0001ff 912f                      	pop rmask
-000200 913f                      	pop cmask
-                                 
-000201 9518                      	reti
-                                 
-                                 Released:
-                                 	
-000202 2777                      	clr temp3
-000203 9370 006f                 	sts TIMSK1, temp3
-000205 2799                      	clr flag1
+000202 e0a1                      	ldi r26,1
+000203 2777                      	clr temp3
+000204 9370 006f                 	sts TIMSK1, temp3
                                  
 000206 2711                      	clr timerCounter
                                  
-                                 	;ldi temp1, 0b11111111
-                                 	;out PORTC, temp1
+                                 	Finish:
                                  
 000207 910f                      	pop temp1
 000208 bf0f                      	out SREG, temp1
@@ -2642,800 +2642,797 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
 00020a 910f                      	pop temp1
 00020b 912f                      	pop rmask
 00020c 913f                      	pop cmask
-                                 	
+                                 
 00020d 9518                      	reti
+                                 
+                                 Released:
+                                 	
+00020e 2777                      	clr temp3
+00020f 9370 006f                 	sts TIMSK1, temp3
+000211 2799                      	clr flag1
+                                 
+000212 2711                      	clr timerCounter
+                                 
+                                 	;ldi temp1, 0b11111111
+                                 	;out PORTC, temp1
+                                 
+000213 910f                      	pop temp1
+000214 bf0f                      	out SREG, temp1
+000215 916f                      	pop temp2
+000216 910f                      	pop temp1
+000217 912f                      	pop rmask
+000218 913f                      	pop cmask
+                                 	
+000219 9518                      	reti
                                  
                                  displaySelectScreen:
                                  
-00020e 2711                      	clr timerCounter
-00020f 2799                      	clr flag1
+00021a 2711                      	clr timerCounter
+00021b 2799                      	clr flag1
                                  
-000210 2722                      	clr r18 
-000211 9320 006e                 	sts TIMSK0, r18 ; turn off timer.
+00021c 2722                      	clr r18 
+00021d 9320 006e                 	sts TIMSK0, r18 ; turn off timer.
                                  
-000213 e001
-000214 d350
-000215 d35f                      	do_lcd_command 0b00000001
-                                  ; clear display
-000216 e800
-000217 d34d
-000218 d35c                       do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+00021f e001
+000220 d362
+000221 d371                      	do_lcd_command 0b00000001
+                                  	; clear display
+000222 e800
+000223 d35f
+000224 d36e                      	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
                                  
-000219 e503
-00021a d351
-00021b d359                       do_lcd_data 'S'
-00021c e605
-00021d d34e
-00021e d356                       do_lcd_data 'e'
-00021f e60c
-000220 d34b
-000221 d353                       do_lcd_data 'l'
-000222 e605
-000223 d348
-000224 d350                       do_lcd_data 'e'
-000225 e603
-000226 d345
-000227 d34d                       do_lcd_data 'c'
-000228 e704
-000229 d342
-00022a d34a                       do_lcd_data 't'
-00022b e200
-00022c d33f
-00022d d347                       do_lcd_data ' '
-00022e e609
-00022f d33c
-000230 d344                       do_lcd_data 'i'
-000231 e704
-000232 d339
-000233 d341                       do_lcd_data 't'
-000234 e605
-000235 d336
-000236 d33e                       do_lcd_data 'e'
-000237 e60d
-000238 d333
-000239 d33b                       do_lcd_data 'm'
+000225 e503
+000226 d363
+000227 d36b                       	do_lcd_data 'S'
+000228 e605
+000229 d360
+00022a d368                       	do_lcd_data 'e'
+00022b e60c
+00022c d35d
+00022d d365                       	do_lcd_data 'l'
+00022e e605
+00022f d35a
+000230 d362                       	do_lcd_data 'e'
+000231 e603
+000232 d357
+000233 d35f                       	do_lcd_data 'c'
+000234 e704
+000235 d354
+000236 d35c                       	do_lcd_data 't'
+000237 e200
+000238 d351
+000239 d359                       	do_lcd_data ' '
+00023a e609
+00023b d34e
+00023c d356                       	do_lcd_data 'i'
+00023d e704
+00023e d34b
+00023f d353                       	do_lcd_data 't'
+000240 e605
+000241 d348
+000242 d350                       	do_lcd_data 'e'
+000243 e60d
+000244 d345
+000245 d34d                       	do_lcd_data 'm'
                                  
-00023a 910f                       pop temp1
-00023b bf0f                       out SREG, temp1
+000246 910f                       	pop temp1
+000247 bf0f                       	out SREG, temp1
                                  
-00023c 9518                       reti
+000248 9518                       	reti
                                  
                                  .include "modules/emptyScreen.asm"
                                  
                                  checkEmpty:
-                                 //temp1 is ascii
-00023d 930f                       push temp1
-00023e 5300                       subi temp1, '0'
-00023f 3001                       cpi temp1, 1
-000240 f081                       breq check1
-000241 3002                       cpi temp1, 2
-000242 f0a9                       breq check2
-000243 3003                       cpi temp1, 3
-000244 f0d1                       breq check3
-000245 3004                       cpi temp1, 4
-000246 f0f9                       breq check4
-000247 3005                       cpi temp1, 5
-000248 f121                       breq check5
-000249 3006                       cpi temp1, 6
-00024a f149                       breq check6
-00024b 3007                       cpi temp1, 7
-00024c f171                       breq check7
-00024d 3008                       cpi temp1, 8
-00024e f199                       breq check8
-00024f 3009                       cpi temp1, 9
-000250 f1c1                       breq check9
+                                    //temp1 is ascii
+000249 930f                         push temp1
+00024a 5300                         subi temp1, '0'
+00024b 3001                         cpi temp1, 1
+00024c f081                         breq check1
+00024d 3002                         cpi temp1, 2
+00024e f0a9                         breq check2
+00024f 3003                         cpi temp1, 3
+000250 f0d1                         breq check3
+000251 3004                         cpi temp1, 4
+000252 f0f9                         breq check4
+000253 3005                         cpi temp1, 5
+000254 f121                         breq check5
+000255 3006                         cpi temp1, 6
+000256 f149                         breq check6
+000257 3007                         cpi temp1, 7
+000258 f171                         breq check7
+000259 3008                         cpi temp1, 8
+00025a f199                         breq check8
+00025b 3009                         cpi temp1, 9
+00025c f1c1                         breq check9
                                  
-                                  check1:
-000251 e0e0                       ldi ZL, low(item1)
-000252 e0f2                       ldi ZH, high(item1)
-000253 8160                       ld temp2, Z
-000254 910f                       pop temp1
-000255 3060                       cpi temp2, 0
-000256 f1c9                       breq EmptyScreen
-000257 c0b2                       rjmp CoinScreen
-                                  check2:
-000258 e0e2                       ldi ZL, low(item2)
-000259 e0f2                       ldi ZH, high(item2)
-00025a 8160                       ld temp2, Z
-00025b 910f                       pop temp1
-00025c 3060                       cpi temp2, 0
-00025d f191                       breq EmptyScreen
-00025e c0ab                       rjmp CoinScreen
-                                  check3:
-00025f e0e4                       ldi ZL, low(item3)
-000260 e0f2                       ldi ZH, high(item3)
-000261 8160                       ld temp2, Z
-000262 910f                       pop temp1
-000263 3060                       cpi temp2, 0
-000264 f159                       breq EmptyScreen
-000265 c0a4                       rjmp CoinScreen
-                                  check4:
-000266 e0e6                       ldi ZL, low(item4)
-000267 e0f2                       ldi ZH, high(item4)
-000268 8160                       ld temp2, Z
-000269 910f                       pop temp1
-00026a 3060                       cpi temp2, 0
-00026b f121                       breq EmptyScreen
-00026c c09d                       rjmp CoinScreen
-                                  check5:
-00026d e0e8                       ldi ZL, low(item5)
-00026e e0f2                       ldi ZH, high(item5)
-00026f 8160                       ld temp2, Z
-000270 910f                       pop temp1
-000271 3060                       cpi temp2, 0
-000272 f0e9                       breq EmptyScreen
-000273 c096                       rjmp CoinScreen
-                                  check6:
-000274 e0ea                       ldi ZL, low(item6)
-000275 e0f2                       ldi ZH, high(item6)
-000276 8160                       ld temp2, Z
-000277 910f                       pop temp1
-000278 3060                       cpi temp2, 0
-000279 f0b1                       breq EmptyScreen
-00027a c08f                       rjmp CoinScreen
-                                  check7:
-00027b e0ec                       ldi ZL, low(item7)
-00027c e0f2                       ldi ZH, high(item7)
-00027d 8160                       ld temp2, Z
-00027e 910f                       pop temp1
-00027f 3060                       cpi temp2, 0
-000280 f079                       breq EmptyScreen
-000281 c088                       rjmp CoinScreen
-                                  check8:
-000282 e0ee                       ldi ZL, low(item8)
-000283 e0f2                       ldi ZH, high(item8)
-000284 8160                       ld temp2, Z
-000285 910f                       pop temp1
-000286 3060                       cpi temp2, 0
-000287 f041                       breq EmptyScreen
-000288 c081                       rjmp CoinScreen
-                                  check9:
-000289 e1e0                       ldi ZL, low(item9)
-00028a e0f2                       ldi ZH, high(item9)
-00028b 8160                       ld temp2, Z
-00028c 910f                       pop temp1
-00028d 3060                       cpi temp2, 0
-00028e f009                       breq EmptyScreen
-00028f c07a                       rjmp CoinScreen
+                                    check1:
+00025d e0e0                           ldi ZL, low(item1)
+00025e e0f2                           ldi ZH, high(item1)
+00025f 8160                           ld temp2, Z
+000260 910f                           pop temp1
+000261 3060                           cpi temp2, 0
+000262 f1c9                           breq EmptyScreen
+000263 c0b2                          rjmp CoinScreen
+                                    check2:
+000264 e0e2                           ldi ZL, low(item2)
+000265 e0f2                           ldi ZH, high(item2)
+000266 8160                           ld temp2, Z
+000267 910f                           pop temp1
+000268 3060                           cpi temp2, 0
+000269 f191                           breq EmptyScreen
+00026a c0ab                           rjmp CoinScreen
+                                    check3:
+00026b e0e4                           ldi ZL, low(item3)
+00026c e0f2                           ldi ZH, high(item3)
+00026d 8160                           ld temp2, Z
+00026e 910f                           pop temp1
+00026f 3060                           cpi temp2, 0
+000270 f159                           breq EmptyScreen
+000271 c0a4                           rjmp CoinScreen
+                                    check4:
+000272 e0e6                           ldi ZL, low(item4)
+000273 e0f2                           ldi ZH, high(item4)
+000274 8160                           ld temp2, Z
+000275 910f                           pop temp1
+000276 3060                           cpi temp2, 0
+000277 f121                           breq EmptyScreen
+000278 c09d                           rjmp CoinScreen
+                                    check5:
+000279 e0e8                           ldi ZL, low(item5)
+00027a e0f2                           ldi ZH, high(item5)
+00027b 8160                           ld temp2, Z
+00027c 910f                           pop temp1
+00027d 3060                           cpi temp2, 0
+00027e f0e9                           breq EmptyScreen
+00027f c096                           rjmp CoinScreen
+                                    check6:
+000280 e0ea                           ldi ZL, low(item6)
+000281 e0f2                           ldi ZH, high(item6)
+000282 8160                           ld temp2, Z
+000283 910f                           pop temp1
+000284 3060                           cpi temp2, 0
+000285 f0b1                           breq EmptyScreen
+000286 c08f                           rjmp CoinScreen
+                                    check7:
+000287 e0ec                           ldi ZL, low(item7)
+000288 e0f2                           ldi ZH, high(item7)
+000289 8160                           ld temp2, Z
+00028a 910f                           pop temp1
+00028b 3060                           cpi temp2, 0
+00028c f079                           breq EmptyScreen
+00028d c088                           rjmp CoinScreen
+                                    check8:
+00028e e0ee                          ldi ZL, low(item8)
+00028f e0f2                          ldi ZH, high(item8)
+000290 8160                          ld temp2, Z
+000291 910f                          pop temp1
+000292 3060                          cpi temp2, 0
+000293 f041                          breq EmptyScreen
+000294 c081                          rjmp CoinScreen
+                                    check9:
+000295 e1e0                          ldi ZL, low(item9)
+000296 e0f2                          ldi ZH, high(item9)
+000297 8160                          ld temp2, Z
+000298 910f                          pop temp1
+000299 3060                          cpi temp2, 0
+00029a f009                          breq EmptyScreen
+00029b c07a                          rjmp CoinScreen
                                  
                                   
                                  EmptyScreen:
                                   
-000290 930f                       push temp1
+00029c 930f                          push temp1
                                  
-000291 e001
-000292 d2d2
-000293 d2e1                       do_lcd_command 0b00000001
-000294 e40f
-000295 d2d6
-000296 d2de                       do_lcd_data 'O'
-000297 e705
-000298 d2d3
-000299 d2db                       do_lcd_data 'u'
-00029a e704
-00029b d2d0
-00029c d2d8                       do_lcd_data 't'
-00029d e200
-00029e d2cd
-00029f d2d5                       do_lcd_data ' '
-0002a0 e60f
-0002a1 d2ca
-0002a2 d2d2                       do_lcd_data 'o'
-0002a3 e606
-0002a4 d2c7
-0002a5 d2cf                       do_lcd_data 'f'
-0002a6 e200
-0002a7 d2c4
-0002a8 d2cc                       do_lcd_data ' '
-0002a9 e703
-0002aa d2c1
-0002ab d2c9                       do_lcd_data 's'
-0002ac e704
-0002ad d2be
-0002ae d2c6                       do_lcd_data 't'
-0002af e60f
-0002b0 d2bb
-0002b1 d2c3                       do_lcd_data 'o'
-0002b2 e603
-0002b3 d2b8
-0002b4 d2c0                       do_lcd_data 'c'
-0002b5 e60b
-0002b6 d2b5
-0002b7 d2bd                       do_lcd_data 'k'
+00029d e001
+00029e d2e4
+00029f d2f3                          do_lcd_command 0b00000001
+0002a0 e40f
+0002a1 d2e8
+0002a2 d2f0                          do_lcd_data 'O'
+0002a3 e705
+0002a4 d2e5
+0002a5 d2ed                          do_lcd_data 'u'
+0002a6 e704
+0002a7 d2e2
+0002a8 d2ea                          do_lcd_data 't'
+0002a9 e200
+0002aa d2df
+0002ab d2e7                          do_lcd_data ' '
+0002ac e60f
+0002ad d2dc
+0002ae d2e4                          do_lcd_data 'o'
+0002af e606
+0002b0 d2d9
+0002b1 d2e1                          do_lcd_data 'f'
+0002b2 e200
+0002b3 d2d6
+0002b4 d2de                          do_lcd_data ' '
+0002b5 e703
+0002b6 d2d3
+0002b7 d2db                          do_lcd_data 's'
+0002b8 e704
+0002b9 d2d0
+0002ba d2d8                          do_lcd_data 't'
+0002bb e60f
+0002bc d2cd
+0002bd d2d5                          do_lcd_data 'o'
+0002be e603
+0002bf d2ca
+0002c0 d2d2                          do_lcd_data 'c'
+0002c1 e60b
+0002c2 d2c7
+0002c3 d2cf                          do_lcd_data 'k'
                                  
-0002b8 ea08
-0002b9 d2ab
-0002ba d2ba                       do_lcd_command 0b10101000
-0002bb 910f                       pop temp1
-0002bc 2f00
-0002bd d2ae
-0002be d2b6                       do_lcd_data_r temp1
+0002c4 ea08
+0002c5 d2bd
+0002c6 d2cc                          do_lcd_command 0b10101000
+0002c7 910f                          pop temp1
+0002c8 2f00
+0002c9 d2c0
+0002ca d2c8                          do_lcd_data_r temp1
                                  
-0002bf ef0f                       ser temp1
-0002c0 b908                       out PORTC, temp1
-0002c1 e002                       ldi temp1, TopLED
-0002c2 6001                       ori temp1, SecondLED
-0002c3 bb04                       out PORTG, temp1
-                                  
-0002c4 d2e2                       rcall sleep_500ms
-0002c5 2700                       clr temp1
-0002c6 b908                       out PORTC, temp1
-0002c7 bb04                       out PORTG, temp1
-                                  
-0002c8 d2de                       rcall sleep_500ms
-0002c9 ef0f                       ser temp1
-0002ca b908                       out PORTC, temp1
-0002cb e002                       ldi temp1, TopLED
-0002cc 6001                       ori temp1, SecondLED
-0002cd bb04                       out PORTG, temp1
-                                  
-0002ce d2d8                       rcall sleep_500ms
-0002cf 2700                       clr temp1
-0002d0 b908                       out PORTC, temp1
-0002d1 bb04                       out PORTG, temp1
+0002cb ef0f                          ser temp1                ; alternates flashing for 3 seconds.
+0002cc b908                          out PORTC, temp1
+0002cd e002                          ldi temp1, TopLED
+0002ce 6001                          ori temp1, SecondLED
+0002cf bb04                          out PORTG, temp1
                                  
-0002d2 d2d4                       rcall sleep_500ms
-0002d3 ef0f                       ser temp1
-0002d4 b908                       out PORTC, temp1
-0002d5 e002                       ldi temp1, TopLED
-0002d6 6001                       ori temp1, SecondLED
-0002d7 bb04                       out PORTG, temp1
+0002d0 d2f4                          rcall sleep_500ms       ; alternates flashing for 3 seconds.
+0002d1 2700                          clr temp1
+0002d2 b908                          out PORTC, temp1
+0002d3 bb04                          out PORTG, temp1
                                  
-0002d8 d2ce                       rcall sleep_500ms
-0002d9 2700                       clr temp1
-0002da b908                       out PORTC, temp1
-0002db bb04                       out PORTG, temp1
-                                  
-0002dc d2ca                       rcall sleep_500ms
-                                  
-                                  
-0002dd c000                       rjmp displaySelectScreen2
+0002d4 d2f0                          rcall sleep_500ms        ; alternates flashing for 3 seconds.
+0002d5 ef0f                          ser temp1
+0002d6 b908                          out PORTC, temp1
+0002d7 e002                          ldi temp1, TopLED
+0002d8 6001                          ori temp1, SecondLED
+0002d9 bb04                          out PORTG, temp1
+                                 
+0002da d2ea                          rcall sleep_500ms        ; alternates flashing for 3 seconds.
+0002db 2700                          clr temp1
+0002dc b908                          out PORTC, temp1
+0002dd bb04                          out PORTG, temp1
+                                 
+0002de d2e6                          rcall sleep_500ms        ; alternates flashing for 3 seconds.
+0002df ef0f                          ser temp1
+0002e0 b908                          out PORTC, temp1
+0002e1 e002                          ldi temp1, TopLED
+0002e2 6001                          ori temp1, SecondLED
+0002e3 bb04                          out PORTG, temp1
+                                 
+0002e4 d2e0                          rcall sleep_500ms         ; alternates flashing for 3 seconds.
+0002e5 2700                          clr temp1
+0002e6 b908                          out PORTC, temp1
+0002e7 bb04                          out PORTG, temp1
+                                 
+0002e8 d2dc                          rcall sleep_500ms
+                                 
+                                 
+0002e9 c000                          rjmp displaySelectScreen2
                                  
                                  
                                  displaySelectScreen2:
                                  
-0002de 2700                      clr temp1
-0002df b908                      out PORTC, temp1
-0002e0 bb04                      out PORTG, temp1
+0002ea 2700                      	clr temp1
+0002eb b908                      	out PORTC, temp1
+0002ec bb04                      	out PORTG, temp1
                                  
-0002e1 e001
-0002e2 d282
-0002e3 d291                       do_lcd_command 0b00000001 ; clear display
-0002e4 e800
-0002e5 d27f
-0002e6 d28e                       do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+0002ed e001
+0002ee d294
+0002ef d2a3                       	do_lcd_command 0b00000001 ; clear display
+0002f0 e800
+0002f1 d291
+0002f2 d2a0                       	do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
                                  
-0002e7 e503
-0002e8 d283
-0002e9 d28b                       do_lcd_data 'S'
-0002ea e605
-0002eb d280
-0002ec d288                       do_lcd_data 'e'
-0002ed e60c
-0002ee d27d
-0002ef d285                       do_lcd_data 'l'
-0002f0 e605
-0002f1 d27a
-0002f2 d282                       do_lcd_data 'e'
-0002f3 e603
-0002f4 d277
-0002f5 d27f                       do_lcd_data 'c'
-0002f6 e704
-0002f7 d274
-0002f8 d27c                       do_lcd_data 't'
-0002f9 e200
-0002fa d271
-0002fb d279                       do_lcd_data ' '
-0002fc e609
-0002fd d26e
-0002fe d276                       do_lcd_data 'i'
-0002ff e704
-000300 d26b
-000301 d273                       do_lcd_data 't'
-000302 e605
-000303 d268
-000304 d270                       do_lcd_data 'e'
-000305 e60d
-000306 d265
-000307 d26d                       do_lcd_data 'm'
+0002f3 e503
+0002f4 d295
+0002f5 d29d                       	do_lcd_data 'S'
+0002f6 e605
+0002f7 d292
+0002f8 d29a                       	do_lcd_data 'e'
+0002f9 e60c
+0002fa d28f
+0002fb d297                       	do_lcd_data 'l'
+0002fc e605
+0002fd d28c
+0002fe d294                       	do_lcd_data 'e'
+0002ff e603
+000300 d289
+000301 d291                       	do_lcd_data 'c'
+000302 e704
+000303 d286
+000304 d28e                       	do_lcd_data 't'
+000305 e200
+000306 d283
+000307 d28b                       	do_lcd_data ' '
+000308 e609
+000309 d280
+00030a d288                       	do_lcd_data 'i'
+00030b e704
+00030c d27d
+00030d d285                       	do_lcd_data 't'
+00030e e605
+00030f d27a
+000310 d282                       	do_lcd_data 'e'
+000311 e60d
+000312 d277
+000313 d27f                       	do_lcd_data 'm'
                                  
-000308 d29e                       rcall sleep_500ms
+000314 d2b0                       	rcall sleep_500ms
                                  
-000309 ce4c                       rjmp KeypadLoop
+000315 ce4c                       	rjmp KeypadLoop
                                  
                                  
                                  .include "modules/coinInsert.asm"
                                  
-                                 CoinScreen:
+                                 CoinScreen:  ; display screen
                                   
-00030a 930f                       push temp1
-00030b 2722                       clr r18 
-00030c 9320 006e                  sts TIMSK0, r18 ; turn off timer.
+000316 930f                         push temp1
+000317 2722                         clr r18 
+000318 9320 006e                    sts TIMSK0, r18 ; turn off timer.
                                  
-00030e e001
-00030f d255
-000310 d264                       do_lcd_command 0b00000001 ; clear display
-000311 e800
-000312 d252
-000313 d261                       do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
+00031a e001
+00031b d267
+00031c d276                         do_lcd_command 0b00000001 ; clear display
+00031d e800
+00031e d264
+00031f d273                         do_lcd_command 0b10000000 ;set cursor to addr 0 on LCD
                                  
-000314 e409
-000315 d256
-000316 d25e                       do_lcd_data 'I'
-000317 e60e
-000318 d253
-000319 d25b                       do_lcd_data 'n'
-00031a e703
-00031b d250
-00031c d258                       do_lcd_data 's'
-00031d e605
-00031e d24d
-00031f d255                       do_lcd_data 'e'
-000320 e702
-000321 d24a
-000322 d252                       do_lcd_data 'r'
-000323 e704
-000324 d247
-000325 d24f                       do_lcd_data 't'
-000326 e200
-000327 d244
-000328 d24c                       do_lcd_data ' '
-000329 e603
-00032a d241
-00032b d249                       do_lcd_data 'c'
-00032c e60f
-00032d d23e
-00032e d246                       do_lcd_data 'o'
-00032f e609
-000330 d23b
-000331 d243                       do_lcd_data 'i'
-000332 e60e
-000333 d238
-000334 d240                       do_lcd_data 'n'
-000335 e703
-000336 d235
-000337 d23d                       do_lcd_data 's'
-000338 e200
-000339 d232
-00033a d23a                       do_lcd_data ' '
-00033b e203
-00033c d22f
-00033d d237                       do_lcd_data '#'
-                                  ;subi temp1, -'1'
-00033e 910f                       pop temp1
-00033f 2f60                       mov temp2,temp1
-000340 930f                       push temp1
-000341 2f06
-000342 d229
-000343 d231                       do_lcd_data_r temp2
+000320 e409
+000321 d268
+000322 d270                         do_lcd_data 'I'
+000323 e60e
+000324 d265
+000325 d26d                         do_lcd_data 'n'
+000326 e703
+000327 d262
+000328 d26a                         do_lcd_data 's'
+000329 e605
+00032a d25f
+00032b d267                         do_lcd_data 'e'
+00032c e702
+00032d d25c
+00032e d264                         do_lcd_data 'r'
+00032f e704
+000330 d259
+000331 d261                         do_lcd_data 't'
+000332 e200
+000333 d256
+000334 d25e                         do_lcd_data ' '
+000335 e603
+000336 d253
+000337 d25b                         do_lcd_data 'c'
+000338 e60f
+000339 d250
+00033a d258                         do_lcd_data 'o'
+00033b e609
+00033c d24d
+00033d d255                         do_lcd_data 'i'
+00033e e60e
+00033f d24a
+000340 d252                         do_lcd_data 'n'
+000341 e703
+000342 d247
+000343 d24f                         do_lcd_data 's'
+000344 e200
+000345 d244
+000346 d24c                         do_lcd_data ' '
+000347 e203
+000348 d241
+000349 d249                         do_lcd_data '#'
+                                    ;subi temp1, -'1'
+00034a 910f                         pop temp1
+00034b 2f60                         mov temp2,temp1
+00034c 930f                         push temp1
+00034d 2f06
+00034e d23b
+00034f d243                         do_lcd_data_r temp2
                                   
-000344 ea08
-000345 d21f
-000346 d22e                       do_lcd_command 0b10101000
-000347 c000                       rjmp InsertCoin
+000350 ea08
+000351 d231
+000352 d240                         do_lcd_command 0b10101000
+000353 c000                         rjmp InsertCoin
                                  
                                   
                                  
-                                  .macro HashLoop
+                                  .macro HashLoop   ; a modified version of keypad loop that ONLY listens for the '#' character. Nothing else.
                                  
-                                  ldi cmask, INITCOLMASK ; initial column mask
-                                  lsl cmask
-                                  lsl cmask  //third column
+                                      ldi cmask, INITCOLMASK ; initial column mask
+                                      lsl cmask
+                                      lsl cmask  //third column
                                  
-                                  sts PORTL, cmask ; Otherwise, scan a column.
+                                      sts PORTL, cmask ; Otherwise, scan a column.
                                   
-                                  ldi temp1, 0xFF ; Slow down the scan operation.
-                                  Hashdelay: dec temp1
-                                  brne Hashdelay  //assuming this counts down to 0 from 255, otherwise, idk.
+                                      ldi temp1, 0xFF ; Slow down the scan operation.
+                                      Hashdelay: dec temp1
+                                        brne Hashdelay  
                                   
-                                  lds temp1, PINL ; Read PORTA
-                                  andi temp1, ROWMASK ; Get the keypad output value
-                                  cpi temp1, 0xF ; Check if any row is low???
-                                  breq @0 ; If yes, find which row is low
+                                      lds temp1, PINL ; Read PORTA
+                                      andi temp1, ROWMASK ; Get the keypad output value
+                                      cpi temp1, 0xF ; Check if any row is low???
+                                      breq @0 ; If yes, find which row is low
                                   
-                                  ldi rmask, INITROWMASK ; Initialize for row check
+                                      ldi rmask, INITROWMASK ; Initialize for row check
                                  
-                                  lsl rmask
-                                  lsl rmask
-                                  lsl rmask
+                                      lsl rmask
+                                      lsl rmask
+                                      lsl rmask
                                  
-                                  mov temp2, temp1
-                                  and temp2, rmask 
-                                  breq CoinReturn
+                                      mov temp2, temp1
+                                      and temp2, rmask 
+                                      breq CoinReturn
                                   
-                                  rjmp @0
+                                      rjmp @0
                                   .endmacro
                                  
-                                 InsertCoin:
+                                 InsertCoin:    ;coin screen that handles coin insertion.
                                   
-000348 910f                       pop temp1
+000354 910f                         pop temp1
                                  
-000349 d177                       rcall ReturnInventory
-00034a 8168                       ld temp2,Y
+000355 d180                         rcall ReturnInventory
+000356 8168                         ld temp2,Y
                                  
-00034b 930f                       push temp1
+000357 930f                         push temp1
                                  
-00034c 2788                       clr temp4
-00034d 2777                       clr temp3
-00034e b978                       out PORTC, temp3
-00034f ea08
-000350 d214
-000351 d223                       do_lcd_command 0b10101000
+000358 2788                         clr temp4
+000359 2777                         clr temp3
+00035a b978                         out PORTC, temp3
+00035b ea08
+00035c d226
+00035d d235                         do_lcd_command 0b10101000
                                   
-000352 2f06                       mov temp1,temp2
-000353 5d00                       subi temp1,-'0'
-000354 2f00
-000355 d216
-000356 d21e                       do_lcd_data_r temp1
+00035e 2f06                         mov temp1,temp2
+00035f 5d00                         subi temp1,-'0'
+000360 2f00
+000361 d228
+000362 d230                         do_lcd_data_r temp1
                                  
-                                  FirstZeroLoop:
-000357 930f                       push temp1
-000358 936f                       push temp2
+                                  FirstZeroLoop:  ;listens for coin or hashkey inputs
+000363 930f                           push temp1
+000364 936f                           push temp2
                                  
-000359 ee3f
-00035a 0f33
-00035b 0f33
-00035c 9330 010b
-00035e ef0f
-00035f 950a
-000360 f7f1
-000361 9100 0109
-000363 700f
-000364 300f
-000365 f041
-000366 e021
-000367 0f22
-000368 0f22
-000369 0f22
-00036a 2f60
-00036b 2362
-00036c f141
-00036d c000                       HashLoop Loop2c
-                                  Loop2c:
+000365 ee3f
+000366 0f33
+000367 0f33
+000368 9330 010b
+00036a ef0f
+00036b 950a
+00036c f7f1
+00036d 9100 0109
+00036f 700f
+000370 300f
+000371 f041
+000372 e021
+000373 0f22
+000374 0f22
+000375 0f22
+000376 2f60
+000377 2362
+000378 f141
+000379 c000                           HashLoop Loop2c
+                                      Loop2c:
                                  
-00036e 916f                       pop temp2 
-00036f 910f                       pop temp1 
+00037a 916f                               pop temp2 
+00037b 910f                               pop temp1 
                                  
-000370 9100 0106                  lds temp1, PINK
-000372 7001                       andi temp1, 0b00000001
+00037c 9100 0106                          lds temp1, PINK
+00037e 7001                               andi temp1, 0b00000001
+                                 
+00037f 3000                               cpi temp1, 0
+000380 f711                               brne FirstZeroLoop  ; if no input is received, go back and listen again.
+000381 c000                               rjmp SecondOneLoop ; if there is a coin inserted go to the second loop
+                                 
+                                  SecondOneLoop:  ;one coin has been inserted, listening for second coin or for abort instruction
+                                 
+000382 9100 0106                      lds temp1, PINK
                                   
+000384 930f                           push temp1
+000385 936f                           push temp2
                                  
-000373 3000                       cpi temp1, 0
-000374 f711                       brne FirstZeroLoop
-000375 c000                       rjmp SecondOneLoop
-                                 
-                                  SecondOneLoop:
-                                 
-000376 9100 0106                  lds temp1, PINK
+000386 ee3f
+000387 0f33
+000388 0f33
+000389 9330 010b
+00038b ef0f
+00038c 950a
+00038d f7f1
+00038e 9100 0109
+000390 700f
+000391 300f
+000392 f041
+000393 e021
+000394 0f22
+000395 0f22
+000396 0f22
+000397 2f60
+000398 2362
+000399 f039
+00039a c000                           HashLoop Loopc
+                                      Loopc:
                                   
-000378 930f                       push temp1
-000379 936f                       push temp2
+00039b 916f                               pop temp2 
+00039c 910f                               pop temp1 
                                  
-00037a ee3f
-00037b 0f33
-00037c 0f33
-00037d 9330 010b
-00037f ef0f
-000380 950a
-000381 f7f1
-000382 9100 0109
-000384 700f
-000385 300f
-000386 f041
-000387 e021
-000388 0f22
-000389 0f22
-00038a 0f22
-00038b 2f60
-00038c 2362
-00038d f039
-00038e c000                       HashLoop Loopc
-                                  Loopc:
-                                  
-00038f 916f                       pop temp2 
-000390 910f                       pop temp1 
-                                 
-000391 7001                       andi temp1, 0b00000001
-000392 3001                       cpi temp1, 1
-000393 f711                       brne SecondOneLoop
-000394 c011                       rjmp ThirdZeroLoop 
+00039d 7001                               andi temp1, 0b00000001
+00039e 3001                               cpi temp1, 1
+00039f f711                               brne SecondOneLoop  ; no further input received, re-entering loop.
+0003a0 c011                               rjmp ThirdZeroLoop  ; otherwise, enter third loop.
                                  
                                   CoinReturn:
                                  
-000395 3080                       cpi temp4,0
-000396 f071                       breq JumpDisplay
-000397 958a                       dec temp4
+0003a1 3080                           cpi temp4,0
+0003a2 f071                           breq JumpDisplay
+0003a3 958a                           dec temp4
                                   
-000398 ef0f                       ser temp1 
-000399 9300 0099                  sts OCR3AH, temp1
-00039b 9300 0098                  sts OCR3AL, temp1
+0003a4 ef0f                           ser temp1 
+0003a5 9300 0099                      sts OCR3AH, temp1
+0003a7 9300 0098                      sts OCR3AL, temp1
                                   
-00039d d202                       rcall sleep_250ms
+0003a9 d214                           rcall sleep_250ms
                                  
-00039e 2700                       clr temp1 
-00039f 9300 0099                  sts OCR3AH, temp1
-0003a1 9300 0098                  sts OCR3AL, temp1
+0003aa 2700                           clr temp1 
+0003ab 9300 0099                      sts OCR3AH, temp1
+0003ad 9300 0098                      sts OCR3AL, temp1
                                   
-0003a3 d1fc                       rcall sleep_250ms
-0003a4 cff0                       rjmp CoinReturn
+0003af d20e                           rcall sleep_250ms
+0003b0 cff0                           rjmp CoinReturn
                                  
                                   JumpDisplay:
-0003a5 cf38                       rjmp displaySelectScreen2
+0003b1 cf38                           rjmp displaySelectScreen2
                                   
-                                  ThirdZeroLoop:
+                                  ThirdZeroLoop: ; much like the first two loops, listens for input, but this time sends them to delivery screen.
                                  
-0003a6 930f                       push temp1
-0003a7 936f                       push temp2
+0003b2 930f                           push temp1
+0003b3 936f                           push temp2
                                   
-0003a8 ee3f
-0003a9 0f33
-0003aa 0f33
-0003ab 9330 010b
-0003ad ef0f
-0003ae 950a
-0003af f7f1
-0003b0 9100 0109
-0003b2 700f
-0003b3 300f
-0003b4 f041
-0003b5 e021
-0003b6 0f22
-0003b7 0f22
-0003b8 0f22
-0003b9 2f60
-0003ba 2362
-0003bb f2c9
-0003bc c000                       HashLoop Loop3c
-                                  Loop3c:
+0003b4 ee3f
+0003b5 0f33
+0003b6 0f33
+0003b7 9330 010b
+0003b9 ef0f
+0003ba 950a
+0003bb f7f1
+0003bc 9100 0109
+0003be 700f
+0003bf 300f
+0003c0 f041
+0003c1 e021
+0003c2 0f22
+0003c3 0f22
+0003c4 0f22
+0003c5 2f60
+0003c6 2362
+0003c7 f2c9
+0003c8 c000                           HashLoop Loop3c
+                                      Loop3c:
                                   
-0003bd 916f                       pop temp2
-0003be 910f                       pop temp1 
+0003c9 916f                               pop temp2
+0003ca 910f                               pop temp1 
                                  
-0003bf 9100 0106                  lds temp1, PINK
-0003c1 7001                       andi temp1, 0b00000001
+0003cb 9100 0106                          lds temp1, PINK
+0003cd 7001                               andi temp1, 0b00000001
                                   
-                                 
-0003c2 3000                       cpi temp1, 0
-0003c3 f711                       brne ThirdZeroLoop
+0003ce 3000                               cpi temp1, 0
+0003cf f711                               brne ThirdZeroLoop
                                   
-0003c4 9583                       inc temp4
+0003d0 9583                               inc temp4
+0003d1 956a                               dec temp2
                                   
-0003c5 956a                       dec temp2
-                                  
-0003c6 2f06                       mov temp1,temp2
-0003c7 5d00                       subi temp1,-'0'
-0003c8 0f77                       lsl temp3
-0003c9 6071                       ori temp3, 0b00000001
-                                 
-0003ca 930f                       push temp1
-                                 
-0003cb b978                       out PORTC, temp3
-0003cc ea08
-0003cd d197
-0003ce d1a6                       do_lcd_command 0b10101000
-                                  
-0003cf 910f                       pop temp1
-0003d0 2f00
-0003d1 d19a
-0003d2 d1a2                       do_lcd_data_r temp1
-0003d3 3060                       cpi temp2, 0
-0003d4 f009                       breq DeliverScreen
-0003d5 cf81                       rjmp FirstZeroLoop
+0003d2 2f06                               mov temp1,temp2    //converting number of coins into LED blocks
+0003d3 5d00                               subi temp1,-'0'
+0003d4 0f77                               lsl temp3
+0003d5 6071                               ori temp3, 0b00000001   
+0003d6 930f                               push temp1
+0003d7 b978                               out PORTC, temp3
+                                          
+0003d8 ea08
+0003d9 d1a9
+0003da d1b8                               do_lcd_command 0b10101000
+0003db 910f                               pop temp1
+0003dc 2f00
+0003dd d1ac
+0003de d1b4                               do_lcd_data_r temp1
+0003df 3060                               cpi temp2, 0
+                                          
+0003e0 f009                               breq DeliverScreen
+0003e1 cf81                               rjmp FirstZeroLoop
                                   
                                  .include "modules/deliverItem.asm"
                                  
                                  
                                  DeliverScreen:
-                                  ;cli  //disable all input related interrupts
+                                     ;cli  //disable all input related interrupts during this time.
                                   
-0003d6 ef0f                       ser temp1
-0003d7 b90d                       out DDRE, temp1
-0003d8 b907                       out DDRC, temp1
-                                  
-                                  ;ldi temp1,0b10101010
-                                  ;out PORTC, temp1
-0003d9 e001
-0003da d18a
-0003db d199                       do_lcd_command 0b00000001
-0003dc e404
-0003dd d18e
-0003de d196                       do_lcd_data 'D'
-0003df e605
-0003e0 d18b
-0003e1 d193                       do_lcd_data 'e'
-0003e2 e60c
-0003e3 d188
-0003e4 d190                       do_lcd_data 'l'
-0003e5 e609
-0003e6 d185
-0003e7 d18d                       do_lcd_data 'i'
-0003e8 e706
-0003e9 d182
-0003ea d18a                       do_lcd_data 'v'
+0003e2 ef0f                          ser temp1
+0003e3 b90d                          out DDRE, temp1
+0003e4 b907                          out DDRC, temp1
+                                 
+0003e5 e001
+0003e6 d19c
+0003e7 d1ab                          do_lcd_command 0b00000001
+0003e8 e404
+0003e9 d1a0
+0003ea d1a8                          do_lcd_data 'D'
 0003eb e605
-0003ec d17f
-0003ed d187                       do_lcd_data 'e'
-0003ee e702
-0003ef d17c
-0003f0 d184                       do_lcd_data 'r'
+0003ec d19d
+0003ed d1a5                          do_lcd_data 'e'
+0003ee e60c
+0003ef d19a
+0003f0 d1a2                          do_lcd_data 'l'
 0003f1 e609
-0003f2 d179
-0003f3 d181                       do_lcd_data 'i'
-0003f4 e60e
-0003f5 d176
-0003f6 d17e                       do_lcd_data 'n'
-0003f7 e607
-0003f8 d173
-0003f9 d17b                       do_lcd_data 'g'
-0003fa e200
-0003fb d170
-0003fc d178                       do_lcd_data ' '
-0003fd e409
-0003fe d16d
-0003ff d175                       do_lcd_data 'I'
-000400 e704
-000401 d16a
-000402 d172                       do_lcd_data 't'
-000403 e605
-000404 d167
-000405 d16f                       do_lcd_data 'e'
-000406 e60d
-000407 d164
-000408 d16c                       do_lcd_data 'm'
+0003f2 d197
+0003f3 d19f                          do_lcd_data 'i'
+0003f4 e706
+0003f5 d194
+0003f6 d19c                          do_lcd_data 'v'
+0003f7 e605
+0003f8 d191
+0003f9 d199                          do_lcd_data 'e'
+0003fa e702
+0003fb d18e
+0003fc d196                          do_lcd_data 'r'
+0003fd e609
+0003fe d18b
+0003ff d193                          do_lcd_data 'i'
+000400 e60e
+000401 d188
+000402 d190                          do_lcd_data 'n'
+000403 e607
+000404 d185
+000405 d18d                          do_lcd_data 'g'
+000406 e200
+000407 d182
+000408 d18a                          do_lcd_data ' '
+000409 e409
+00040a d17f
+00040b d187                          do_lcd_data 'I'
+00040c e704
+00040d d17c
+00040e d184                          do_lcd_data 't'
+00040f e605
+000410 d179
+000411 d181                          do_lcd_data 'e'
+000412 e60d
+000413 d176
+000414 d17e                          do_lcd_data 'm'
                                  
-000409 916f                       pop temp2
-00040a 5360                       subi temp2, '0'
+000415 916f                          pop temp2
+000416 5360                          subi temp2, '0'
                                  
-00040b d00e                       rcall decrementInventory
+000417 d00e                          rcall decrementInventory
                                  
-00040c ef0f                       ser temp1					; connected to PE4 (externally labelled PE2)
-00040d 9300 0099                  sts OCR3AH, temp1
-00040f 9300 0098                  sts OCR3AL, temp1
+000418 ef0f                          ser temp1					; connected to PE4 (externally labelled PE2)
+000419 9300 0099                     sts OCR3AH, temp1
+00041b 9300 0098                     sts OCR3AL, temp1
                                  
-000411 d19b                       rcall sleep_1000ms
-000412 d19a                       rcall sleep_1000ms
-000413 d199                       rcall sleep_1000ms
+00041d d1ad                          rcall sleep_1000ms   ;spin motors for 3 seconds.
+00041e d1ac                          rcall sleep_1000ms
+00041f d1ab                          rcall sleep_1000ms
                                  
-000414 2700                       clr temp1					; connected to PE4 (externally labelled PE2)
-000415 9300 0099                  sts OCR3AH, temp1
-000417 9300 0098                  sts OCR3AL, temp1
+000420 2700                          clr temp1					; stops motors
+000421 9300 0099                     sts OCR3AH, temp1
+000423 9300 0098                     sts OCR3AL, temp1
                                  
-000419 cec4                       rjmp displaySelectScreen2
+000425 cec4                          rjmp displaySelectScreen2  ;jump back to select screen.
                                  
                                  
                                   
                                  decrementInventory:
                                   
-00041a 3061                       cpi temp2, 1
-00041b f089                       breq decrement1
-00041c 3062                       cpi temp2, 2
-00041d f0a9                       breq decrement2
-00041e 3063                       cpi temp2, 3
-00041f f0c9                       breq decrement3
-000420 3064                       cpi temp2, 4
-000421 f0e9                       breq decrement4
-000422 3065                       cpi temp2, 5
-000423 f109                       breq decrement5
-000424 3066                       cpi temp2, 6
-000425 f129                       breq decrement6
-000426 3067                       cpi temp2, 7
-000427 f149                       breq decrement7
-000428 3068                       cpi temp2, 8
-000429 f169                       breq decrement8
-00042a 3069                       cpi temp2, 9
-00042b f189                       breq decrement9
-00042c 9508                       ret
+000426 3061                          cpi temp2, 1
+000427 f089                          breq decrement1
+000428 3062                          cpi temp2, 2
+000429 f0a9                          breq decrement2
+00042a 3063                          cpi temp2, 3
+00042b f0c9                          breq decrement3
+00042c 3064                          cpi temp2, 4
+00042d f0e9                          breq decrement4
+00042e 3065                          cpi temp2, 5
+00042f f109                          breq decrement5
+000430 3066                          cpi temp2, 6
+000431 f129                          breq decrement6
+000432 3067                          cpi temp2, 7
+000433 f149                          breq decrement7
+000434 3068                          cpi temp2, 8
+000435 f169                          breq decrement8
+000436 3069                          cpi temp2, 9
+000437 f189                          breq decrement9
+000438 9508                          ret
                                   
-                                  decrement1:
+                                     decrement1:
                                   
-00042d e0e0                       ldi ZL, low(item1)
-00042e e0f2                       ldi ZH, high(item1)
-00042f 8100                       ld temp1, Z
+000439 e0e0                             ldi ZL, low(item1)
+00043a e0f2                             ldi ZH, high(item1)
+00043b 8100                             ld temp1, Z
+00043c 950a                             dec temp1
+00043d 8300                             st Z, temp1
+00043e 9508                             ret
+                                     
+                                     decrement2:
                                   
+00043f e0e2                             ldi ZL, low(item2)
+000440 e0f2                             ldi ZH, high(item2)
+000441 8100                             ld temp1, Z
+000442 950a                             dec temp1
+000443 8300                             st Z, temp1
+000444 9508                             ret
                                   
-000430 950a                       dec temp1
-                                  //out PORTC, temp1
-000431 8300                       st Z, temp1
+                                     decrement3:
+                                  
+000445 e0e4                             ldi ZL, low(item3)
+000446 e0f2                             ldi ZH, high(item3)
+000447 8100                             ld temp1, Z
+000448 950a                             dec temp1
+000449 8300                             st Z, temp1
+00044a 9508                             ret
+                                  
+                                     decrement4:
+00044b e0e6                             ldi ZL, low(item4)
+00044c e0f2                             ldi ZH, high(item4)
+00044d 8100                             ld temp1, Z
+00044e 950a                             dec temp1
+00044f 8300                             st Z, temp1
+000450 9508                             ret
                                  
-000432 9508                       ret
-                                  decrement2:
+                                     decrement5:
+000451 e0e8                             ldi ZL, low(item5)
+000452 e0f2                             ldi ZH, high(item5)
+000453 8100                             ld temp1, Z
+000454 950a                             dec temp1
+000455 8300                             st Z, temp1
+000456 9508                             ret
                                   
-000433 e0e2                       ldi ZL, low(item2)
-000434 e0f2                       ldi ZH, high(item2)
-000435 8100                       ld temp1, Z
+                                     decrement6:
                                   
-                                  //out PORTC, temp1
+000457 e0ea                             ldi ZL, low(item6)
+000458 e0f2                             ldi ZH, high(item6)
+000459 8100                             ld temp1, Z
+00045a 950a                             dec temp1
+00045b 8300                             st Z, temp1
+00045c 9508                             ret
                                   
-000436 950a                       dec temp1
-000437 8300                       st Z, temp1
-000438 9508                       ret
+                                     decrement7:
                                   
-                                  decrement3:
+00045d e0ec                             ldi ZL, low(item7)
+00045e e0f2                             ldi ZH, high(item7)
+00045f 8100                             ld temp1, Z
+000460 950a                             dec temp1
+000461 8300                             st Z, temp1
+000462 9508                             ret
                                   
-000439 e0e4                       ldi ZL, low(item3)
-00043a e0f2                       ldi ZH, high(item3)
+                                     decrement8:
+000463 e0ee                             ldi ZL, low(item8)
+000464 e0f2                             ldi ZH, high(item8)
+000465 8100                             ld temp1, Z
+000466 950a                             dec temp1
+000467 8300                             st Z, temp1
+000468 9508                             ret
                                   
-00043b 8100                       ld temp1, Z
-                                  //out PORTC, temp1
-00043c 950a                       dec temp1
-                                 
-00043d 8300                       st Z, temp1
-00043e 9508                       ret
-                                  
-                                  decrement4:
-00043f e0e6                       ldi ZL, low(item4)
-000440 e0f2                       ldi ZH, high(item4)
-000441 8100                       ld temp1, Z
-                                  
-000442 950a                       dec temp1
-                                  //out PORTC, temp1
-000443 8300                       st Z, temp1
-000444 9508                       ret
-                                 
-                                  decrement5:
-000445 e0e8                       ldi ZL, low(item5)
-000446 e0f2                       ldi ZH, high(item5)
-000447 8100                       ld temp1, Z
-                                  
-000448 950a                       dec temp1
-                                  //out PORTC, temp1
-000449 8300                       st Z, temp1
-00044a 9508                       ret
-                                  
-                                  decrement6:
-                                  
-00044b e0ea                       ldi ZL, low(item6)
-00044c e0f2                       ldi ZH, high(item6)
-00044d 8100                       ld temp1, Z
-                                  
-                                  //out PORTC, temp1
-00044e 950a                       dec temp1
-00044f 8300                       st Z, temp1
-000450 9508                       ret
-                                  
-                                  decrement7:
-                                  
-000451 e0ec                       ldi ZL, low(item7)
-000452 e0f2                       ldi ZH, high(item7)
-000453 8100                       ld temp1, Z
-                                  //out PORTC, temp1
-                                 
-000454 950a                       dec temp1
-000455 8300                       st Z, temp1
-000456 9508                       ret
-                                  
-                                  decrement8:
-000457 e0ee                       ldi ZL, low(item8)
-000458 e0f2                       ldi ZH, high(item8)
-000459 8100                       ld temp1, Z
-                                  //out PORTC, temp1
-                                 
-00045a 950a                       dec temp1
-00045b 8300                       st Z, temp1
-00045c 9508                       ret
-                                  
-                                  decrement9:
-00045d e1e0                       ldi ZL, low(item9)
-00045e e0f2                       ldi ZH, high(item9)
-00045f 8100                       ld temp1, Z
-                                  //out PORTC, temp1
-                                 
-000460 950a                       dec temp1
-000461 8300                       st Z, temp1
-000462 9508                       ret
+                                     decrement9:
+000469 e1e0                             ldi ZL, low(item9)
+00046a e0f2                             ldi ZH, high(item9)
+00046b 8100                             ld temp1, Z
+00046c 950a                             dec temp1
+00046d 8300                             st Z, temp1
+00046e 9508                             ret
                                  
                                  .include "modules/admin.asm"
                                  
-                                 .macro LEDcount
+                                 ;
+                                 ;
+                                 
+                                 
+                                 .macro LEDcount   ;a macro that transforms decimal to number of LED blocks.
                                  	push @0
                                  	push temp2
                                  	push temp3
                                  	clr temp2
                                  	out PORTG, temp2
                                  
-                                 	cpi @0, 10
+                                 	cpi @0, 10   ;if the item has 10 in inventory, we want the top 2 orange-red LEDs to be on.
                                  	breq TWO
-                                 	cpi @0, 9 
+                                 	cpi @0, 9    ; if it has only 9, then only the orange one.
                                  	breq ONE
                                  	rjmp mainloop
                                  
@@ -3472,371 +3469,395 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
                                  	pop @0
                                  .endmacro
                                  
-                                 adminModeInitial:
+                                 adminModeInitial:    ;the default screen for admin mode always displays the information for item1
                                  
-000463 e001
-000464 d100
-000465 d10f                      	do_lcd_command 0b00000001
-000466 e401
-000467 d104
-000468 d10c                      	do_lcd_data 'A'
-000469 e604
-00046a d101
-00046b d109                      	do_lcd_data 'd'
-00046c e60d
-00046d d0fe
-00046e d106                      	do_lcd_data 'm'
-00046f e609
-000470 d0fb
-000471 d103                      	do_lcd_data 'i'
-000472 e60e
-000473 d0f8
-000474 d100                      	do_lcd_data 'n'
-000475 e200
-000476 d0f5
-000477 d0fd                      	do_lcd_data ' '
+00046f e001
+000470 d112
+000471 d121                      	do_lcd_command 0b00000001
+000472 e401
+000473 d116
+000474 d11e                      	do_lcd_data 'A'
+000475 e604
+000476 d113
+000477 d11b                      	do_lcd_data 'd'
 000478 e60d
-000479 d0f2
-00047a d0fa                      	do_lcd_data 'm'
-00047b e60f
-00047c d0ef
-00047d d0f7                      	do_lcd_data 'o'
-00047e e604
-00047f d0ec
-000480 d0f4                      	do_lcd_data 'd'
-000481 e605
-000482 d0e9
-000483 d0f1                      	do_lcd_data 'e'
-000484 e200
-000485 d0e6
-000486 d0ee                      	do_lcd_data ' '
-000487 e301
-000488 d0e3
-000489 d0eb                      	do_lcd_data '1'
+000479 d110
+00047a d118                      	do_lcd_data 'm'
+00047b e609
+00047c d10d
+00047d d115                      	do_lcd_data 'i'
+00047e e60e
+00047f d10a
+000480 d112                      	do_lcd_data 'n'
+000481 e200
+000482 d107
+000483 d10f                      	do_lcd_data ' '
+000484 e60d
+000485 d104
+000486 d10c                      	do_lcd_data 'm'
+000487 e60f
+000488 d101
+000489 d109                      	do_lcd_data 'o'
+00048a e604
+00048b d0fe
+00048c d106                      	do_lcd_data 'd'
+00048d e605
+00048e d0fb
+00048f d103                      	do_lcd_data 'e'
+000490 e200
+000491 d0f8
+000492 d100                      	do_lcd_data ' '
+000493 e301
+000494 d0f5
+000495 d0fd                      	do_lcd_data '1'
                                  	
-00048a ea08
-00048b d0d9
-00048c d0e8                      	do_lcd_command 0b10101000
-                                 
-00048d 930f                      	push temp1
-00048e e0e0                      	ldi ZL, low(item1)   //z holds pointer to item1's inventory. 
-00048f e0f2                      	ldi ZH, high(item1)
-000490 8100                      	ld temp1, Z
+000496 ea08
+000497 d0eb
+000498 d0fa                      	do_lcd_command 0b10101000
+                                 	;displaying inventory
+000499 930f                      	push temp1
+00049a e0e0                      	ldi ZL, low(item1)   //z holds pointer to item1's inventory. 
+00049b e0f2                      	ldi ZH, high(item1)
+00049c 8100                      	ld temp1, Z
                                  	
-000491 930f
-000492 936f
-000493 937f
-000494 2766
-000495 bb64
-000496 300a
-000497 f019
-000498 3009
-000499 f029
-00049a c006
-00049b e072
-00049c 6071
-00049d bb74
-00049e c002
-00049f e071
-0004a0 bb74
-0004a1 3000
-0004a2 f021
-0004a3 0f66
-0004a4 6061
-0004a5 950a
-0004a6 cffa
-0004a7 b968
-0004a8 917f
-0004a9 916f
-0004aa 910f                      	LEDcount temp1
+00049d 930f
+00049e 936f
+00049f 937f
+0004a0 2766
+0004a1 bb64
+0004a2 300a
+0004a3 f019
+0004a4 3009
+0004a5 f029
+0004a6 c006
+0004a7 e072
+0004a8 6071
+0004a9 bb74
+0004aa c002
+0004ab e071
+0004ac bb74
+0004ad 3000
+0004ae f021
+0004af 0f66
+0004b0 6061
+0004b1 950a
+0004b2 cffa
+0004b3 b968
+0004b4 917f
+0004b5 916f
+0004b6 910f                      	LEDcount temp1
                                  
-0004ab 5d00                      	subi temp1, -'0'
-0004ac 2f00
-0004ad d0be
-0004ae d0c6                      	do_lcd_data_r temp1 
+0004b7 300a                      	cpi temp1, 10
+0004b8 f029                      	breq TEN
+                                 
+0004b9 5d00                      	subi temp1, -'0'
+0004ba 2f00
+0004bb d0ce
+0004bc d0d6                      	do_lcd_data_r temp1 
+0004bd c006                      	rjmp EndIt
+                                 	TEN:
+                                 
+0004be e301
+0004bf d0ca
+0004c0 d0d2                      	do_lcd_data '1'
+0004c1 e300
+0004c2 d0c7
+0004c3 d0cf                      	do_lcd_data '0'
+                                 
+                                 	EndIt:
                                  	//out PORTC, temp1    //since item 1 will initially have only 1 item, no conversion is needed
                                  	
-0004af eb06
-0004b0 d0b4
-0004b1 d0c3                      	do_lcd_command 0b10110110
-0004b2 e204
-0004b3 d0b8
-0004b4 d0c0                      	do_lcd_data '$'
-0004b5 e0e1                      	ldi ZL, low(item1Cost)
-0004b6 e0f2                      	ldi ZH, high(item1Cost)
-0004b7 8100                      	ld temp1, Z
-0004b8 5d00                      	subi temp1, -'0'
-0004b9 2f00
-0004ba d0b1
-0004bb d0b9                      	do_lcd_data_r temp1 
-0004bc 910f                      	pop temp1
+                                 	;displaying cost
+0004c4 eb06
+0004c5 d0bd
+0004c6 d0cc                      	do_lcd_command 0b10110110
+0004c7 e204
+0004c8 d0c1
+0004c9 d0c9                      	do_lcd_data '$'
+0004ca e0e1                      	ldi ZL, low(item1Cost)
+0004cb e0f2                      	ldi ZH, high(item1Cost)
+0004cc 8100                      	ld temp1, Z
+0004cd 5d00                      	subi temp1, -'0'
+0004ce 2f00
+0004cf d0ba
+0004d0 d0c2                      	do_lcd_data_r temp1 
+0004d1 910f                      	pop temp1
                                  
                                  
-0004bd e081                      	ldi temp4, 1
-0004be e0b1                      	ldi r27,1
-0004bf e091                      	ldi flag1,1
+0004d2 e081                      	ldi temp4, 1
+0004d3 e0b1                      	ldi r27,1
+0004d4 e091                      	ldi flag1,1
                                  
-0004c0 cc95                      	rjmp KeypadLoop
+0004d5 cc8c                      	rjmp KeypadLoop
                                  
                                  
                                  
-                                 returnInventory:
+                                 returnInventory:  ;this function stores the inventory and cost information for the selected item in registers Y and Z
                                  	 
-0004c1 930f                      	push temp1
-0004c2 5300                      	subi temp1, '0'
-0004c3 3001                      	cpi temp1, 1
-0004c4 f079                      	breq return1
-0004c5 3002                      	cpi temp1, 2
-0004c6 f099                      	breq return2
-0004c7 3003                      	cpi temp1, 3
-0004c8 f0b9                      	breq return3
-0004c9 3004                      	cpi temp1, 4
-0004ca f0d9                      	breq return4
-0004cb 3005                      	cpi temp1, 5
-0004cc f0f9                      	breq return5
-0004cd 3006                      	cpi temp1, 6
-0004ce f119                      	breq return6
-0004cf 3007                      	cpi temp1, 7
-0004d0 f139                      	breq return7
-0004d1 3008                      	cpi temp1, 8
-0004d2 f159                      	breq return8
-0004d3 c030                      	rjmp return9
+0004d6 930f                      	push temp1
+0004d7 5300                      	subi temp1, '0'
+0004d8 3001                      	cpi temp1, 1
+0004d9 f079                      	breq return1
+0004da 3002                      	cpi temp1, 2
+0004db f099                      	breq return2
+0004dc 3003                      	cpi temp1, 3
+0004dd f0b9                      	breq return3
+0004de 3004                      	cpi temp1, 4
+0004df f0d9                      	breq return4
+0004e0 3005                      	cpi temp1, 5
+0004e1 f0f9                      	breq return5
+0004e2 3006                      	cpi temp1, 6
+0004e3 f119                      	breq return6
+0004e4 3007                      	cpi temp1, 7
+0004e5 f139                      	breq return7
+0004e6 3008                      	cpi temp1, 8
+0004e7 f159                      	breq return8
+0004e8 c030                      	rjmp return9
                                  
                                  	return1:
-0004d4 e0e0                      		ldi ZL, low(item1)    //inventory amount
-0004d5 e0f2                      		ldi ZH, high(item1)
-0004d6 e0c1                      		ldi YL, low(item1Cost) 	//item cost
-0004d7 e0d2                      		ldi YH, high(item1Cost)	
+0004e9 e0e0                      		ldi ZL, low(item1)    //inventory amount
+0004ea e0f2                      		ldi ZH, high(item1)
+0004eb e0c1                      		ldi YL, low(item1Cost) 	//item cost
+0004ec e0d2                      		ldi YH, high(item1Cost)	
                                  		;ldi temp1, 0b00000001
                                  		;out PORTC, temp1
-0004d8 910f                      		pop temp1
-0004d9 9508                      		ret
+0004ed 910f                      		pop temp1
+0004ee 9508                      		ret
                                  	return2:
-0004da e0e2                      		ldi ZL, low(item2)   
-0004db e0f2                      		ldi ZH, high(item2)
-0004dc e0c3                      		ldi YL, low(item2Cost) 	//item cost
-0004dd e0d2                      		ldi YH, high(item2Cost)
+0004ef e0e2                      		ldi ZL, low(item2)   
+0004f0 e0f2                      		ldi ZH, high(item2)
+0004f1 e0c3                      		ldi YL, low(item2Cost) 	//item cost
+0004f2 e0d2                      		ldi YH, high(item2Cost)
                                  		;ldi temp1, 0b00000011
                                  		;out PORTC, temp1
-0004de 910f                      		pop temp1
-0004df 9508                      		ret
+0004f3 910f                      		pop temp1
+0004f4 9508                      		ret
                                  	return3:
-0004e0 e0e4                      		ldi ZL, low(item3)   
-0004e1 e0f2                      		ldi ZH, high(item3)
-0004e2 e0c5                      		ldi YL, low(item3Cost) 	//item cost
-0004e3 e0d2                      		ldi YH, high(item3Cost)
+0004f5 e0e4                      		ldi ZL, low(item3)   
+0004f6 e0f2                      		ldi ZH, high(item3)
+0004f7 e0c5                      		ldi YL, low(item3Cost) 	//item cost
+0004f8 e0d2                      		ldi YH, high(item3Cost)
                                  		;ldi temp1, 0b00000111
                                  		;out PORTC, temp1
-0004e4 910f                      		pop temp1
-0004e5 9508                      		ret
+0004f9 910f                      		pop temp1
+0004fa 9508                      		ret
                                  	return4:
-0004e6 e0e6                      		ldi ZL, low(item4)   
-0004e7 e0f2                      		ldi ZH, high(item4)
-0004e8 e0c7                      		ldi YL, low(item4Cost) 	//item cost
-0004e9 e0d2                      		ldi YH, high(item4Cost)
+0004fb e0e6                      		ldi ZL, low(item4)   
+0004fc e0f2                      		ldi ZH, high(item4)
+0004fd e0c7                      		ldi YL, low(item4Cost) 	//item cost
+0004fe e0d2                      		ldi YH, high(item4Cost)
                                  		;ldi temp1, 0b00001111
                                  		;out PORTC, temp1
-0004ea 910f                      		pop temp1
-0004eb 9508                      		ret
+0004ff 910f                      		pop temp1
+000500 9508                      		ret
                                  	return5:
-0004ec e0e8                      		ldi ZL, low(item5)   
-0004ed e0f2                      		ldi ZH, high(item5)
-0004ee e0c9                      		ldi YL, low(item5Cost) 	//item cost
-0004ef e0d2                       ldi YH, high(item5Cost)
-                                  ;ldi temp1, 0b00011111
-                                  ;out PORTC, temp1
-0004f0 910f                       pop temp1
-0004f1 9508                       ret
-                                  return6:
-0004f2 e0ea                       ldi ZL, low(item6) 
-0004f3 e0f2                       ldi ZH, high(item6)
-0004f4 e0cb                       ldi YL, low(item6Cost) 	//item cost
-0004f5 e0d2                       ldi YH, high(item6Cost)
-                                  ;ldi temp1, 0b00111111
-                                  ;out PORTC, temp1
-0004f6 910f                       pop temp1
-0004f7 9508                       ret
-                                  return7:
-0004f8 e0ec                       ldi ZL, low(item7) 
-0004f9 e0f2                       ldi ZH, high(item7)
-0004fa e0cd                       ldi YL, low(item7Cost) 	//item cost
-0004fb e0d2                       ldi YH, high(item7Cost)
-                                  ;ldi temp1, 0b01111111
-                                  ;out PORTC, temp1
-0004fc 910f                       pop temp1
-0004fd 9508                       ret
-                                  return8:
-0004fe e0ee                       ldi ZL, low(item8) 
-0004ff e0f2                       ldi ZH, high(item8)
-000500 e0cf                       ldi YL, low(item8Cost) 	//item cost
-000501 e0d2                       ldi YH, high(item8Cost)
-                                  ;ldi temp1, 0b11111111
-                                  ;out PORTC, temp1
-000502 910f                       pop temp1
-000503 9508                       ret
-                                  return9:
-000504 e1e0                       ldi ZL, low(item9) 
-000505 e0f2                       ldi ZH, high(item9)
-000506 e1c1                       ldi YL, low(item9Cost) 	//item cost
-000507 e0d2                       ldi YH, high(item9Cost)
-000508 910f                       pop temp1
-000509 9508                       ret
+000501 e0e8                      		ldi ZL, low(item5)   
+000502 e0f2                      		ldi ZH, high(item5)
+000503 e0c9                      		ldi YL, low(item5Cost) 	//item cost
+000504 e0d2                       		ldi YH, high(item5Cost)
+                                  		;ldi temp1, 0b00011111
+                                  		;out PORTC, temp1
+000505 910f                       		pop temp1
+000506 9508                       		ret
+                                  	return6:
+000507 e0ea                       		ldi ZL, low(item6) 
+000508 e0f2                       		ldi ZH, high(item6)
+000509 e0cb                       		ldi YL, low(item6Cost) 	//item cost
+00050a e0d2                       		ldi YH, high(item6Cost)
+                                  		;ldi temp1, 0b00111111
+                                  		;out PORTC, temp1
+00050b 910f                       		pop temp1
+00050c 9508                       		ret
+                                  	return7:
+00050d e0ec                       		ldi ZL, low(item7) 
+00050e e0f2                       		ldi ZH, high(item7)
+00050f e0cd                       		ldi YL, low(item7Cost) 	//item cost
+000510 e0d2                       		ldi YH, high(item7Cost)
+                                  		;ldi temp1, 0b01111111
+                                  		;out PORTC, temp1
+000511 910f                       		pop temp1
+000512 9508                       		ret
+                                 	 return8:
+000513 e0ee                      		ldi ZL, low(item8) 
+000514 e0f2                       		ldi ZH, high(item8)
+000515 e0cf                       		ldi YL, low(item8Cost) 	//item cost
+000516 e0d2                       		ldi YH, high(item8Cost)
+                                  		;ldi temp1, 0b11111111
+                                  		;out PORTC, temp1
+000517 910f                       		pop temp1
+000518 9508                       		ret
+                                  	return9:
+000519 e1e0                       		ldi ZL, low(item9) 
+00051a e0f2                       		ldi ZH, high(item9)
+00051b e1c1                       		ldi YL, low(item9Cost) 	//item cost
+00051c e0d2                       		ldi YH, high(item9Cost)
+00051d 910f                       		pop temp1
+00051e 9508                       		ret
                                  
                                   
-                                 
                                  adminMode:
                                   
                                  
-00050a d08f                       rcall sleep_100ms
+00051f d098                       	rcall sleep_100ms
                                   
                                  
-00050b 930f                       push temp1
-00050c dfb4                       rcall returnInventory  
+000520 930f                       	push temp1
+000521 dfb4                       	rcall returnInventory  
                                  
-00050d e001
-00050e d056
-00050f d065                       do_lcd_command 0b00000001
-000510 e401
-000511 d05a
-000512 d062                       do_lcd_data 'A'
-000513 e604
-000514 d057
-000515 d05f                       do_lcd_data 'd'
-000516 e60d
-000517 d054
-000518 d05c                       do_lcd_data 'm'
-000519 e609
-00051a d051
-00051b d059                       do_lcd_data 'i'
-00051c e60e
-00051d d04e
-00051e d056                       do_lcd_data 'n'
-00051f e200
-000520 d04b
-000521 d053                       do_lcd_data ' '
-000522 e60d
-000523 d048
-000524 d050                       do_lcd_data 'm'
-000525 e60f
-000526 d045
-000527 d04d                       do_lcd_data 'o'
+000522 e001
+000523 d05f
+000524 d06e                       	do_lcd_command 0b00000001
+000525 e401
+000526 d063
+000527 d06b                       	do_lcd_data 'A'
 000528 e604
-000529 d042
-00052a d04a                       do_lcd_data 'd'
-00052b e605
-00052c d03f
-00052d d047                       do_lcd_data 'e'
-00052e e200
-00052f d03c
-000530 d044                       do_lcd_data ' '
-000531 910f                       pop temp1
+000529 d060
+00052a d068                       	do_lcd_data 'd'
+00052b e60d
+00052c d05d
+00052d d065                       	do_lcd_data 'm'
+00052e e609
+00052f d05a
+000530 d062                       	do_lcd_data 'i'
+000531 e60e
+000532 d057
+000533 d05f                       	do_lcd_data 'n'
+000534 e200
+000535 d054
+000536 d05c                       	do_lcd_data ' '
+000537 e60d
+000538 d051
+000539 d059                       	do_lcd_data 'm'
+00053a e60f
+00053b d04e
+00053c d056                       	do_lcd_data 'o'
+00053d e604
+00053e d04b
+00053f d053                      	do_lcd_data 'd'
+000540 e605
+000541 d048
+000542 d050                       	do_lcd_data 'e'
+000543 e200
+000544 d045
+000545 d04d                       	do_lcd_data ' '
+000546 910f                       	pop temp1
                                   
-000532 2f80                       mov temp4, temp1
-000533 5380                       subi temp4, '0'
+000547 2f80                       	mov temp4, temp1
+000548 5380                       	subi temp4, '0' 
                                  
-000534 2f00
-000535 d036
-000536 d03e                       do_lcd_data_r temp1 
+000549 2f00
+00054a d03f
+00054b d047                       	do_lcd_data_r temp1 
                                  
-000537 ea08
-000538 d02c
-000539 d03b                       do_lcd_command 0b10101000
+00054c ea08
+00054d d035
+00054e d044                       	do_lcd_command 0b10101000
                                  
-00053a 8100                       ld temp1, Z
+00054f 8100                       	ld temp1, Z
+000550 930f
+000551 936f
+000552 937f
+000553 2766
+000554 bb64
+000555 300a
+000556 f019
+000557 3009
+000558 f029
+000559 c006
+00055a e072
+00055b 6071
+00055c bb74
+00055d c002
+00055e e071
+00055f bb74
+000560 3000
+000561 f021
+000562 0f66
+000563 6061
+000564 950a
+000565 cffa
+000566 b968
+000567 917f
+000568 916f
+000569 910f                       	LEDcount temp1
                                  
-00053b 930f
-00053c 936f
-00053d 937f
-00053e 2766
-00053f bb64
-000540 300a
-000541 f019
-000542 3009
-000543 f029
-000544 c006
-000545 e072
-000546 6071
-000547 bb74
-000548 c002
-000549 e071
-00054a bb74
-00054b 3000
-00054c f021
-00054d 0f66
-00054e 6061
-00054f 950a
-000550 cffa
-000551 b968
-000552 917f
-000553 916f
-000554 910f                       LEDcount temp1
+00056a 300a                       	cpi temp1, 10
+00056b f029                      	breq TEN1
                                  
-000555 5d00                       subi temp1,-'0'
+00056c 5d00                      	subi temp1, -'0'
+00056d 2f00
+00056e d01b
+00056f d023                      	do_lcd_data_r temp1 
+000570 c006                      	rjmp EndIt1
+                                 	TEN1:
                                  
-000556 2f00
-000557 d014
-000558 d01c                       do_lcd_data_r temp1   //displays inventory of selected item
+000571 e301
+000572 d017
+000573 d01f                      	do_lcd_data '1'
+000574 e300
+000575 d014
+000576 d01c                      	do_lcd_data '0'
+                                 
+                                 	EndIt1:   //displays inventory of selected item
                                   
-000559 eb06
-00055a d00a
-00055b d019                       do_lcd_command 0b10110110
-00055c e204
-00055d d00e
-00055e d016                       do_lcd_data '$'		//displays cost of selected item
-00055f 8108                       ld temp1, Y
-000560 5d00                       subi temp1,-'0'
-000561 2f00
-000562 d009
-000563 d011                       do_lcd_data_r temp1 
+000577 eb06
+000578 d00a
+000579 d019                       	do_lcd_command 0b10110110
+00057a e204
+00057b d00e
+00057c d016                       	do_lcd_data '$'		
+00057d 8108                       	ld temp1, Y
+00057e 5d00                       	subi temp1,-'0'
+00057f 2f00
+000580 d009
+000581 d011                       	do_lcd_data_r temp1 //displays cost of selected item
                                  
-                                 
-000564 9508                       ret 
-                                  
+000582 9508                       	ret 
                                   
                                  .include "modules/lcd.asm"
                                  
                                  lcd_command: ; Send a command to the LCD (r16)
                                  
-000565 bb01                       out PORTF, r16
-000566 d01f                       rcall sleep_1ms
-000567 9a16                       lcd_set LCD_E
-000568 d01d                       rcall sleep_1ms
-000569 9816                       lcd_clr LCD_E
-00056a d01b                       rcall sleep_1ms
-00056b 9508                       ret
+000583 bb01                       out PORTF, r16
+000584 d01f                       rcall sleep_1ms
+000585 9a16                       lcd_set LCD_E
+000586 d01d                       rcall sleep_1ms
+000587 9816                       lcd_clr LCD_E
+000588 d01b                       rcall sleep_1ms
+000589 9508                       ret
                                  
                                  lcd_data:
                                  
-00056c bb01                       out PORTF, r16
-00056d 9a17                       lcd_set LCD_RS
-00056e d017                       rcall sleep_1ms
-00056f 9a16                       lcd_set LCD_E
-000570 d015                       rcall sleep_1ms
-000571 9816                       lcd_clr LCD_E
-000572 d013                       rcall sleep_1ms
-000573 9817                       lcd_clr LCD_RS
-000574 9508                       ret
+00058a bb01                       out PORTF, r16
+00058b 9a17                       lcd_set LCD_RS
+00058c d017                       rcall sleep_1ms
+00058d 9a16                       lcd_set LCD_E
+00058e d015                       rcall sleep_1ms
+00058f 9816                       lcd_clr LCD_E
+000590 d013                       rcall sleep_1ms
+000591 9817                       lcd_clr LCD_RS
+000592 9508                       ret
                                  
                                  lcd_wait:
                                  
-000575 930f                       push r16
-000576 2700                       clr r16
-000577 bb00                       out DDRF, r16
-000578 bb01                       out PORTF, r16
-000579 9a15                       lcd_set LCD_RW
+000593 930f                       push r16
+000594 2700                       clr r16
+000595 bb00                       out DDRF, r16
+000596 bb01                       out PORTF, r16
+000597 9a15                       lcd_set LCD_RW
                                   lcd_wait_loop:
-00057a d00b                       rcall sleep_1ms
-00057b 9a16                       lcd_set LCD_E
-00057c d009                       rcall sleep_1ms
-00057d b10f                       in r16, PINF
-00057e 9816                       lcd_clr LCD_E
-00057f fd07                       sbrc r16, 7
-000580 cff9                       rjmp lcd_wait_loop
-000581 9815                       lcd_clr LCD_RW
-000582 ef0f                       ser r16
-000583 bb00                       out DDRF, r16
-000584 910f                       pop r16
-000585 9508                       ret
+000598 d00b                       rcall sleep_1ms
+000599 9a16                       lcd_set LCD_E
+00059a d009                       rcall sleep_1ms
+00059b b10f                       in r16, PINF
+00059c 9816                       lcd_clr LCD_E
+00059d fd07                       sbrc r16, 7
+00059e cff9                       rjmp lcd_wait_loop
+00059f 9815                       lcd_clr LCD_RW
+0005a0 ef0f                       ser r16
+0005a1 bb00                       out DDRF, r16
+0005a2 910f                       pop r16
+0005a3 9508                       ret
                                  
                                  .include "modules/sleep.asm"
                                  
@@ -3847,67 +3868,67 @@ C:\Users\Brandon\Desktop\UNI STUFF\comp 2121\2121proj\AssemblerApplication1\Asse
                                  
                                  sleep_1ms:
                                  	
-000586 938f                      	push r24
-000587 939f                      	push r25
-000588 e09f                      	ldi r25, high(DELAY_1MS)
-000589 e98c                      	ldi r24, low(DELAY_1MS)
+0005a4 938f                      	push r24
+0005a5 939f                      	push r25
+0005a6 e09f                      	ldi r25, high(DELAY_1MS)
+0005a7 e98c                      	ldi r24, low(DELAY_1MS)
                                  
                                  delayloop_1ms:
                                  	
-00058a 9701                      	sbiw r25:r24, 1
-00058b f7f1                      	brne delayloop_1ms
-00058c 919f                      	pop r25
-00058d 918f                      	pop r24
-00058e 9508                      	ret
+0005a8 9701                      	sbiw r25:r24, 1
+0005a9 f7f1                      	brne delayloop_1ms
+0005aa 919f                      	pop r25
+0005ab 918f                      	pop r24
+0005ac 9508                      	ret
                                  
                                  sleep_5ms:
                                  
-00058f dff6                      	rcall sleep_1ms
-000590 dff5                      	rcall sleep_1ms
-000591 dff4                      	rcall sleep_1ms
-000592 dff3                      	rcall sleep_1ms
-000593 dff2                      	rcall sleep_1ms
-000594 9508                      	ret
+0005ad dff6                      	rcall sleep_1ms
+0005ae dff5                      	rcall sleep_1ms
+0005af dff4                      	rcall sleep_1ms
+0005b0 dff3                      	rcall sleep_1ms
+0005b1 dff2                      	rcall sleep_1ms
+0005b2 9508                      	ret
                                  
                                  sleep_20ms:
                                  
-000595 dff9                      	rcall sleep_5ms
-000596 dff8                      	rcall sleep_5ms
-000597 dff7                      	rcall sleep_5ms
-000598 dff6                      	rcall sleep_5ms
-000599 9508                      	ret
+0005b3 dff9                      	rcall sleep_5ms
+0005b4 dff8                      	rcall sleep_5ms
+0005b5 dff7                      	rcall sleep_5ms
+0005b6 dff6                      	rcall sleep_5ms
+0005b7 9508                      	ret
                                  
                                  sleep_100ms:
                                  	
-00059a dffa                      	rcall sleep_20ms
-00059b dff9                      	rcall sleep_20ms
-00059c dff8                      	rcall sleep_20ms
-00059d dff7                      	rcall sleep_20ms
-00059e dff6                      	rcall sleep_20ms
-00059f 9508                      	ret
+0005b8 dffa                      	rcall sleep_20ms
+0005b9 dff9                      	rcall sleep_20ms
+0005ba dff8                      	rcall sleep_20ms
+0005bb dff7                      	rcall sleep_20ms
+0005bc dff6                      	rcall sleep_20ms
+0005bd 9508                      	ret
                                  
                                  sleep_250ms:
-0005a0 dff9                      	rcall sleep_100ms
-0005a1 dff8                      	rcall sleep_100ms
-0005a2 dff2                      	rcall sleep_20ms
-0005a3 dff1                      	rcall sleep_20ms
-0005a4 dfea                      	rcall sleep_5ms
-0005a5 dfe9                      	rcall sleep_5ms
-0005a6 9508                      	ret
+0005be dff9                      	rcall sleep_100ms
+0005bf dff8                      	rcall sleep_100ms
+0005c0 dff2                      	rcall sleep_20ms
+0005c1 dff1                      	rcall sleep_20ms
+0005c2 dfea                      	rcall sleep_5ms
+0005c3 dfe9                      	rcall sleep_5ms
+0005c4 9508                      	ret
                                  sleep_500ms:
                                  	
-0005a7 dff2                      	rcall sleep_100ms
-0005a8 dff1                      	rcall sleep_100ms
-0005a9 dff0                      	rcall sleep_100ms
-0005aa dfef                      	rcall sleep_100ms
-0005ab dfee                      	rcall sleep_100ms
-0005ac 9508                      	ret
+0005c5 dff2                      	rcall sleep_100ms
+0005c6 dff1                      	rcall sleep_100ms
+0005c7 dff0                      	rcall sleep_100ms
+0005c8 dfef                      	rcall sleep_100ms
+0005c9 dfee                      	rcall sleep_100ms
+0005ca 9508                      	ret
                                  
                                  sleep_1000ms:
                                  
-0005ad dff9                      	rcall sleep_500ms
-0005ae dff8                      	rcall sleep_500ms
-0005af 9508                      	ret
+0005cb dff9                      	rcall sleep_500ms
+0005cc dff8                      	rcall sleep_500ms
+0005cd 9508                      	ret
 
 
 RESOURCE USE INFORMATION
@@ -3927,7 +3948,7 @@ counted separately from r26..r31 here.
 "ATmega2560" register use summary:
 x  :   0 y  :  24 z  :  35 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 498 r17:   9 r18:  43 r19:  22 r20:  11 
+r13:   0 r14:   0 r15:   0 r16: 504 r17:  19 r18:  43 r19:  22 r20:  11 
 r21:   8 r22:  71 r23:  27 r24:  21 r25:  13 r26:   4 r27:   8 r28:  27 
 r29:  27 r30:  29 r31:  29 
 Registers used: 18 out of 35 (51.4%)
@@ -3935,30 +3956,30 @@ Registers used: 18 out of 35 (51.4%)
 "ATmega2560" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   3 adiw  :   0 and   :   5 
 andi  :   8 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :  70 brge  :   0 brhc  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :  72 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
 brne  :  13 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   5 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  40 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
-cpi   :  73 cpse  :   0 dec   :  20 eicall:   0 eijmp :   0 elpm  :   0 
+cpi   :  75 cpse  :   0 dec   :  20 eicall:   0 eijmp :   0 elpm  :   0 
 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 icall :   0 ijmp  :   0 
-in    :   5 inc   :   9 jmp   :  12 ld    :  27 ldd   :   0 ldi   : 319 
+in    :   7 inc   :   9 jmp   :  12 ld    :  27 ldd   :   0 ldi   : 325 
 lds   :   8 lpm   :   0 lsl   :  24 lsr   :   0 mov   :  29 movw  :   0 
 mul   :   0 muls  :   0 mulsu :   0 neg   :   0 nop   :   0 or    :   0 
-ori   :   8 out   :  48 pop   :  56 push  :  34 rcall : 377 ret   :  30 
-reti  :   7 rjmp  :  39 rol   :   0 ror   :   0 sbc   :   0 sbci  :   0 
+ori   :  10 out   :  50 pop   :  56 push  :  34 rcall : 385 ret   :  30 
+reti  :   7 rjmp  :  41 rol   :   0 ror   :   0 sbc   :   0 sbci  :   0 
 sbi   :   5 sbic  :   0 sbis  :   0 sbiw  :   1 sbr   :   0 sbrc  :   1 
 sbrs  :   0 sec   :   0 seh   :   0 sei   :   1 sen   :   0 ser   :   9 
 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 spm   :   0 
-st    :  32 std   :   0 sts   :  29 sub   :   0 subi  :  21 swap  :   0 
+st    :  32 std   :   0 sts   :  31 sub   :   0 subi  :  21 swap  :   0 
 tst   :   0 wdr   :   0 
 Instructions used: 34 out of 116 (29.3%)
 
 "ATmega2560" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000b60   2836      0   2836  262144   1.1%
+[.cseg] 0x000000 0x000b9c   2896      0   2896  262144   1.1%
 [.dseg] 0x000200 0x000212      0     18     18    8192   0.2%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
